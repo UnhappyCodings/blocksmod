@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:blue_lamp_block"
+    }
+  },
+  "result": {
+    "item": "blocksmod:blue_tube_lamp",
+    "count": 16
+  }
+}

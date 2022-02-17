@@ -17,32 +17,60 @@ public class ClientEvents {
     public static void onStartupEvent(FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_GRAY_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_GRAY_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_GRAY_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_GRAY_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GRAY_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GRAY_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GRAY_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GRAY_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLACK_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLACK_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLACK_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLACK_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.YELLOW_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.YELLOW_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.YELLOW_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.YELLOW_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORANGE_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORANGE_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORANGE_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.ORANGE_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.RED_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GREEN_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.GREEN_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GREEN_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.GREEN_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLUE_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLUE_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLUE_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLUE_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_BLUE_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_BLUE_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_BLUE_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_BLUE_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CYAN_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CYAN_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CYAN_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CYAN_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PINK_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PINK_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PINK_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PINK_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.MAGENTA_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.MAGENTA_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.MAGENTA_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.MAGENTA_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_LAMP_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_LAMP_STATIC.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_LAMP_STATIC_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_LAMP_BUTTON.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_LAMP_BUTTON_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
@@ -327,6 +355,17 @@ public class ClientEvents {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_LAMP_FLAT_HUGE_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_LAMP_FLAT_HUGE_FRAMED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.PURPLE_LAMP_FLAT_HUGE_FRAMED_ENLIGHTED.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_TUBE_LAMP.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_TUBE_LAMP_LEFT_OPEN.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_TUBE_LAMP_RIGHT_OPEN.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_TUBE_LAMP_LEFT_RIGHT_OPEN.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_TUBE_LAMP_EDGE.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_OPEN.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_TUBE_LAMP_EDGE_RIGHT_OPEN.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
+
 
     }
 

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:green_lamp_block_enlighted"
+    }
+  },
+  "result": {
+    "item": "blocksmod:green_tube_lamp_enlighted",
+    "count": 16
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "aa ",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:white_lamp_block"
+    }
+  },
+  "result": {
+    "item": "blocksmod:white_tube_lamp_edge",
+    "count": 16
+  }
+}

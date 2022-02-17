@@ -68,15 +68,14 @@ public class WirelessLampControllerEntity extends BlockEntity {
                         BlockPos blockPos = NbtUtil.getPos((CompoundTag) x);
                         BlockState blockState = level.getBlockState(blockPos);
                         if (blockState.getBlock() instanceof LampFlatBlock || blockState.getBlock() instanceof TubeLampBlock) {
-                            if (!blockState.getValue(LampFlatBlock.REMOTED)) {
-                                if (blockState.getValue(BlockStateProperties.LIT)) {
-                                    blockState = blockState.setValue(BlockStateProperties.LIT, false);
-                                } else {
-                                    blockState = blockState.setValue(BlockStateProperties.LIT, true);
-                                }
-                                this.origin = true;
-                                level.setBlockAndUpdate(blockPos, blockState.setValue(LampFlatBlock.REMOTED, true));
+                            if (blockState.getValue(BlockStateProperties.LIT)) {
+                                blockState = blockState.setValue(BlockStateProperties.LIT, false);
+                            } else {
+                                blockState = blockState.setValue(BlockStateProperties.LIT, true);
                             }
+                            this.origin = true;
+                            level.setBlockAndUpdate(blockPos, blockState.setValue(LampFlatBlock.REMOTED, true));
+
                         }
                     });
                 }
@@ -97,14 +96,12 @@ public class WirelessLampControllerEntity extends BlockEntity {
                         BlockPos blockPos = NbtUtil.getPos((CompoundTag) x);
                         BlockState blockState = level.getBlockState(blockPos);
                         if (blockState.getBlock() instanceof LampFlatBlock || blockState.getBlock() instanceof TubeLampBlock) {
-                            if (!blockState.getValue(LampFlatBlock.REMOTED) || this.origin) {
-                                if (blockState.getValue(BlockStateProperties.LIT)) {
-                                    blockState = blockState.setValue(BlockStateProperties.LIT, false);
-                                } else {
-                                    blockState = blockState.setValue(BlockStateProperties.LIT, true);
-                                }
-                                level.setBlockAndUpdate(blockPos, blockState.setValue(LampFlatBlock.REMOTED, false));
+                            if (blockState.getValue(BlockStateProperties.LIT)) {
+                                blockState = blockState.setValue(BlockStateProperties.LIT, false);
+                            } else {
+                                blockState = blockState.setValue(BlockStateProperties.LIT, true);
                             }
+                            level.setBlockAndUpdate(blockPos, blockState.setValue(LampFlatBlock.REMOTED, false));
                         }
                     });
                 }

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blocksmod:black_lamp_block_static_enlighted"
+    }
+  ],
+  "result": {
+    "item": "blocksmod:black_lamp_block"
+  }
+}

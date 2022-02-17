@@ -3,7 +3,7 @@ loaderVersion = "[39,)"
 license = "All Rights Reserved"
 [[mods]]
 modId = "blocksmod"
-version = "0.1a"
+version = "0.1.1b"
 displayName = "Blocks"
 displayURL = "https://www.curseforge.com/minecraft/mc-mods/blocksmod"
 logoFile="blocks-logo.png"

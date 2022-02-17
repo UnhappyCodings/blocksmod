@@ -54,6 +54,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/white_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/white_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/white_lamp_block"));
         buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_LAMP_BUTTON_ENLIGHTED.get().getRegistryName()).toString(),
@@ -70,6 +74,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         withExistingParent(Objects.requireNonNull(ModBlocks.LIGHT_GRAY_LAMP.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/light_gray_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.LIGHT_GRAY_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/light_gray_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.LIGHT_GRAY_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/light_gray_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.LIGHT_GRAY_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/light_gray_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.LIGHT_GRAY_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/light_gray_lamp_block"));
@@ -88,6 +96,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/gray_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.GRAY_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/gray_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GRAY_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gray_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GRAY_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gray_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.GRAY_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/gray_lamp_block"));
         buttonInventory(Objects.requireNonNull(ModBlocks.GRAY_LAMP_BUTTON_ENLIGHTED.get().getRegistryName()).toString(),
@@ -104,6 +116,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         withExistingParent(Objects.requireNonNull(ModBlocks.BLACK_LAMP.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/black_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.BLACK_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/black_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BLACK_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/black_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BLACK_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/black_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.BLACK_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/black_lamp_block"));
@@ -122,6 +138,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/yellow_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.YELLOW_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/yellow_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.YELLOW_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/yellow_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.YELLOW_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/yellow_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.YELLOW_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/yellow_lamp_block"));
         buttonInventory(Objects.requireNonNull(ModBlocks.YELLOW_LAMP_BUTTON_ENLIGHTED.get().getRegistryName()).toString(),
@@ -138,6 +158,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         withExistingParent(Objects.requireNonNull(ModBlocks.ORANGE_LAMP.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/orange_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.ORANGE_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/orange_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ORANGE_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/orange_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ORANGE_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/orange_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.ORANGE_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/orange_lamp_block"));
@@ -156,6 +180,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/red_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.RED_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/red_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.RED_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/red_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.RED_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/red_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.RED_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/red_lamp_block"));
         buttonInventory(Objects.requireNonNull(ModBlocks.RED_LAMP_BUTTON_ENLIGHTED.get().getRegistryName()).toString(),
@@ -172,6 +200,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         withExistingParent(Objects.requireNonNull(ModBlocks.GREEN_LAMP.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/green_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.GREEN_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/green_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GREEN_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/green_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GREEN_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/green_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.GREEN_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/green_lamp_block"));
@@ -190,6 +222,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/cyan_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.CYAN_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/cyan_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.CYAN_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/cyan_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.CYAN_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/cyan_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.CYAN_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/cyan_lamp_block"));
         buttonInventory(Objects.requireNonNull(ModBlocks.CYAN_LAMP_BUTTON_ENLIGHTED.get().getRegistryName()).toString(),
@@ -206,6 +242,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         withExistingParent(Objects.requireNonNull(ModBlocks.BLUE_LAMP.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/blue_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.BLUE_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/blue_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BLUE_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/blue_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BLUE_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/blue_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.BLUE_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/blue_lamp_block"));
@@ -224,6 +264,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/light_blue_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.LIGHT_BLUE_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/light_blue_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.LIGHT_BLUE_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/light_blue_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.LIGHT_BLUE_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/light_blue_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.LIGHT_BLUE_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/light_blue_lamp_block"));
         buttonInventory(Objects.requireNonNull(ModBlocks.LIGHT_BLUE_LAMP_BUTTON_ENLIGHTED.get().getRegistryName()).toString(),
@@ -240,6 +284,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         withExistingParent(Objects.requireNonNull(ModBlocks.PINK_LAMP.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/pink_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.PINK_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/pink_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.PINK_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/pink_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.PINK_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/pink_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.PINK_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/pink_lamp_block"));
@@ -258,6 +306,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/magenta_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.MAGENTA_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/magenta_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.MAGENTA_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/magenta_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.MAGENTA_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/magenta_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.MAGENTA_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/magenta_lamp_block"));
         buttonInventory(Objects.requireNonNull(ModBlocks.MAGENTA_LAMP_BUTTON_ENLIGHTED.get().getRegistryName()).toString(),
@@ -274,6 +326,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         withExistingParent(Objects.requireNonNull(ModBlocks.PURPLE_LAMP.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/purple_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.PURPLE_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/purple_lamp_block_enlighted"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.PURPLE_LAMP_STATIC.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/purple_lamp_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.PURPLE_LAMP_STATIC_ENLIGHTED.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/purple_lamp_block_enlighted"));
         buttonInventory(Objects.requireNonNull(ModBlocks.PURPLE_LAMP_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/purple_lamp_block"));

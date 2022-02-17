@@ -1,5 +1,6 @@
 package de.unhappycodings.blocksmod.common.data;
 
+import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.common.block.ModBlocks;
 import de.unhappycodings.blocksmod.common.item.ModItems;
 import de.unhappycodings.blocksmod.common.util.Registration;
@@ -293,6 +294,1182 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .define('b', Items.IRON_INGOT)
                 .define('c', Items.IRON_NUGGET)
                 .pattern("cbc").pattern("bab").pattern("cbc").unlockedBy("has_item", has(Items.REDSTONE_BLOCK)).save(consumer);
+
+        ShapedRecipeBuilder.shaped(ModBlocks.WHITE_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.WHITE_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.WHITE_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.WHITE_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.WHITE_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.WHITE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_LAMP.get())
+                .requires(ModBlocks.WHITE_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.WHITE_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_LAMP.get())
+                .requires(ModBlocks.WHITE_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.WHITE_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.LIGHT_GRAY_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.LIGHT_GRAY_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIGHT_GRAY_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.LIGHT_GRAY_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.LIGHT_GRAY_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIGHT_GRAY_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_LAMP.get())
+                .requires(ModBlocks.LIGHT_GRAY_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.LIGHT_GRAY_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_LAMP.get())
+                .requires(ModBlocks.LIGHT_GRAY_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.LIGHT_GRAY_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.GRAY_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.GRAY_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.GRAY_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.GRAY_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.GRAY_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.GRAY_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_LAMP.get())
+                .requires(ModBlocks.GRAY_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.GRAY_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_LAMP.get())
+                .requires(ModBlocks.GRAY_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.GRAY_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.BLACK_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.BLACK_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.BLACK_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.BLACK_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.BLACK_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.BLACK_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_LAMP.get())
+                .requires(ModBlocks.BLACK_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.BLACK_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_LAMP.get())
+                .requires(ModBlocks.BLACK_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.BLACK_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.GREEN_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.GREEN_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.GREEN_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.GREEN_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.GREEN_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.GREEN_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_LAMP.get())
+                .requires(ModBlocks.GREEN_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.GREEN_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_LAMP.get())
+                .requires(ModBlocks.GREEN_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.GREEN_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.CYAN_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.CYAN_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.CYAN_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.CYAN_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.CYAN_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.CYAN_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_LAMP.get())
+                .requires(ModBlocks.CYAN_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.CYAN_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_LAMP.get())
+                .requires(ModBlocks.CYAN_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.CYAN_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.BLUE_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.BLUE_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.BLUE_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.BLUE_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.BLUE_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.BLUE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_LAMP.get())
+                .requires(ModBlocks.BLUE_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.BLUE_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_LAMP.get())
+                .requires(ModBlocks.BLUE_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.BLUE_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.YELLOW_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.YELLOW_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.YELLOW_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.YELLOW_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.YELLOW_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.YELLOW_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_LAMP.get())
+                .requires(ModBlocks.YELLOW_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.YELLOW_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_LAMP.get())
+                .requires(ModBlocks.YELLOW_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.YELLOW_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.ORANGE_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.ORANGE_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.ORANGE_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.ORANGE_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.ORANGE_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.ORANGE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_LAMP.get())
+                .requires(ModBlocks.ORANGE_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.ORANGE_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_LAMP.get())
+                .requires(ModBlocks.ORANGE_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.ORANGE_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RED_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.RED_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.RED_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.RED_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.RED_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.RED_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_LAMP.get())
+                .requires(ModBlocks.RED_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.RED_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_LAMP.get())
+                .requires(ModBlocks.RED_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.RED_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+
+        ShapedRecipeBuilder.shaped(ModBlocks.PINK_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.PINK_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.PINK_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.PINK_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.PINK_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.PINK_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_LAMP.get())
+                .requires(ModBlocks.PINK_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.PINK_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_LAMP.get())
+                .requires(ModBlocks.PINK_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.PINK_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.MAGENTA_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.MAGENTA_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.MAGENTA_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.MAGENTA_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.MAGENTA_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.MAGENTA_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_LAMP.get())
+                .requires(ModBlocks.MAGENTA_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.MAGENTA_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_LAMP.get())
+                .requires(ModBlocks.MAGENTA_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.MAGENTA_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.PURPLE_LAMP_STATIC.get(), 1)
+                .define('a', ModBlocks.PURPLE_LAMP.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.PURPLE_LAMP.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(ModBlocks.PURPLE_LAMP_STATIC_ENLIGHTED.get(), 1)
+                .define('a', ModBlocks.PURPLE_LAMP_ENLIGHTED.get())
+                .define('b', Items.REDSTONE_TORCH)
+                .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.PURPLE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_LAMP.get())
+                .requires(ModBlocks.PURPLE_LAMP_STATIC.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_LAMP_STATIC.get()))
+                .save(consumer, ModBlocks.PURPLE_LAMP.get().getRegistryName().getPath() + "_from_static");
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_LAMP.get())
+                .requires(ModBlocks.PURPLE_LAMP_STATIC_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_LAMP_STATIC_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.PURPLE_LAMP.get().getRegistryName().getPath() + "_from_static_enlighted");
+
+        //region Tube Lamps
+        ShapedRecipeBuilder.shaped(ModBlocks.WHITE_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.WHITE_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.WHITE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.WHITE_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.WHITE_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.WHITE_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.WHITE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.WHITE_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.WHITE_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.WHITE_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.WHITE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.WHITE_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.WHITE_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.WHITE_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.WHITE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.WHITE_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.LIGHT_GRAY_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.LIGHT_GRAY_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.LIGHT_GRAY_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.LIGHT_GRAY_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.LIGHT_GRAY_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.LIGHT_GRAY_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.LIGHT_GRAY_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.LIGHT_GRAY_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.LIGHT_GRAY_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.LIGHT_GRAY_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.LIGHT_GRAY_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.LIGHT_GRAY_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.LIGHT_GRAY_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.GRAY_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.GRAY_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.GRAY_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.GRAY_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.GRAY_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.GRAY_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.GRAY_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.GRAY_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.GRAY_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.GRAY_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.GRAY_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.GRAY_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.GRAY_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.GRAY_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.GRAY_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.GRAY_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.BLACK_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.BLACK_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.BLACK_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.BLACK_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.BLACK_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.BLACK_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.BLACK_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.BLACK_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.BLACK_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.BLACK_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.BLACK_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.BLACK_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.BLACK_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.BLACK_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.BLACK_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.BLACK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLACK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.BLACK_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.GREEN_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.GREEN_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.GREEN_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.GREEN_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.GREEN_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.GREEN_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.GREEN_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.GREEN_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.GREEN_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.GREEN_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.GREEN_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.GREEN_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.GREEN_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.GREEN_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.GREEN_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.GREEN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.GREEN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.GREEN_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.CYAN_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.CYAN_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.CYAN_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.CYAN_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.CYAN_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.CYAN_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.CYAN_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.CYAN_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.CYAN_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.CYAN_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.CYAN_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.CYAN_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.CYAN_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.CYAN_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.CYAN_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.CYAN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.CYAN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.CYAN_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.BLUE_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.BLUE_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.BLUE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.BLUE_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.BLUE_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.BLUE_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.BLUE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.BLUE_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.BLUE_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.BLUE_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.BLUE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.BLUE_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.BLUE_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.BLUE_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.BLUE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.BLUE_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.LIGHT_BLUE_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.LIGHT_BLUE_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.LIGHT_BLUE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.LIGHT_BLUE_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.LIGHT_BLUE_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.LIGHT_BLUE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.LIGHT_BLUE_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.LIGHT_BLUE_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.LIGHT_BLUE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.LIGHT_BLUE_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.LIGHT_BLUE_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.LIGHT_BLUE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.LIGHT_BLUE_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.YELLOW_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.YELLOW_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.YELLOW_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.YELLOW_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.YELLOW_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.YELLOW_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.YELLOW_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.YELLOW_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.YELLOW_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.YELLOW_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.YELLOW_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.YELLOW_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.YELLOW_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.YELLOW_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.YELLOW_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.YELLOW_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.YELLOW_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.YELLOW_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.ORANGE_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.ORANGE_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.ORANGE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.ORANGE_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.ORANGE_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.ORANGE_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.ORANGE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.ORANGE_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.ORANGE_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.ORANGE_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.ORANGE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.ORANGE_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.ORANGE_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.ORANGE_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.ORANGE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.ORANGE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.ORANGE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.ORANGE_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RED_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.RED_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.RED_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.RED_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.RED_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RED_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.RED_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.RED_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.RED_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RED_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.RED_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.RED_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.RED_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.RED_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.RED_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.RED_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.RED_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.RED_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.RED_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.PINK_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.PINK_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.PINK_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.PINK_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.PINK_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.PINK_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.PINK_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.PINK_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.PINK_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.PINK_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.PINK_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.PINK_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.PINK_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.PINK_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.PINK_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.PINK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PINK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.PINK_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.MAGENTA_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.MAGENTA_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.MAGENTA_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.MAGENTA_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.MAGENTA_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.MAGENTA_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.MAGENTA_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.MAGENTA_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.MAGENTA_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.MAGENTA_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.MAGENTA_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.MAGENTA_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.MAGENTA_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.MAGENTA_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.MAGENTA_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.MAGENTA_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.PURPLE_TUBE_LAMP.get(), 16)
+                .define('a', ModBlocks.PURPLE_LAMP.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.PURPLE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_LEFT_OPEN.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_RIGHT_OPEN.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.PURPLE_TUBE_LAMP.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.PURPLE_TUBE_LAMP_EDGE.get(), 16)
+                .define('a', ModBlocks.PURPLE_LAMP.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.PURPLE_LAMP.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_EDGE.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_EDGE.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_EDGE_RIGHT_OPEN.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_EDGE.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get()))
+                .save(consumer, ModBlocks.PURPLE_TUBE_LAMP_EDGE.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.PURPLE_TUBE_LAMP_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.PURPLE_LAMP_ENLIGHTED.get())
+                .pattern("aaa").unlockedBy("has_item", has(ModBlocks.PURPLE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_ENLIGHTED.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.PURPLE_TUBE_LAMP_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+
+        ShapedRecipeBuilder.shaped(ModBlocks.PURPLE_TUBE_LAMP_EDGE_ENLIGHTED.get(), 16)
+                .define('a', ModBlocks.PURPLE_LAMP_ENLIGHTED.get())
+                .pattern("   ").pattern("aa ").pattern("a  ").unlockedBy("has_item", has(ModBlocks.PURPLE_LAMP_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_EDGE_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED.get())).save(consumer);
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_TUBE_LAMP_EDGE_ENLIGHTED.get())
+                .requires(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
+                .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
+                .save(consumer, ModBlocks.PURPLE_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
+        //endregion
 
         ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_LAMP_BUTTON.get())
                 .requires(ModBlocks.WHITE_LAMP.get())

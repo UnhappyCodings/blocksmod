@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blocksmod:yellow_tube_lamp_edge"
+    }
+  ],
+  "result": {
+    "item": "blocksmod:yellow_tube_lamp_edge_left_open"
+  }
+}

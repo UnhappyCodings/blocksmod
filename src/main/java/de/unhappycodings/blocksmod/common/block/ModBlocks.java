@@ -298,84 +298,169 @@ public class ModBlocks {
     //endregion
 
     //region LAMP BLOCKS
+
+    public static final RegistryObject<LampStaticBlock> WHITE_LAMP_STATIC =
+            register("white_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> WHITE_LAMP_STATIC_ENLIGHTED =
+            register("white_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> WHITE_LAMP =
             register("white_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> WHITE_LAMP_ENLIGHTED =
             register("white_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> LIGHT_GRAY_LAMP_STATIC =
+            register("light_gray_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> LIGHT_GRAY_LAMP_STATIC_ENLIGHTED =
+            register("light_gray_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> LIGHT_GRAY_LAMP =
             register("light_gray_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> LIGHT_GRAY_LAMP_ENLIGHTED =
             register("light_gray_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> GRAY_LAMP_STATIC =
+            register("gray_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> GRAY_LAMP_STATIC_ENLIGHTED =
+            register("gray_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> GRAY_LAMP =
             register("gray_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> GRAY_LAMP_ENLIGHTED =
             register("gray_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> BLACK_LAMP_STATIC =
+            register("black_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> BLACK_LAMP_STATIC_ENLIGHTED =
+            register("black_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> BLACK_LAMP =
             register("black_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> BLACK_LAMP_ENLIGHTED =
             register("black_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> YELLOW_LAMP_STATIC =
+            register("yellow_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> YELLOW_LAMP_STATIC_ENLIGHTED =
+            register("yellow_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> YELLOW_LAMP =
             register("yellow_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> YELLOW_LAMP_ENLIGHTED =
             register("yellow_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> ORANGE_LAMP_STATIC =
+            register("orange_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> ORANGE_LAMP_STATIC_ENLIGHTED =
+            register("orange_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> ORANGE_LAMP =
             register("orange_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> ORANGE_LAMP_ENLIGHTED =
             register("orange_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> RED_LAMP_STATIC =
+            register("red_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> RED_LAMP_STATIC_ENLIGHTED =
+            register("red_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> RED_LAMP =
             register("red_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> RED_LAMP_ENLIGHTED =
             register("red_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> GREEN_LAMP_STATIC =
+            register("green_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> GREEN_LAMP_STATIC_ENLIGHTED =
+            register("green_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> GREEN_LAMP =
             register("green_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> GREEN_LAMP_ENLIGHTED =
             register("green_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> CYAN_LAMP_STATIC =
+            register("cyan_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> CYAN_LAMP_STATIC_ENLIGHTED =
+            register("cyan_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> CYAN_LAMP =
             register("cyan_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> CYAN_LAMP_ENLIGHTED =
             register("cyan_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> BLUE_LAMP_STATIC =
+            register("blue_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> BLUE_LAMP_STATIC_ENLIGHTED =
+            register("blue_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> BLUE_LAMP =
             register("blue_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> BLUE_LAMP_ENLIGHTED =
             register("blue_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> LIGHT_BLUE_LAMP_STATIC =
+            register("light_blue_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> LIGHT_BLUE_LAMP_STATIC_ENLIGHTED =
+            register("light_blue_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> LIGHT_BLUE_LAMP =
             register("light_blue_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> LIGHT_BLUE_LAMP_ENLIGHTED =
             register("light_blue_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> PINK_LAMP_STATIC =
+            register("pink_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> PINK_LAMP_STATIC_ENLIGHTED =
+            register("pink_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> PINK_LAMP =
             register("pink_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> PINK_LAMP_ENLIGHTED =
             register("pink_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> MAGENTA_LAMP_STATIC =
+            register("magenta_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> MAGENTA_LAMP_STATIC_ENLIGHTED =
+            register("magenta_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> MAGENTA_LAMP =
             register("magenta_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
     public static final RegistryObject<RedstoneLampBlock> MAGENTA_LAMP_ENLIGHTED =
             register("magenta_lamp_block_enlighted",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+    public static final RegistryObject<LampStaticBlock> PURPLE_LAMP_STATIC =
+            register("purple_lamp_block_static",
+                    () -> new LampStaticBlock(false));
+    public static final RegistryObject<LampStaticBlock> PURPLE_LAMP_STATIC_ENLIGHTED =
+            register("purple_lamp_block_static_enlighted",
+                    () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> PURPLE_LAMP =
             register("purple_lamp_block",
                     () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
@@ -1461,6 +1546,465 @@ public class ModBlocks {
             register("white_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
     public static final RegistryObject<TubeLampBlock> WHITE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
             register("white_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> WHITE_TUBE_LAMP_ENLIGHTED =
+            register("white_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> WHITE_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("white_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> WHITE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("white_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> WHITE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("white_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> WHITE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("white_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> WHITE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("white_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> WHITE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("white_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> WHITE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("white_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP =
+            register("light_gray_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_EDGE =
+            register("light_gray_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_LEFT_OPEN =
+            register("light_gray_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("light_gray_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_RIGHT_OPEN =
+            register("light_gray_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("light_gray_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("light_gray_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("light_gray_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_ENLIGHTED =
+            register("light_gray_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("light_gray_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("light_gray_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("light_gray_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("light_gray_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("light_gray_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("light_gray_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("light_gray_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP =
+            register("gray_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_EDGE =
+            register("gray_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_LEFT_OPEN =
+            register("gray_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("gray_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_RIGHT_OPEN =
+            register("gray_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("gray_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("gray_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("gray_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_ENLIGHTED =
+            register("gray_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("gray_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("gray_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("gray_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("gray_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("gray_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("gray_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GRAY_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("gray_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP =
+            register("black_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_EDGE =
+            register("black_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_LEFT_OPEN =
+            register("black_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("black_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_RIGHT_OPEN =
+            register("black_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("black_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("black_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("black_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_ENLIGHTED =
+            register("black_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("black_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("black_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("black_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("black_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("black_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("black_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLACK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("black_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP =
+            register("green_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_EDGE =
+            register("green_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_LEFT_OPEN =
+            register("green_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("green_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_RIGHT_OPEN =
+            register("green_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("green_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("green_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("green_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_ENLIGHTED =
+            register("green_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("green_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("green_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("green_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("green_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("green_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("green_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> GREEN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("green_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP =
+            register("cyan_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_EDGE =
+            register("cyan_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_LEFT_OPEN =
+            register("cyan_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("cyan_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_RIGHT_OPEN =
+            register("cyan_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("cyan_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("cyan_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("cyan_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_ENLIGHTED =
+            register("cyan_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("cyan_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("cyan_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("cyan_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("cyan_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("cyan_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("cyan_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> CYAN_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("cyan_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP =
+            register("blue_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_EDGE =
+            register("blue_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_LEFT_OPEN =
+            register("blue_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("blue_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_RIGHT_OPEN =
+            register("blue_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("blue_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("blue_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("blue_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_ENLIGHTED =
+            register("blue_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("blue_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("blue_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("blue_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("blue_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("blue_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("blue_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("blue_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP =
+            register("light_blue_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_EDGE =
+            register("light_blue_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_LEFT_OPEN =
+            register("light_blue_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("light_blue_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_RIGHT_OPEN =
+            register("light_blue_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("light_blue_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("light_blue_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("light_blue_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_ENLIGHTED =
+            register("light_blue_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("light_blue_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("light_blue_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("light_blue_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("light_blue_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("light_blue_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("light_blue_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> LIGHT_BLUE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("light_blue_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP =
+            register("yellow_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_EDGE =
+            register("yellow_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_LEFT_OPEN =
+            register("yellow_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("yellow_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_RIGHT_OPEN =
+            register("yellow_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("yellow_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("yellow_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("yellow_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_ENLIGHTED =
+            register("yellow_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("yellow_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("yellow_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("yellow_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("yellow_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("yellow_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("yellow_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> YELLOW_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("yellow_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP =
+            register("orange_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_EDGE =
+            register("orange_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_LEFT_OPEN =
+            register("orange_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("orange_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_RIGHT_OPEN =
+            register("orange_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("orange_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("orange_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("orange_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_ENLIGHTED =
+            register("orange_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("orange_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("orange_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("orange_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("orange_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("orange_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("orange_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> ORANGE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("orange_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP =
+            register("red_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_EDGE =
+            register("red_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_LEFT_OPEN =
+            register("red_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("red_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_RIGHT_OPEN =
+            register("red_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("red_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("red_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("red_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_ENLIGHTED =
+            register("red_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("red_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("red_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("red_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("red_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("red_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("red_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> RED_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("red_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP =
+            register("pink_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_EDGE =
+            register("pink_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_LEFT_OPEN =
+            register("pink_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("pink_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_RIGHT_OPEN =
+            register("pink_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("pink_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("pink_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("pink_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_ENLIGHTED =
+            register("pink_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("pink_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("pink_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("pink_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("pink_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("pink_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("pink_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PINK_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("pink_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP =
+            register("magenta_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_EDGE =
+            register("magenta_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_LEFT_OPEN =
+            register("magenta_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("magenta_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_RIGHT_OPEN =
+            register("magenta_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("magenta_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("magenta_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("magenta_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_ENLIGHTED =
+            register("magenta_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("magenta_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("magenta_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("magenta_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("magenta_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("magenta_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("magenta_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> MAGENTA_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("magenta_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP =
+            register("purple_tube_lamp", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_EDGE =
+            register("purple_tube_lamp_edge", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_LEFT_OPEN =
+            register("purple_tube_lamp_left_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_EDGE_LEFT_OPEN =
+            register("purple_tube_lamp_edge_left_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_RIGHT_OPEN =
+            register("purple_tube_lamp_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_EDGE_RIGHT_OPEN =
+            register("purple_tube_lamp_edge_right_open", () -> new TubeLampEdgeBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_LEFT_RIGHT_OPEN =
+            register("purple_tube_lamp_left_right_open", () -> new TubeLampBlock(true, false));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN =
+            register("purple_tube_lamp_edge_left_right_open", () -> new TubeLampEdgeBlock(true, false));
+
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_ENLIGHTED =
+            register("purple_tube_lamp_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_EDGE_ENLIGHTED =
+            register("purple_tube_lamp_edge_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_LEFT_OPEN_ENLIGHTED =
+            register("purple_tube_lamp_left_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_EDGE_LEFT_OPEN_ENLIGHTED =
+            register("purple_tube_lamp_edge_left_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_RIGHT_OPEN_ENLIGHTED =
+            register("purple_tube_lamp_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_EDGE_RIGHT_OPEN_ENLIGHTED =
+            register("purple_tube_lamp_edge_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("purple_tube_lamp_left_right_open_enlighted", () -> new TubeLampBlock(true, true));
+    public static final RegistryObject<TubeLampBlock> PURPLE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED =
+            register("purple_tube_lamp_edge_left_right_open_enlighted", () -> new TubeLampEdgeBlock(true, true));
 
     public static void register() {
     }

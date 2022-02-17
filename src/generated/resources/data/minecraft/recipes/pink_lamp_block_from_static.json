@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blocksmod:pink_lamp_block_static"
+    }
+  ],
+  "result": {
+    "item": "blocksmod:pink_lamp_block"
+  }
+}

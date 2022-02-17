@@ -20,7 +20,7 @@ apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'io.github.noeppi_noeppi.tools.modgradle.mapping'
 
 group = 'de.unhappycodings'
-version = '0.1a'
+version = '0.1.1b'
 
 java {
     archivesBaseName = 'blocksmod'

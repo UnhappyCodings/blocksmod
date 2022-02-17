@@ -20,21 +20,6 @@ public class Generation {
     public static final List<PlacedFeature> OVERWORLD_ORES = new ArrayList<>();
 
     public static void registerOres() {
-        /*
-                final ConfiguredFeature<SimpleBlockConfiguration, ?> MOSS_VEGETATION = FeatureUtils.register("moss_vegetation",
-                        Feature.SIMPLE_BLOCK.configured(new SimpleBlockConfiguration(new WeightedStateProvider(SimpleWeightedRandomList
-                                .<BlockState>builder().add(Blocks.FLOWERING_AZALEA.defaultBlockState(), 4)
-                                .add(Blocks.AZALEA.defaultBlockState(), 7)
-                                .add(Blocks.MOSS_CARPET.defaultBlockState(), 25)
-                                .add(Blocks.GRASS.defaultBlockState(), 50)
-                                .add(Blocks.TALL_GRASS.defaultBlockState(), 10)))));
-
-                final ConfiguredFeature<VegetationPatchConfiguration, ?> MOSS_PATCH = FeatureUtils.register("moss_patch",
-                        Feature.VEGETATION_PATCH.configured(new VegetationPatchConfiguration(BlockTags.MOSS_REPLACEABLE.getName(),
-                                BlockStateProvider.simple(Blocks.MOSS_BLOCK), MOSS_VEGETATION::placed, CaveSurface.FLOOR,
-                                ConstantInt.of(1), 0.0F, 5, 0.8F, UniformInt.of(4, 7), 0.3F)));
-         */
-
         final ConfiguredFeature<?, ?> aragonitBlock = FeatureUtils.register("aragonit_block",
                 Feature.ORE.configured(new OreConfiguration(List.of(
                         OreConfiguration.target(OreFeatures.NATURAL_STONE, ModBlocks.ARAGONIT_BLOCK.get().defaultBlockState())), CommonConfig.ARAGONIT_PER_CHUNK.get())));

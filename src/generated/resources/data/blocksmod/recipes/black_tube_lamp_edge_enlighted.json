@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "aa ",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:black_lamp_block_enlighted"
+    }
+  },
+  "result": {
+    "item": "blocksmod:black_tube_lamp_edge_enlighted",
+    "count": 16
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:gray_lamp_block"
+    },
+    "b": {
+      "item": "minecraft:redstone_torch"
+    }
+  },
+  "result": {
+    "item": "blocksmod:gray_lamp_block_static"
+  }
+}
