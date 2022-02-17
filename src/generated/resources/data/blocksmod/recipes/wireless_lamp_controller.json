@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "cbc",
+    "bab",
+    "cbc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:redstone_block"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "blocksmod:wireless_lamp_controller"
+  }
+}

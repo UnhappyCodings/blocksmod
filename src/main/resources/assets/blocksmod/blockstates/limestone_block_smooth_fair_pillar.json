@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "blocksmod:block/limestone_block_smooth_fair_pillar_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "blocksmod:block/limestone_block_smooth_fair_pillar"
+    },
+    "axis=z": {
+      "model": "blocksmod:block/limestone_block_smooth_fair_pillar_horizontal",
+      "x": 90
+    }
+  }
+}

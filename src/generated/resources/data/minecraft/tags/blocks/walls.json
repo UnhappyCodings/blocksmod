@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "blocksmod:limestone_wall",
+    "blocksmod:limestone_block_smooth_slight_wall",
+    "blocksmod:limestone_block_smooth_fair_wall",
+    "blocksmod:limestone_block_smooth_great_wall",
+    "blocksmod:limestone_block_smooth_heavy_wall",
+    "blocksmod:limestone_block_smooth_fine_wall",
+    "blocksmod:limestone_block_brick_wall",
+    "blocksmod:limestone_block_smooth_slight_brick_wall",
+    "blocksmod:limestone_block_smooth_fair_brick_wall",
+    "blocksmod:limestone_block_smooth_great_brick_wall",
+    "blocksmod:limestone_block_smooth_heavy_brick_wall",
+    "blocksmod:limestone_block_smooth_fine_brick_wall",
+    "blocksmod:limestone_block_tile_brick_wall",
+    "blocksmod:limestone_block_smooth_slight_tile_brick_wall",
+    "blocksmod:limestone_block_smooth_fair_tile_brick_wall",
+    "blocksmod:limestone_block_smooth_great_tile_brick_wall",
+    "blocksmod:limestone_block_smooth_heavy_tile_brick_wall",
+    "blocksmod:limestone_block_smooth_fine_tile_brick_wall",
+    "blocksmod:limestone_block_lined_brick_wall",
+    "blocksmod:limestone_block_smooth_slight_lined_brick_wall",
+    "blocksmod:limestone_block_smooth_fair_lined_brick_wall",
+    "blocksmod:limestone_block_smooth_great_lined_brick_wall",
+    "blocksmod:limestone_block_smooth_heavy_lined_brick_wall",
+    "blocksmod:limestone_block_smooth_fine_lined_brick_wall"
+  ]
+}

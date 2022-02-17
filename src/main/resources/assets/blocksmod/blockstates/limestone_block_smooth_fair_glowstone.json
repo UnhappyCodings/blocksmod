@@ -1,0 +1,196 @@
+{
+  "variants": {
+    "con_dwn=false,con_e=false,con_n=false,con_s=false,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_c0"
+    },
+    "con_dwn=false,con_e=false,con_n=false,con_s=false,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_u"
+    },
+    "con_dwn=true,con_e=false,con_n=false,con_s=false,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d"
+    },
+    "con_dwn=false,con_e=false,con_n=true,con_s=false,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_n"
+    },
+    "con_dwn=false,con_e=false,con_n=false,con_s=true,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_s"
+    },
+    "con_dwn=false,con_e=false,con_n=false,con_s=false,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_w"
+    },
+    "con_dwn=false,con_e=true,con_n=false,con_s=false,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_e"
+    },
+    "con_dwn=false,con_e=true,con_n=false,con_s=false,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_u_e"
+    },
+    "con_dwn=false,con_e=false,con_n=false,con_s=false,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_u_w"
+    },
+    "con_dwn=true,con_e=true,con_n=false,con_s=false,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_e"
+    },
+    "con_dwn=true,con_e=false,con_n=false,con_s=false,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_w"
+    },
+    "con_dwn=false,con_e=false,con_n=true,con_s=false,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_u_n"
+    },
+    "con_dwn=false,con_e=false,con_n=false,con_s=true,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_u_s"
+    },
+    "con_dwn=true,con_e=false,con_n=true,con_s=false,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_n"
+    },
+    "con_dwn=true,con_e=false,con_n=false,con_s=true,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_s"
+    },
+    "con_dwn=false,con_e=true,con_n=true,con_s=false,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_n_e"
+    },
+    "con_dwn=false,con_e=true,con_n=false,con_s=true,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_s_e"
+    },
+    "con_dwn=false,con_e=false,con_n=true,con_s=false,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_n_w"
+    },
+    "con_dwn=false,con_e=false,con_n=false,con_s=true,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_s_w"
+    },
+    "con_dwn=true,con_e=false,con_n=false,con_s=false,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_u_d"
+    },
+    "con_dwn=false,con_e=true,con_n=false,con_s=false,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_e_w"
+    },
+    "con_dwn=false,con_e=false,con_n=true,con_s=true,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_n_s"
+    },
+    "con_dwn=true,con_e=false,con_n=false,con_s=false,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_w_u"
+    },
+    "con_dwn=true,con_e=false,con_n=false,con_s=true,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_s_u"
+    },
+    "con_dwn=true,con_e=true,con_n=false,con_s=false,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_e_u"
+    },
+    "con_dwn=true,con_e=false,con_n=true,con_s=false,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_n_u"
+    },
+    "con_dwn=false,con_e=false,con_n=true,con_s=true,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_n_s_w"
+    },
+    "con_dwn=false,con_e=true,con_n=true,con_s=true,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_n_e_s"
+    },
+    "con_dwn=false,con_e=true,con_n=false,con_s=false,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_e_u_w"
+    },
+    "con_dwn=false,con_e=true,con_n=false,con_s=true,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_e_s_w"
+    },
+    "con_dwn=true,con_e=true,con_n=false,con_s=false,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_e_d_w"
+    },
+    "con_dwn=false,con_e=true,con_n=true,con_s=false,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_e_n_w"
+    },
+    "con_dwn=false,con_e=false,con_n=true,con_s=true,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_n_s_u"
+    },
+    "con_dwn=true,con_e=false,con_n=true,con_s=true,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_n_s_d"
+    },
+    "con_dwn=false,con_e=true,con_n=false,con_s=true,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_e_s_u"
+    },
+    "con_dwn=false,con_e=false,con_n=false,con_s=true,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_s_u_w"
+    },
+    "con_dwn=false,con_e=true,con_n=true,con_s=false,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_e_n_u"
+    },
+    "con_dwn=true,con_e=true,con_n=true,con_s=false,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_e_n"
+    },
+    "con_dwn=true,con_e=true,con_n=false,con_s=true,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_e_s"
+    },
+    "con_dwn=true,con_e=false,con_n=false,con_s=true,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_s_w"
+    },
+    "con_dwn=true,con_e=false,con_n=true,con_s=false,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_n_w"
+    },
+    "con_dwn=false,con_e=false,con_n=true,con_s=false,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_n_u_w"
+    },
+    "con_dwn=true,con_e=true,con_n=false,con_s=false,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_e_u_w"
+    },
+    "con_dwn=false,con_e=true,con_n=true,con_s=true,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_e_n_s_w"
+    },
+    "con_dwn=true,con_e=false,con_n=true,con_s=true,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_n_s_u"
+    },
+    "con_dwn=true,con_e=false,con_n=true,con_s=false,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_n_u_w"
+    },
+    "con_dwn=true,con_e=false,con_n=true,con_s=true,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_n_s_w"
+    },
+    "con_dwn=false,con_e=false,con_n=true,con_s=true,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_n_s_u_w"
+    },
+    "con_dwn=true,con_e=false,con_n=false,con_s=true,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_s_u_w"
+    },
+    "con_dwn=true,con_e=true,con_n=true,con_s=false,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_e_n_u"
+    },
+    "con_dwn=true,con_e=true,con_n=false,con_s=true,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_e_s_u"
+    },
+    "con_dwn=false,con_e=true,con_n=true,con_s=true,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_e_n_s_u"
+    },
+    "con_dwn=true,con_e=true,con_n=true,con_s=true,con_up=false,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_e_n_s"
+    },
+    "con_dwn=false,con_e=true,con_n=false,con_s=true,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_e_s_u_w"
+    },
+    "con_dwn=true,con_e=true,con_n=false,con_s=true,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_e_s_w"
+    },
+    "con_dwn=false,con_e=true,con_n=true,con_s=false,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_e_n_u_w"
+    },
+    "con_dwn=true,con_e=true,con_n=true,con_s=false,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_d_e_n_w"
+    },
+    "con_dwn=true,con_e=true,con_n=true,con_s=true,con_up=false,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_m"
+    },
+    "con_dwn=true,con_e=true,con_n=false,con_s=true,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_m"
+    },
+    "con_dwn=true,con_e=false,con_n=true,con_s=true,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_m"
+    },
+    "con_dwn=true,con_e=true,con_n=true,con_s=true,con_up=true,con_w=false": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_m"
+    },
+    "con_dwn=true,con_e=true,con_n=true,con_s=false,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_m"
+    },
+    "con_dwn=false,con_e=true,con_n=true,con_s=true,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_m"
+    },
+    "con_dwn=true,con_e=true,con_n=true,con_s=true,con_up=true,con_w=true": {
+      "model": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_m"
+    }
+  }
+}

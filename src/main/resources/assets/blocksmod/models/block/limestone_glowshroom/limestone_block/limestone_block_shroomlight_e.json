@@ -1,0 +1,13 @@
+{
+  "__comment": "Model for when only one side is connected.",
+  "parent": "block/cube",
+  "textures": {
+    "particle": "blocksmod:block/limestone_glowshroom/limestone_block/limestone_block_shroomlight_0c",
+    "down": "blocksmod:block/limestone_glowshroom/limestone_block/limestone_block_shroomlight_1c_e",
+    "up": "blocksmod:block/limestone_glowshroom/limestone_block/limestone_block_shroomlight_1c_e",
+    "north": "blocksmod:block/limestone_glowshroom/limestone_block/limestone_block_shroomlight_1c_w",
+    "south": "blocksmod:block/limestone_glowshroom/limestone_block/limestone_block_shroomlight_1c_e",
+    "west": "blocksmod:block/limestone_glowshroom/limestone_block/limestone_block_shroomlight_0c",
+    "east": "blocksmod:block/limestone_glowshroom/limestone_block/limestone_block_shroomlight_0c"
+  }
+}

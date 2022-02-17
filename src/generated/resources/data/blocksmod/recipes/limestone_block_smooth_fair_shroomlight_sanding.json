@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:limestone_block_smooth_slight_shroomlight"
+    },
+    "b": {
+      "item": "blocksmod:sanding_paper"
+    }
+  },
+  "result": {
+    "item": "blocksmod:limestone_block_smooth_fair_shroomlight"
+  }
+}

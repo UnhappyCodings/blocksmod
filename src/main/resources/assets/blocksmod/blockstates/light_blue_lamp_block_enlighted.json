@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "blocksmod:block/light_blue_lamp_block_on"
+    },
+    "lit=true": {
+      "model": "blocksmod:block/light_blue_lamp_block"
+    }
+  }
+}

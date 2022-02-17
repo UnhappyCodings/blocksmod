@@ -1,0 +1,13 @@
+{
+  "__comment": "Model for when three adjacent sides are connected.",
+  "parent": "block/cube",
+  "textures": {
+    "particle": "blocksmod:block/limestone_glowshroom/limestone_block_smooth/heavy/limestone_block_shroomlight_0c",
+    "down": "blocksmod:block/limestone_glowshroom/limestone_block_smooth/heavy/limestone_block_shroomlight_4c",
+    "up": "blocksmod:block/limestone_glowshroom/limestone_block_smooth/heavy/limestone_block_shroomlight_4c",
+    "north": "blocksmod:block/limestone_glowshroom/limestone_block_smooth/heavy/limestone_block_shroomlight_0c",
+    "south": "blocksmod:block/limestone_glowshroom/limestone_block_smooth/heavy/limestone_block_shroomlight_0c",
+    "west": "blocksmod:block/limestone_glowshroom/limestone_block_smooth/heavy/limestone_block_shroomlight_0c",
+    "east": "blocksmod:block/limestone_glowshroom/limestone_block_smooth/heavy/limestone_block_shroomlight_0c"
+  }
+}

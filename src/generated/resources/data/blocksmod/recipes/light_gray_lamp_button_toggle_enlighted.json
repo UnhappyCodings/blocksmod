@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blocksmod:light_gray_lamp_button_enlighted"
+    }
+  ],
+  "result": {
+    "item": "blocksmod:light_gray_lamp_button_toggle_enlighted"
+  }
+}

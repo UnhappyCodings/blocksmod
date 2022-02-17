@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "blocksmod:green_lamp_button_enlighted_back"
+    ]
+  },
+  "criteria": {
+    "has_x": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blocksmod:green_lamp_block_enlighted"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "blocksmod:green_lamp_button_enlighted_back"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_x",
+      "has_the_recipe"
+    ]
+  ]
+}

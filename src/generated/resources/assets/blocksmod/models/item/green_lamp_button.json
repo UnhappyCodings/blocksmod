@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "blocksmod:block/green_lamp_block"
+  }
+}

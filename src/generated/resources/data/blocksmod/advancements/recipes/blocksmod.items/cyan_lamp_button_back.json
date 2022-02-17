@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "blocksmod:cyan_lamp_button_back"
+    ]
+  },
+  "criteria": {
+    "has_x": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "blocksmod:cyan_lamp_button_trigger"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "blocksmod:cyan_lamp_button_back"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_x",
+      "has_the_recipe"
+    ]
+  ]
+}

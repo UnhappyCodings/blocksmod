@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/lever_on",
+  "textures": {
+    "particle": "blocksmod:block/limestone_block_smooth_heavy",
+    "base": "blocksmod:block/limestone_block_smooth_heavy",
+    "lever": "blocksmod:block/limestone_block_smooth_heavy_lever"
+  }
+}

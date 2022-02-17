@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fair/limestone_block_glowstone_0c"
+  }
+}

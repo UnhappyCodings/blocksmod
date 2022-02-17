@@ -1,0 +1,55 @@
+package de.unhappycodings.blocksmod;
+
+import de.unhappycodings.blocksmod.common.block.ModBlocks;
+import de.unhappycodings.blocksmod.common.blockentity.ModBlockEntities;
+import de.unhappycodings.blocksmod.common.config.CommonConfig;
+import de.unhappycodings.blocksmod.common.event.ModEvents;
+import de.unhappycodings.blocksmod.common.item.ModItems;
+import de.unhappycodings.blocksmod.common.util.Registration;
+import net.minecraft.core.NonNullList;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLPaths;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+@Mod(BlocksMod.MOD_ID)
+public class BlocksMod {
+
+    public static final String MOD_ID = "blocksmod";
+    public static final int MOD_COLOR = 0x00b497;
+    public static final int MOD_COLOR_SUB = 0x13C6A6;
+
+    public static final Logger LOGGER = LogManager.getLogger();
+
+    public static final CreativeModeTab ItemTab = new ItemCreativeTab();
+    public static final CreativeModeTab LampTab = new LampCreativeTab();
+
+    public BlocksMod() {
+        final IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        LOGGER.info("[" + MOD_ID + "] Initialization");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, CommonConfig.COMMON_CONFIG);
+
+        Registration.register();
+        ModItems.register();
+        ModBlocks.register();
+        MinecraftForge.EVENT_BUS.register(new ModEvents());
+        ModBlockEntities.BLOCK_ENTITIES.register(bus);
+
+        CommonConfig.loadConfigFile(CommonConfig.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("blocksmod-common.toml").toString());
+        MinecraftForge.EVENT_BUS.register(this);
+    }
+}

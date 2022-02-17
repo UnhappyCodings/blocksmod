@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:limestone_block_smooth_slight"
+    }
+  },
+  "result": {
+    "item": "blocksmod:limestone_block_smooth_slight_wall",
+    "count": 6
+  }
+}

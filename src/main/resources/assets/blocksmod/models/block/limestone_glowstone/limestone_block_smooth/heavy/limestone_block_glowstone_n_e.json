@@ -1,0 +1,13 @@
+{
+  "__comment": "Model for when two adgacent sides are connected.",
+  "parent": "block/cube",
+  "textures": {
+    "particle": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fine/limestone_block_glowstone_0c",
+    "down": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fine/limestone_block_glowstone_2c_ed",
+    "up": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fine/limestone_block_glowstone_2c_ue",
+    "north": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fine/limestone_block_glowstone_0c",
+    "south": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fine/limestone_block_glowstone_1c_e",
+    "west": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fine/limestone_block_glowstone_1c_w",
+    "east": "blocksmod:block/limestone_glowstone/limestone_block_smooth/fine/limestone_block_glowstone_0c"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blocksmod:red_lamp_block"
+    }
+  ],
+  "result": {
+    "item": "blocksmod:red_lamp_button"
+  }
+}

@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[39,)"
+license = "All Rights Reserved"
+[[mods]]
+modId = "blocksmod"
+version = "0.1a"
+displayName = "Blocks"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/blocksmod"
+logoFile="blocks-logo.png"
+authors = "UnhappyWithoutU"
+description = '''Adds a Big Variation of Different Building and Functional Blocks to Minecraft Forge!'''
+
+[[dependencies.blocksmod]]
+modId = "forge"
+mandatory = true
+versionRange = "[39.0.76,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.blocksmod]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.1,1.19)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.blocksmod]]
+modId = "jeresources"
+mandatory = false
+versionRange = "[0.13.1.138,)"
+ordering = "NONE"
+side = "BOTH"

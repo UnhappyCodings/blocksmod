@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba",
+    "aca",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass_pane"
+    },
+    "b": {
+      "item": "minecraft:green_dye"
+    },
+    "c": {
+      "item": "minecraft:redstone_lamp"
+    },
+    "d": {
+      "item": "blocksmod:luminous_dust"
+    }
+  },
+  "result": {
+    "item": "blocksmod:green_lamp_block"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "__comment": "Model for when four connected sides at an angle.",
+  "parent": "block/cube",
+  "textures": {
+    "particle": "blocksmod:block/limestone_glowstone/limestone_block/limestone_block_glowstone_0c",
+    "down": "blocksmod:block/limestone_glowstone/limestone_block/limestone_block_glowstone_0c",
+    "up": "blocksmod:block/limestone_glowstone/limestone_block/limestone_block_glowstone_0c",
+    "north": "blocksmod:block/limestone_glowstone/limestone_block/limestone_block_glowstone_0c",
+    "south": "blocksmod:block/limestone_glowstone/limestone_block/limestone_block_glowstone_3c_ued",
+    "west": "blocksmod:block/limestone_glowstone/limestone_block/limestone_block_glowstone_3c_uwd",
+    "east": "blocksmod:block/limestone_glowstone/limestone_block/limestone_block_glowstone_0c"
+  }
+}

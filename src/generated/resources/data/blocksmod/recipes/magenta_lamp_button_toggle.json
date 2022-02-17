@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blocksmod:magenta_lamp_button"
+    }
+  ],
+  "result": {
+    "item": "blocksmod:magenta_lamp_button_toggle"
+  }
+}

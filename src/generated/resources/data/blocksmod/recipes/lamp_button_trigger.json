@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:green_lamp_button"
+    },
+    "b": {
+      "item": "blocksmod:red_lamp_button"
+    }
+  },
+  "result": {
+    "item": "blocksmod:lamp_button_trigger"
+  }
+}

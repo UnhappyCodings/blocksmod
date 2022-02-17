@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " a ",
+    "cbc",
+    "cbc"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:luminous_dust"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "blocksmod:linking_card"
+  }
+}

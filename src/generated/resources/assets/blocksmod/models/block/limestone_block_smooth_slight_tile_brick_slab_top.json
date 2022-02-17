@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "side": "blocksmod:block/limestone_block_smooth_slight_tile_brick",
+    "bottom": "blocksmod:block/limestone_block_smooth_slight_tile_brick",
+    "top": "blocksmod:block/limestone_block_smooth_slight_tile_brick"
+  }
+}

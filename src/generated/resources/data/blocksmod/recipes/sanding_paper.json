@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:paper"
+    },
+    "b": {
+      "item": "minecraft:sand"
+    }
+  },
+  "result": {
+    "item": "blocksmod:sanding_paper",
+    "count": 3
+  }
+}

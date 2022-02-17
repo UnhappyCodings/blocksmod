@@ -1,0 +1,13 @@
+{
+  "__comment": "Model for when three adjacent connected sides are a T shape.",
+  "parent": "block/cube",
+  "textures": {
+    "particle": "blocksmod:block/limestone_glowstone/limestone_block_smooth/great/limestone_block_glowstone_0c",
+    "down": "blocksmod:block/limestone_glowstone/limestone_block_smooth/great/limestone_block_glowstone_3c_ued",
+    "up": "blocksmod:block/limestone_glowstone/limestone_block_smooth/great/limestone_block_glowstone_3c_ued",
+    "north": "blocksmod:block/limestone_glowstone/limestone_block_smooth/great/limestone_block_glowstone_0c",
+    "south": "blocksmod:block/limestone_glowstone/limestone_block_smooth/great/limestone_block_glowstone_0c",
+    "west": "blocksmod:block/limestone_glowstone/limestone_block_smooth/great/limestone_block_glowstone_2c_we",
+    "east": "blocksmod:block/limestone_glowstone/limestone_block_smooth/great/limestone_block_glowstone_0c"
+  }
+}

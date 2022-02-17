@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "blocksmod:block/yellow_lamp_block_on"
+    },
+    "lit=true": {
+      "model": "blocksmod:block/yellow_lamp_block"
+    }
+  }
+}

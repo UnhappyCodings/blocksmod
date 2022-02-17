@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ac",
+    "aba",
+    "ca "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "blocksmod:green_lamp_block_enlighted"
+    },
+    "c": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "blocksmod:green_lamp_block_flat_big_framed_enlighted",
+    "count": 12
+  }
+}

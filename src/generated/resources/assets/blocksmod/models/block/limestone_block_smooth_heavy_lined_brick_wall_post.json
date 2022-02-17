@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "blocksmod:block/limestone_block_smooth_heavy_lined_brick"
+  }
+}

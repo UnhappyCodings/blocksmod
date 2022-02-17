@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:limestone_block_smooth_fine"
+    }
+  },
+  "result": {
+    "item": "blocksmod:limestone_block_smooth_fine_pillar",
+    "count": 2
+  }
+}

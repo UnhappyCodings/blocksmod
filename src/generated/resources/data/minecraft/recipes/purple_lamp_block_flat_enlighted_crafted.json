@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "blocksmod:purple_lamp_block_enlighted"
+    }
+  },
+  "result": {
+    "item": "blocksmod:purple_lamp_block_flat_enlighted",
+    "count": 12
+  }
+}

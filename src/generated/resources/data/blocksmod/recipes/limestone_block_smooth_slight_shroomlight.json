@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:limestone_block_smooth_slight"
+    },
+    "b": {
+      "item": "minecraft:shroomlight"
+    }
+  },
+  "result": {
+    "item": "blocksmod:limestone_block_smooth_slight_shroomlight",
+    "count": 2
+  }
+}

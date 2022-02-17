@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blocksmod:limestone_block_smooth_fair"
+    }
+  ],
+  "result": {
+    "item": "blocksmod:limestone_block_smooth_fair_button"
+  }
+}

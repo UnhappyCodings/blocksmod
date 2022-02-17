@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:limestone_block"
+    }
+  },
+  "result": {
+    "item": "blocksmod:limestone_wall",
+    "count": 6
+  }
+}

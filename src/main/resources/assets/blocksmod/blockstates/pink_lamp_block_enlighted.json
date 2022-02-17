@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "blocksmod:block/pink_lamp_block_on"
+    },
+    "lit=true": {
+      "model": "blocksmod:block/pink_lamp_block"
+    }
+  }
+}

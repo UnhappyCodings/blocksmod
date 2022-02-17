@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:limestone_block_smooth_heavy"
+    }
+  },
+  "result": {
+    "item": "blocksmod:limestone_block_smooth_heavy_pressure_plate"
+  }
+}

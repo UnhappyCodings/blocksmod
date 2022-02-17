@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "blocksmod:block/limestone_block_smooth_fair_lined_brick"
+  }
+}

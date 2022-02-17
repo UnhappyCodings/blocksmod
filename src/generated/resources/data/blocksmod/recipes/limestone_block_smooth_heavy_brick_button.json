@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blocksmod:limestone_block_smooth_heavy_brick"
+    }
+  ],
+  "result": {
+    "item": "blocksmod:limestone_block_smooth_heavy_brick_button"
+  }
+}
