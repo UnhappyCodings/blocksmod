@@ -13,7 +13,7 @@ description = '''Adds a Big Variation of Different Building and Functional Block
 [[dependencies.blocksmod]]
 modId = "forge"
 mandatory = true
-versionRange = "[39.0.76,)"
+versionRange = "[39.0.79,)"
 ordering = "NONE"
 side = "BOTH"
 
