@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_down",
+  "textures": {
+    "texture": "blocksmod:block/anorthosite_block_smooth_great_tile_brick"
+  }
+}

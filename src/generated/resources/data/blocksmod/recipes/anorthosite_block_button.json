@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blocksmod:anorthosite_block"
+    }
+  ],
+  "result": {
+    "item": "blocksmod:anorthosite_block_button"
+  }
+}

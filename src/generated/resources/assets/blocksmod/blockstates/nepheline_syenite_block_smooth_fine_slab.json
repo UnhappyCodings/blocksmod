@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "blocksmod:block/nepheline_syenite_block_smooth_fine_slab_top"
+    },
+    "type=bottom": {
+      "model": "blocksmod:block/nepheline_syenite_block_smooth_fine_slab"
+    },
+    "type=double": {
+      "model": "blocksmod:block/nepheline_syenite_block_smooth_fine"
+    }
+  }
+}

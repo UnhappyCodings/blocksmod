@@ -1,6 +1,5 @@
 package de.unhappycodings.blocksmod.common.data;
 
-import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.common.block.ModBlocks;
 import de.unhappycodings.blocksmod.common.item.ModItems;
 import de.unhappycodings.blocksmod.common.util.Registration;
@@ -1469,10 +1468,10 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.PURPLE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN_ENLIGHTED.get()))
                 .save(consumer, ModBlocks.PURPLE_TUBE_LAMP_EDGE_ENLIGHTED.get().getRegistryName().getPath() + "_from_self");
-        //endregion
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.WHITE_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.WHITE_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.WHITE_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.WHITE_LAMP_ENLIGHTED.get())
@@ -1498,9 +1497,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.WHITE_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.WHITE_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-
-        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.LIGHT_GRAY_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_GRAY_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.LIGHT_GRAY_LAMP_ENLIGHTED.get())
@@ -1526,8 +1525,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.LIGHT_GRAY_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.LIGHT_GRAY_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.GRAY_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.GRAY_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.GRAY_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.GRAY_LAMP_ENLIGHTED.get())
@@ -1553,8 +1553,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.GRAY_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.GRAY_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.BLACK_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.BLACK_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.BLACK_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.BLACK_LAMP_ENLIGHTED.get())
@@ -1580,8 +1581,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.BLACK_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.BLACK_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.YELLOW_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.YELLOW_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.YELLOW_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.YELLOW_LAMP_ENLIGHTED.get())
@@ -1607,8 +1609,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.YELLOW_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.YELLOW_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.ORANGE_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.ORANGE_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.ORANGE_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.ORANGE_LAMP_ENLIGHTED.get())
@@ -1634,8 +1637,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.ORANGE_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.ORANGE_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.RED_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.RED_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.RED_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.RED_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.RED_LAMP_ENLIGHTED.get())
@@ -1661,8 +1665,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.RED_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.RED_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.GREEN_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.GREEN_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.GREEN_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.GREEN_LAMP_ENLIGHTED.get())
@@ -1688,8 +1693,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.GREEN_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.GREEN_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.CYAN_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.CYAN_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.CYAN_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.CYAN_LAMP_ENLIGHTED.get())
@@ -1715,8 +1721,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.CYAN_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.CYAN_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.BLUE_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.BLUE_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.BLUE_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.BLUE_LAMP_ENLIGHTED.get())
@@ -1742,8 +1749,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.BLUE_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.BLUE_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.LIGHT_BLUE_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.LIGHT_BLUE_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.LIGHT_BLUE_LAMP_ENLIGHTED.get())
@@ -1769,8 +1777,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.LIGHT_BLUE_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.LIGHT_BLUE_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.PINK_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.PINK_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.PINK_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.PINK_LAMP_ENLIGHTED.get())
@@ -1796,8 +1805,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.PINK_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.PINK_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.MAGENTA_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.MAGENTA_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.MAGENTA_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.MAGENTA_LAMP_ENLIGHTED.get())
@@ -1823,8 +1833,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.MAGENTA_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())
                 .unlockedBy("has_x", has(ModBlocks.MAGENTA_LAMP_BUTTON_TOGGLE_ENLIGHTED.get())).save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_LAMP_BUTTON.get())
+        ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_LAMP_BUTTON.get(), 6)
                 .requires(ModBlocks.PURPLE_LAMP.get())
+                .requires(Blocks.STONE_BUTTON)
                 .unlockedBy("has_x", has(ModBlocks.PURPLE_LAMP.get())).save(consumer);
         ShapelessRecipeBuilder.shapeless(ModBlocks.PURPLE_LAMP_BUTTON_ENLIGHTED.get())
                 .requires(ModBlocks.PURPLE_LAMP_ENLIGHTED.get())
@@ -1865,7 +1876,7 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .unlockedBy("has_x", has(ModBlocks.LAMP_BUTTON_TRIGGER_BIG.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LAMP_BUTTON_TRIGGER_BIG.get().getRegistryName()) + "_back");
 
-        //region Limestone Block Recipes
+        //region Limestone Recipes
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_STAIRS.get(), 4)
                 .define('a', ModBlocks.LIMESTONE.get())
                 .pattern("a  ").pattern("aa ").pattern("aaa").unlockedBy("has_item", has(ModBlocks.LIMESTONE.get())).save(consumer);
@@ -2052,7 +2063,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .define('a', ModBlocks.LIMESTONE_SMOOTH_FINE.get())
                 .pattern("a").pattern("a").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE.get())).save(consumer);
 
-        // bricks
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_BRICK_STAIRS.get(), 4)
                 .define('a', ModBlocks.LIMESTONE_BRICK.get())
                 .pattern("a  ").pattern("aa ").pattern("aaa").unlockedBy("has_item", has(ModBlocks.LIMESTONE_BRICK.get())).save(consumer);
@@ -2149,7 +2159,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK.get())
                 .unlockedBy("has_x", has(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK.get())).save(consumer);
 
-        // lined bricks
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_LINED_BRICK_STAIRS.get(), 4)
                 .define('a', ModBlocks.LIMESTONE_LINED_BRICK.get())
                 .pattern("a  ").pattern("aa ").pattern("aaa").unlockedBy("has_item", has(ModBlocks.LIMESTONE_LINED_BRICK.get())).save(consumer);
@@ -2246,7 +2255,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK.get())
                 .unlockedBy("has_x", has(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK.get())).save(consumer);
 
-        // tile bricks
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_TILE_BRICK_STAIRS.get(), 4)
                 .define('a', ModBlocks.LIMESTONE_TILE_BRICK.get())
                 .pattern("a  ").pattern("aa ").pattern("aaa").unlockedBy("has_item", has(ModBlocks.LIMESTONE_TILE_BRICK.get())).save(consumer);
@@ -2343,8 +2351,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .requires(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK.get())
                 .unlockedBy("has_x", has(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK.get())).save(consumer);
 
-        //endregion
-
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_BRICK.get(), 4)
                 .define('a', ModBlocks.LIMESTONE.get())
                 .pattern("aa ").pattern("aa ").pattern("   ").unlockedBy("has_item", has(ModBlocks.LIMESTONE.get())).save(consumer);
@@ -2402,8 +2408,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .define('a', ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK.get())
                 .pattern("   ").pattern(" aa").pattern(" aa").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK.get())).save(consumer);
 
-        //region Sanding Limestone Recipes
-        //limestone block
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT.get())
                 .define('a', ModBlocks.LIMESTONE.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2425,7 +2429,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .define('b', ModItems.SANDING_PAPER.get())
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE.get())).save(consumer);
 
-        // brick
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BRICK.get())
                 .define('a', ModBlocks.LIMESTONE_BRICK.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2452,7 +2455,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK.get().getRegistryName()) + "_sanding");
 
-        // lined brick
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_LINED_BRICK.get())
                 .define('a', ModBlocks.LIMESTONE_LINED_BRICK.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2479,7 +2481,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK.get().getRegistryName()) + "_sanding");
 
-        // tile brick
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_TILE_BRICK.get())
                 .define('a', ModBlocks.LIMESTONE_TILE_BRICK.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2506,7 +2507,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK.get().getRegistryName()) + "_sanding");
 
-        // pillar
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_PILLAR.get())
                 .define('a', ModBlocks.LIMESTONE_PILLAR.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2533,7 +2533,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_PILLAR.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_PILLAR.get().getRegistryName()) + "_sanding");
 
-        // stairs
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_STAIRS.get())
                 .define('a', ModBlocks.LIMESTONE_STAIRS.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2560,7 +2559,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_STAIRS.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_STAIRS.get().getRegistryName()) + "_sanding");
 
-        // brick stairs
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BRICK_STAIRS.get())
                 .define('a', ModBlocks.LIMESTONE_BRICK_STAIRS.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2587,7 +2585,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_STAIRS.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_STAIRS.get().getRegistryName()) + "_sanding");
 
-        // tile stairs
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_TILE_BRICK_STAIRS.get())
                 .define('a', ModBlocks.LIMESTONE_TILE_BRICK_STAIRS.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2614,7 +2611,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_STAIRS.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_STAIRS.get().getRegistryName()) + "_sanding");
 
-        // lined stairs
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_LINED_BRICK_STAIRS.get())
                 .define('a', ModBlocks.LIMESTONE_LINED_BRICK_STAIRS.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2641,7 +2637,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK_STAIRS.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK_STAIRS.get().getRegistryName()) + "_sanding");
 
-        // slab
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_SLAB.get())
                 .define('a', ModBlocks.LIMESTONE_SLAB.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2668,7 +2663,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_SLAB.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_SLAB.get().getRegistryName()) + "_sanding");
 
-        // brick slab
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BRICK_SLAB.get())
                 .define('a', ModBlocks.LIMESTONE_BRICK_SLAB.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2695,7 +2689,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_SLAB.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_SLAB.get().getRegistryName()) + "_sanding");
 
-        // tile slab
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_TILE_BRICK_SLAB.get())
                 .define('a', ModBlocks.LIMESTONE_TILE_BRICK_SLAB.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2722,7 +2715,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_SLAB.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_SLAB.get().getRegistryName()) + "_sanding");
 
-        // lined slab
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_LINED_BRICK_SLAB.get())
                 .define('a', ModBlocks.LIMESTONE_LINED_BRICK_SLAB.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2749,8 +2741,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK_SLAB.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK_SLAB.get().getRegistryName()) + "_sanding");
 
-
-        // WALL
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_WALL.get())
                 .define('a', ModBlocks.LIMESTONE_WALL.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2777,7 +2767,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_WALL.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_WALL.get().getRegistryName()) + "_sanding");
 
-        // brick WALL
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BRICK_WALL.get())
                 .define('a', ModBlocks.LIMESTONE_BRICK_WALL.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2804,7 +2793,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_WALL.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_WALL.get().getRegistryName()) + "_sanding");
 
-        // tile WALL
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_TILE_BRICK_WALL.get())
                 .define('a', ModBlocks.LIMESTONE_TILE_BRICK_WALL.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2831,7 +2819,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_WALL.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_WALL.get().getRegistryName()) + "_sanding");
 
-        // lined WALL
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_LINED_BRICK_WALL.get())
                 .define('a', ModBlocks.LIMESTONE_LINED_BRICK_WALL.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2859,7 +2846,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK_WALL.get().getRegistryName()) + "_sanding");
 
 
-        // PRESSURE_PLATE
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_PRESSURE_PLATE.get())
                 .define('a', ModBlocks.LIMESTONE_PRESSURE_PLATE.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2886,7 +2872,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_PRESSURE_PLATE.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()) + "_sanding");
 
-        // brick PRESSURE_PLATE
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BRICK_PRESSURE_PLATE.get())
                 .define('a', ModBlocks.LIMESTONE_BRICK_PRESSURE_PLATE.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2913,7 +2898,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_PRESSURE_PLATE.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_PRESSURE_PLATE.get().getRegistryName()) + "_sanding");
 
-        // tile PRESSURE_PLATE
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_TILE_BRICK_PRESSURE_PLATE.get())
                 .define('a', ModBlocks.LIMESTONE_TILE_BRICK_PRESSURE_PLATE.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2940,7 +2924,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_PRESSURE_PLATE.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_PRESSURE_PLATE.get().getRegistryName()) + "_sanding");
 
-        // lined PRESSURE_PLATE
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_LINED_BRICK_PRESSURE_PLATE.get())
                 .define('a', ModBlocks.LIMESTONE_LINED_BRICK_PRESSURE_PLATE.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2967,8 +2950,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK_PRESSURE_PLATE.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK_PRESSURE_PLATE.get().getRegistryName()) + "_sanding");
 
-
-        // BUTTON
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BUTTON.get())
                 .define('a', ModBlocks.LIMESTONE_BUTTON.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -2995,7 +2976,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_BUTTON.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_BUTTON.get().getRegistryName()) + "_sanding");
 
-        // brick BUTTON
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BRICK_BUTTON.get())
                 .define('a', ModBlocks.LIMESTONE_BRICK_BUTTON.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -3022,7 +3002,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_BUTTON.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_BUTTON.get().getRegistryName()) + "_sanding");
 
-        // tile BUTTON
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_TILE_BRICK_BUTTON.get())
                 .define('a', ModBlocks.LIMESTONE_TILE_BRICK_BUTTON.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -3049,7 +3028,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_BUTTON.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_BUTTON.get().getRegistryName()) + "_sanding");
 
-        // lined BUTTON
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_LINED_BRICK_BUTTON.get())
                 .define('a', ModBlocks.LIMESTONE_LINED_BRICK_BUTTON.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -3103,7 +3081,6 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_LEVER.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_LEVER.get().getRegistryName()) + "_sanding");
 
-        // glowstone limestone
         ShapedRecipeBuilder.shaped(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_GLOWSTONE.get())
                 .define('a', ModBlocks.LIMESTONE_GLOWSTONE.get())
                 .define('b', ModItems.SANDING_PAPER.get())
@@ -3157,5 +3134,9 @@ public class RecipeProvider extends net.minecraft.data.recipes.RecipeProvider {
                 .pattern("a").pattern("b").unlockedBy("has_item", has(ModBlocks.LIMESTONE_SMOOTH_FINE_SHROOMLIGHT.get())).save(consumer,
                         Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_SHROOMLIGHT.get().getRegistryName()) + "_sanding");
         //endregion
+
+
+        //endregion
+
     }
 }

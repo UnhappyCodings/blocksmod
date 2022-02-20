@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:nepheline_syenite_block_smooth_fine_brick"
+    }
+  },
+  "result": {
+    "item": "blocksmod:nepheline_syenite_block_smooth_fine_brick_pressure_plate"
+  }
+}

@@ -1,6 +1,7 @@
 package de.unhappycodings.blocksmod.common.blockentity;
 
 import de.unhappycodings.blocksmod.BlocksMod;
+import de.unhappycodings.blocksmod.common.block.LampBlock;
 import de.unhappycodings.blocksmod.common.block.LampFlatBlock;
 import de.unhappycodings.blocksmod.common.block.TubeLampBlock;
 import de.unhappycodings.blocksmod.common.block.WirelessLampControllerBlock;
@@ -67,7 +68,7 @@ public class WirelessLampControllerEntity extends BlockEntity {
                     list.forEach((x) -> {
                         BlockPos blockPos = NbtUtil.getPos((CompoundTag) x);
                         BlockState blockState = level.getBlockState(blockPos);
-                        if (blockState.getBlock() instanceof LampFlatBlock || blockState.getBlock() instanceof TubeLampBlock) {
+                        if (blockState.getBlock() instanceof LampFlatBlock || blockState.getBlock() instanceof TubeLampBlock || blockState.getBlock() instanceof LampBlock) {
                             if (blockState.getValue(BlockStateProperties.LIT)) {
                                 blockState = blockState.setValue(BlockStateProperties.LIT, false);
                             } else {
@@ -95,7 +96,7 @@ public class WirelessLampControllerEntity extends BlockEntity {
                     list.forEach((x) -> {
                         BlockPos blockPos = NbtUtil.getPos((CompoundTag) x);
                         BlockState blockState = level.getBlockState(blockPos);
-                        if (blockState.getBlock() instanceof LampFlatBlock || blockState.getBlock() instanceof TubeLampBlock) {
+                        if (blockState.getBlock() instanceof LampFlatBlock || blockState.getBlock() instanceof TubeLampBlock || blockState.getBlock() instanceof LampBlock) {
                             if (blockState.getValue(BlockStateProperties.LIT)) {
                                 blockState = blockState.setValue(BlockStateProperties.LIT, false);
                             } else {

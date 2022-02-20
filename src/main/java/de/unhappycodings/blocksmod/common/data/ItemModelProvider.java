@@ -32,8 +32,6 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/monzonite_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BLOCK.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block"));
-        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BLOCK.get().getRegistryName()).toString(),
-                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BLOCK.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.GARAT_BLOCK.get().getRegistryName()).toString(),
@@ -48,6 +46,623 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         simpleItem(ModItems.SANDING_PAPER.get());
         simpleItem(ModItems.LINKING_CARD.get());
         //endregion
+
+        //region Nepheline Syenite
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BLOCK_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BLOCK_SMOOTH_SLIGHT_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BLOCK_SMOOTH_FAIR_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BLOCK_SMOOTH_GREAT_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BLOCK_SMOOTH_HEAVY_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BLOCK_SMOOTH_FINE_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_pillar"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BLOCK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_brick"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_lined_brick"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_tile_brick"));
+        //endregion
+
+
+        //region Anorthosite
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BLOCK_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BLOCK_SMOOTH_SLIGHT_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BLOCK_SMOOTH_FAIR_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BLOCK_SMOOTH_GREAT_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BLOCK_SMOOTH_HEAVY_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BLOCK_SMOOTH_FINE_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_pillar"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BLOCK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_brick"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_LINED_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_lined_brick"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_tile_brick"));
+        //endregion
+
 
         //region LAMP BLOCKS
         withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_LAMP.get().getRegistryName()).toString(),
@@ -345,6 +960,7 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/purple_lamp_block_on"));
         //endregion
 
+
         //region Limestone
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
@@ -365,6 +981,7 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
         wallInventory(Objects.requireNonNull(ModBlocks.LIMESTONE_WALL.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
         //endregion
+
 
         //region Bricks Limestone
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_LINED_BRICK.get().getRegistryName()).toString(),

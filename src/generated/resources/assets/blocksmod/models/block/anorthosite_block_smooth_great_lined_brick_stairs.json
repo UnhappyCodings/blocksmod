@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "side": "blocksmod:block/anorthosite_block_smooth_great_lined_brick",
+    "bottom": "blocksmod:block/anorthosite_block_smooth_great_lined_brick",
+    "top": "blocksmod:block/anorthosite_block_smooth_great_lined_brick"
+  }
+}

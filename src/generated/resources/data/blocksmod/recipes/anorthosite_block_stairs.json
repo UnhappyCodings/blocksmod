@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:anorthosite_block"
+    }
+  },
+  "result": {
+    "item": "blocksmod:anorthosite_block_stairs",
+    "count": 4
+  }
+}

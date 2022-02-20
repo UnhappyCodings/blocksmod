@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:anorthosite_block_smooth_heavy_lined_brick"
+    }
+  },
+  "result": {
+    "item": "blocksmod:anorthosite_block_smooth_heavy_lined_brick_wall",
+    "count": 6
+  }
+}

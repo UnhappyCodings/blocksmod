@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "blocksmod:block/anorthosite_block_smooth_great_brick"
+  }
+}

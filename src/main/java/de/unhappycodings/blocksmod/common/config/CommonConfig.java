@@ -80,99 +80,99 @@ public class CommonConfig {
         COMMON_BUILDER.push("World");
         COMMON_BUILDER.push("aragonit");
         GENERATE_ARAGONIT_SOURCES = COMMON_BUILDER.comment("Should aragonit blocks be generated")
-                .define("generate_limestone_sources", true);
+                .define("generate_aragonit_sources", true);
         ARAGONIT_PER_CHUNK = COMMON_BUILDER.comment("Amount of aragonit blocks generated per vein (source)")
-                .defineInRange("aragonit_blocks_per_chunk", 16, 2, 64);
+                .defineInRange("aragonit_blocks_per_vein", 32, 2, 64);
         ARAGONIT_SOURCES_PER_CHUNK = COMMON_BUILDER.comment("Amount of max aragonit sources generated per chunk")
-                .defineInRange("aragonit_sources_per_chunk", 1, 1, 64);
+                .defineInRange("aragonit_sources_per_chunk", 2, 1, 64);
         COMMON_BUILDER.pop();
 
         COMMON_BUILDER.push("limestone");
         GENERATE_LIMESTONE_SOURCES = COMMON_BUILDER.comment("Should limestone blocks be generated")
                 .define("generate_limestone_sources", true);
         LIMESTONE_PER_CHUNK = COMMON_BUILDER.comment("Amount of limestone blocks generated per vein (source)")
-                .defineInRange("limestone_blocks_per_chunk", 40, 1, 64);
+                .defineInRange("limestone_blocks_per_vein", 40, 1, 64);
         LIMESTONE_SOURCES_PER_CHUNK = COMMON_BUILDER.comment("Amount of max limestone sources generated per chunk")
-                .defineInRange("limestone_sources_per_chunk", 1, 1, 64);
+                .defineInRange("limestone_sources_per_chunk", 2, 1, 64);
         COMMON_BUILDER.pop();
 
         COMMON_BUILDER.push("garat");
         GENERATE_GARAT_SOURCES = COMMON_BUILDER.comment("Should garat blocks be generated")
                 .define("generate_garat_sources", true);
         GARAT_PER_CHUNK = COMMON_BUILDER.comment("Amount of garat blocks generated per vein (source)")
-                .defineInRange("garat_blocks_per_chunk", 14, 1, 64);
+                .defineInRange("garat_blocks_per_vein", 32, 1, 64);
         GARAT_SOURCES_PER_CHUNK = COMMON_BUILDER.comment("Amount of max garat sources generated per chunk")
                 .defineInRange("garat_sources_per_chunk", 2, 1, 64);
         COMMON_BUILDER.pop();
 
         COMMON_BUILDER.push("slate");
         GENERATE_SLATE_SOURCES = COMMON_BUILDER.comment("Should slate blocks be generated")
-                .define("slate_limestone_sources", true);
+                .define("generate_slate_sources", true);
         SLATE_PER_CHUNK = COMMON_BUILDER.comment("Amount of slate blocks generated per vein (source)")
-                .defineInRange("slate_blocks_per_chunk", 25, 1, 64);
+                .defineInRange("slate_blocks_per_vein", 32, 1, 64);
         SLATE_SOURCES_PER_CHUNK = COMMON_BUILDER.comment("Amount of max slate sources generated per chunk")
-                .defineInRange("slate_sources_per_chunk", 1, 1, 64);
+                .defineInRange("slate_sources_per_chunk", 2, 1, 64);
         COMMON_BUILDER.pop();
 
         COMMON_BUILDER.push("monzonite");
         GENERATE_MONZONITE_SOURCES = COMMON_BUILDER.comment("Should monzonite blocks be generated")
-                .define("monzonite_limestone_sources", true);
+                .define("generate_monzonite_sources", true);
         MONZONITE_PER_CHUNK = COMMON_BUILDER.comment("Amount of monzonite blocks generated per vein (source)")
-                .defineInRange("monzonite_blocks_per_chunk", 14, 1, 64);
+                .defineInRange("monzonite_blocks_per_vein", 32, 1, 64);
         MONZONITE_SOURCES_PER_CHUNK = COMMON_BUILDER.comment("Amount of max monzonite sources generated per chunk")
                 .defineInRange("monzonite_sources_per_chunk", 2, 1, 64);
         COMMON_BUILDER.pop();
 
         COMMON_BUILDER.push("nepheline_syenite");
         GENERATE_NEPHELINE_SYENITE_SOURCES = COMMON_BUILDER.comment("Should nepheline syenite blocks be generated")
-                .define("nepheline_syenite_limestone_sources", true);
+                .define("generate_nepheline_syenite_sources", true);
         NEPHELINE_SYENITE_PER_CHUNK = COMMON_BUILDER.comment("Amount of nepheline syenite blocks generated per vein (source)")
-                .defineInRange("nepheline_syenite_blocks_per_chunk", 12, 1, 64);
+                .defineInRange("nepheline_syenite_blocks_per_vein", 32, 1, 64);
         NEPHELINE_SYENITE_SOURCES_PER_CHUNK = COMMON_BUILDER.comment("Amount of max nepheline syenite sources generated per chunk")
                 .defineInRange("nepheline_syenite_sources_per_chunk", 2, 1, 64);
         COMMON_BUILDER.pop();
 
         COMMON_BUILDER.push("gabbro");
         GENERATE_GABBRO_SOURCES = COMMON_BUILDER.comment("Should gabbro blocks be generated")
-                .define("gabbro_limestone_sources", true);
+                .define("generate_gabbro_sources", true);
         GABBRO_PER_CHUNK = COMMON_BUILDER.comment("Amount of gabbro blocks generated per vein (source)")
-                .defineInRange("gabbro_blocks_per_chunk", 17, 1, 64);
+                .defineInRange("gabbro_blocks_per_vein", 32, 1, 64);
         GABBRO_SOURCES_PER_CHUNK = COMMON_BUILDER.comment("Amount of max gabbro sources generated per chunk")
-                .defineInRange("gabbro_sources_per_chunk", 1, 1, 64);
+                .defineInRange("gabbro_sources_per_chunk", 2, 1, 64);
         COMMON_BUILDER.pop();
 
         COMMON_BUILDER.push("white gabbro");
         GENERATE_WHITE_GABBRO_SOURCES = COMMON_BUILDER.comment("Should white gabbro blocks be generated")
-                .define("white_gabbro_limestone_sources", true);
+                .define("generate_white_gabbro_sources", true);
         WHITE_GABBRO_PER_CHUNK = COMMON_BUILDER.comment("Amount of white gabbro blocks generated per vein (source)")
-                .defineInRange("white_gabbro_blocks_per_chunk", 17, 1, 64);
+                .defineInRange("white_gabbro_blocks_per_vein", 32, 1, 64);
         WHITE_GABBRO_SOURCES_PER_CHUNK = COMMON_BUILDER.comment("Amount of max white gabbro sources generated per chunk")
-                .defineInRange("white_gabbro_sources_per_chunk", 1, 1, 64);
+                .defineInRange("white_gabbro_sources_per_chunk", 2, 1, 64);
         COMMON_BUILDER.pop();
 
         COMMON_BUILDER.push("bimstone");
         GENERATE_BIMSTONE_SOURCES = COMMON_BUILDER.comment("Should bimstone blocks be generated")
-                .define("bimstone_limestone_sources", true);
+                .define("generate_bimstone_sources", true);
         BIMSTONE_PER_CHUNK = COMMON_BUILDER.comment("Amount of bimstone blocks generated per vein (source)")
-                .defineInRange("bimstone_blocks_per_chunk", 13, 1, 64);
+                .defineInRange("bimstone_blocks_per_vein", 32, 1, 64);
         BIMSTONE_SOURCES_PER_CHUNK = COMMON_BUILDER.comment("Amount of max bimstone sources generated per chunk")
-                .defineInRange("bimstone_sources_per_chunk", 1, 1, 64);
+                .defineInRange("bimstone_sources_per_chunk", 2, 1, 64);
         COMMON_BUILDER.pop();
 
         COMMON_BUILDER.push("gneiss");
         GENERATE_GNEISS_SOURCES = COMMON_BUILDER.comment("Should gneiss blocks be generated")
-                .define("gneiss_limestone_sources", true);
+                .define("generate_gneiss_sources", true);
         GNEISS_PER_CHUNK = COMMON_BUILDER.comment("Amount of gneiss blocks generated per vein (source)")
-                .defineInRange("gneiss_blocks_per_chunk", 5, 1, 64);
+                .defineInRange("gneiss_blocks_per_vein", 32, 1, 64);
         GNEISS_SOURCES_PER_CHUNK = COMMON_BUILDER.comment("Amount of max gneiss sources generated per chunk")
                 .defineInRange("gneiss_sources_per_chunk", 2, 1, 64);
         COMMON_BUILDER.pop();
 
         COMMON_BUILDER.push("anorthosite");
         GENERATE_ANORTHOSITE_SOURCES = COMMON_BUILDER.comment("Should anorthosite blocks be generated")
-                .define("anorthosite_limestone_sources", true);
+                .define("generate_anorthosite_sources", true);
         ANORTHOSITE_PER_CHUNK = COMMON_BUILDER.comment("Amount of anorthosite blocks generated per vein (source)")
-                .defineInRange("anorthosite_blocks_per_chunk", 5, 1, 64);
+                .defineInRange("anorthosite_blocks_per_vein", 32, 1, 64);
         ANORTHOSITE_SOURCES_PER_CHUNK = COMMON_BUILDER.comment("Amount of max anorthosite sources generated per chunk")
                 .defineInRange("anorthosite_sources_per_chunk", 2, 1, 64);
         COMMON_BUILDER.pop();

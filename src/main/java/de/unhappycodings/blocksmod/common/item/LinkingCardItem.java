@@ -2,6 +2,7 @@ package de.unhappycodings.blocksmod.common.item;
 
 import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.client.KeyBindings;
+import de.unhappycodings.blocksmod.common.block.LampBlock;
 import de.unhappycodings.blocksmod.common.block.LampFlatBlock;
 import de.unhappycodings.blocksmod.common.block.TubeLampBlock;
 import de.unhappycodings.blocksmod.common.block.WirelessLampControllerBlock;
@@ -29,7 +30,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RedstoneLampBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -37,6 +42,8 @@ import java.util.List;
 import java.util.UUID;
 
 public class LinkingCardItem extends Item {
+
+    public static final BooleanProperty REMOTED = BooleanProperty.create("remoted");
 
     public LinkingCardItem() {
         super(new Item.Properties().stacksTo(1).tab(BlocksMod.ItemTab));
@@ -60,8 +67,7 @@ public class LinkingCardItem extends Item {
                     .append(TextComponentUtil.getTComp("message.flat_lamps", true)).append(" ")
                     .append(TextComponentUtil.getTComp("message.or", false, ChatFormatting.GRAY)).append(" ")
                     .append(TextComponentUtil.getTComp("message.lamp_controller", true)));
-            tooltipComponents.add(TextComponentUtil.getTComp("message.hold", false, ChatFormatting.GRAY).append(" ")
-                    .append(new TextComponent(KeyBindings.DESCRIPTION_KEYBINDING.getName().toUpperCase()).setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR))).append(" ")
+            tooltipComponents.add( new TextComponent("Sneak").setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR)).append(" ")
                     .append(TextComponentUtil.getTComp("message.to", false, ChatFormatting.GRAY)).append(" ")
                     .append(TextComponentUtil.getTComp("message.copy", false, ChatFormatting.GRAY)).append(" ")
                     .append(TextComponentUtil.getTComp("message.from", false, ChatFormatting.GRAY)).append(" ")
@@ -80,7 +86,7 @@ public class LinkingCardItem extends Item {
         Player player = context.getPlayer();
         ItemStack item = context.getItemInHand();
         BlockPos pos = context.getClickedPos();
-        if (level.getBlockState(pos).getBlock() instanceof LampFlatBlock || level.getBlockState(pos).getBlock() instanceof TubeLampBlock) {
+        if (level.getBlockState(pos).getBlock() instanceof LampFlatBlock || level.getBlockState(pos).getBlock() instanceof TubeLampBlock || level.getBlockState(pos).getBlock() instanceof LampBlock) {
             ListTag nbtList = new ListTag();
             if (item.getOrCreateTag().contains("positions"))
                 nbtList = item.getOrCreateTag().getList("positions", Tag.TAG_COMPOUND);

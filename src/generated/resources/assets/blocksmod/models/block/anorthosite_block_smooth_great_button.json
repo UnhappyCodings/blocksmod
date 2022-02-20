@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "blocksmod:block/anorthosite_block_smooth_great"
+  }
+}

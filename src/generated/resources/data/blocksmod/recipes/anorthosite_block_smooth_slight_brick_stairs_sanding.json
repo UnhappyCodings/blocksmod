@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:anorthosite_block_brick_stairs"
+    },
+    "b": {
+      "item": "blocksmod:sanding_paper"
+    }
+  },
+  "result": {
+    "item": "blocksmod:anorthosite_block_smooth_slight_brick_stairs"
+  }
+}

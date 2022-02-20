@@ -20,7 +20,7 @@ apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'io.github.noeppi_noeppi.tools.modgradle.mapping'
 
 group = 'de.unhappycodings'
-version = '0.1.1b'
+version = '0.1.2b'
 
 java {
     archivesBaseName = 'blocksmod'
@@ -150,7 +150,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.1-39.0.76'
+    minecraft 'net.minecraftforge:forge:1.18.1-39.0.79'
 
     implementation fg.deobf('curse.maven:jer-240630:3575590')
     implementation fg.deobf('curse.maven:jei-238222:3599262')

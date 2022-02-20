@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:nepheline_syenite_block_smooth_slight_tile_brick_stairs"
+    },
+    "b": {
+      "item": "blocksmod:sanding_paper"
+    }
+  },
+  "result": {
+    "item": "blocksmod:nepheline_syenite_block_smooth_fair_tile_brick_stairs"
+  }
+}

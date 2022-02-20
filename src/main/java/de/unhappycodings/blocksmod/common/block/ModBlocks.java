@@ -34,12 +34,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> BIMSTONE_BLOCK =
             register("bimstone_block",
                     () -> new Block(Block.Properties.copy(Blocks.STONE)));
-    public static final RegistryObject<Block> ANORTHOSITE_BLOCK =
-            register("anorthosite_block",
-                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    /*
     public static final RegistryObject<Block> NEPHELINE_SYENITE_BLOCK =
             register("nepheline_syenite_block",
                     () -> new Block(Block.Properties.copy(Blocks.STONE)));
+     */
     public static final RegistryObject<Block> GARAT_BLOCK =
             register("garat_block",
                     () -> new Block(Block.Properties.copy(Blocks.STONE)));
@@ -288,7 +287,6 @@ public class ModBlocks {
             register("purple_lamp_button_toggle_enlighted",
                     () -> new StoneButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).lightLevel(poweredBlockEmission(true))));
 
-
     public static final RegistryObject<LampButtonTriggerBlock> LAMP_BUTTON_TRIGGER =
             register("lamp_button_trigger", () -> new LampButtonTriggerBlock("normal"));
     public static final RegistryObject<LampButtonTriggerBlock> LAMP_BUTTON_TRIGGER_BIG =
@@ -307,10 +305,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> WHITE_LAMP =
             register("white_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> WHITE_LAMP_ENLIGHTED =
             register("white_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> LIGHT_GRAY_LAMP_STATIC =
             register("light_gray_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -319,10 +317,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> LIGHT_GRAY_LAMP =
             register("light_gray_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> LIGHT_GRAY_LAMP_ENLIGHTED =
             register("light_gray_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> GRAY_LAMP_STATIC =
             register("gray_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -331,10 +329,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> GRAY_LAMP =
             register("gray_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> GRAY_LAMP_ENLIGHTED =
             register("gray_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> BLACK_LAMP_STATIC =
             register("black_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -343,10 +341,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> BLACK_LAMP =
             register("black_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> BLACK_LAMP_ENLIGHTED =
             register("black_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> YELLOW_LAMP_STATIC =
             register("yellow_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -355,10 +353,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> YELLOW_LAMP =
             register("yellow_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> YELLOW_LAMP_ENLIGHTED =
             register("yellow_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> ORANGE_LAMP_STATIC =
             register("orange_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -367,10 +365,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> ORANGE_LAMP =
             register("orange_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> ORANGE_LAMP_ENLIGHTED =
             register("orange_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> RED_LAMP_STATIC =
             register("red_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -379,10 +377,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> RED_LAMP =
             register("red_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> RED_LAMP_ENLIGHTED =
             register("red_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> GREEN_LAMP_STATIC =
             register("green_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -391,10 +389,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> GREEN_LAMP =
             register("green_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> GREEN_LAMP_ENLIGHTED =
             register("green_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> CYAN_LAMP_STATIC =
             register("cyan_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -403,10 +401,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> CYAN_LAMP =
             register("cyan_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> CYAN_LAMP_ENLIGHTED =
             register("cyan_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> BLUE_LAMP_STATIC =
             register("blue_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -415,10 +413,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> BLUE_LAMP =
             register("blue_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> BLUE_LAMP_ENLIGHTED =
             register("blue_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> LIGHT_BLUE_LAMP_STATIC =
             register("light_blue_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -427,10 +425,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> LIGHT_BLUE_LAMP =
             register("light_blue_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> LIGHT_BLUE_LAMP_ENLIGHTED =
             register("light_blue_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> PINK_LAMP_STATIC =
             register("pink_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -439,10 +437,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> PINK_LAMP =
             register("pink_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> PINK_LAMP_ENLIGHTED =
             register("pink_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> MAGENTA_LAMP_STATIC =
             register("magenta_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -451,10 +449,10 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> MAGENTA_LAMP =
             register("magenta_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> MAGENTA_LAMP_ENLIGHTED =
             register("magenta_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
     public static final RegistryObject<LampStaticBlock> PURPLE_LAMP_STATIC =
             register("purple_lamp_block_static",
                     () -> new LampStaticBlock(false));
@@ -463,10 +461,937 @@ public class ModBlocks {
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> PURPLE_LAMP =
             register("purple_lamp_block",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP)));
+                    () -> new LampBlock());
     public static final RegistryObject<RedstoneLampBlock> PURPLE_LAMP_ENLIGHTED =
             register("purple_lamp_block_enlighted",
-                    () -> new RedstoneLampBlock(Block.Properties.copy(Blocks.REDSTONE_LAMP).lightLevel(litBlockEmission(true))));
+                    () -> new LampBlock(""));
+    //endregion
+
+    //region Nepheline Syenite
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BLOCK_PILLAR =
+            register("nepheline_syenite_block_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BLOCK_SMOOTH_SLIGHT_PILLAR =
+            register("nepheline_syenite_block_smooth_slight_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BLOCK_SMOOTH_FAIR_PILLAR =
+            register("nepheline_syenite_block_smooth_fair_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BLOCK_SMOOTH_GREAT_PILLAR =
+            register("nepheline_syenite_block_smooth_great_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BLOCK_SMOOTH_HEAVY_PILLAR =
+            register("nepheline_syenite_block_smooth_heavy_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BLOCK_SMOOTH_FINE_PILLAR =
+            register("nepheline_syenite_block_smooth_fine_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BLOCK =
+            register("nepheline_syenite_block",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_STAIRS =
+            register("nepheline_syenite_block_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_SLAB =
+            register("nepheline_syenite_block_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_WALL =
+            register("nepheline_syenite_block_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_PRESSURE_PLATE =
+            register("nepheline_syenite_block_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_BUTTON =
+            register("nepheline_syenite_block_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_SMOOTH_SLIGHT =
+            register("nepheline_syenite_block_smooth_slight",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_SMOOTH_SLIGHT_STAIRS =
+            register("nepheline_syenite_block_smooth_slight_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_SMOOTH_SLIGHT_SLAB =
+            register("nepheline_syenite_block_smooth_slight_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_SMOOTH_SLIGHT_WALL =
+            register("nepheline_syenite_block_smooth_slight_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_slight_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_SMOOTH_SLIGHT_BUTTON =
+            register("nepheline_syenite_block_smooth_slight_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_SMOOTH_FAIR =
+            register("nepheline_syenite_block_smooth_fair",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_SMOOTH_FAIR_STAIRS =
+            register("nepheline_syenite_block_smooth_fair_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_SMOOTH_FAIR_SLAB =
+            register("nepheline_syenite_block_smooth_fair_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_SMOOTH_FAIR_WALL =
+            register("nepheline_syenite_block_smooth_fair_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_fair_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_SMOOTH_FAIR_BUTTON =
+            register("nepheline_syenite_block_smooth_fair_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_SMOOTH_GREAT =
+            register("nepheline_syenite_block_smooth_great",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_SMOOTH_GREAT_STAIRS =
+            register("nepheline_syenite_block_smooth_great_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_SMOOTH_GREAT_SLAB =
+            register("nepheline_syenite_block_smooth_great_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_SMOOTH_GREAT_WALL =
+            register("nepheline_syenite_block_smooth_great_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_great_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_SMOOTH_GREAT_BUTTON =
+            register("nepheline_syenite_block_smooth_great_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_SMOOTH_HEAVY =
+            register("nepheline_syenite_block_smooth_heavy",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_SMOOTH_HEAVY_STAIRS =
+            register("nepheline_syenite_block_smooth_heavy_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_SMOOTH_HEAVY_SLAB =
+            register("nepheline_syenite_block_smooth_heavy_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_SMOOTH_HEAVY_WALL =
+            register("nepheline_syenite_block_smooth_heavy_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_heavy_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_SMOOTH_HEAVY_BUTTON =
+            register("nepheline_syenite_block_smooth_heavy_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_SMOOTH_FINE =
+            register("nepheline_syenite_block_smooth_fine",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_SMOOTH_FINE_STAIRS =
+            register("nepheline_syenite_block_smooth_fine_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_SMOOTH_FINE_SLAB =
+            register("nepheline_syenite_block_smooth_fine_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_SMOOTH_FINE_WALL =
+            register("nepheline_syenite_block_smooth_fine_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_SMOOTH_FINE_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_fine_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_SMOOTH_FINE_BUTTON =
+            register("nepheline_syenite_block_smooth_fine_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BRICK =
+            register("nepheline_syenite_block_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_BRICK_STAIRS =
+            register("nepheline_syenite_block_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_BRICK_SLAB =
+            register("nepheline_syenite_block_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_BRICK_WALL =
+            register("nepheline_syenite_block_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_BRICK_PRESSURE_PLATE =
+            register("nepheline_syenite_block_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_BRICK_BUTTON =
+            register("nepheline_syenite_block_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BRICK_SMOOTH_SLIGHT =
+            register("nepheline_syenite_block_smooth_slight_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("nepheline_syenite_block_smooth_slight_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("nepheline_syenite_block_smooth_slight_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_SLIGHT_WALL =
+            register("nepheline_syenite_block_smooth_slight_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_slight_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("nepheline_syenite_block_smooth_slight_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BRICK_SMOOTH_FAIR =
+            register("nepheline_syenite_block_smooth_fair_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_FAIR_STAIRS =
+            register("nepheline_syenite_block_smooth_fair_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_FAIR_SLAB =
+            register("nepheline_syenite_block_smooth_fair_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_FAIR_WALL =
+            register("nepheline_syenite_block_smooth_fair_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_fair_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_FAIR_BUTTON =
+            register("nepheline_syenite_block_smooth_fair_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BRICK_SMOOTH_GREAT =
+            register("nepheline_syenite_block_smooth_great_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_GREAT_STAIRS =
+            register("nepheline_syenite_block_smooth_great_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_GREAT_SLAB =
+            register("nepheline_syenite_block_smooth_great_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_GREAT_WALL =
+            register("nepheline_syenite_block_smooth_great_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_great_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_GREAT_BUTTON =
+            register("nepheline_syenite_block_smooth_great_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BRICK_SMOOTH_HEAVY =
+            register("nepheline_syenite_block_smooth_heavy_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("nepheline_syenite_block_smooth_heavy_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_HEAVY_SLAB =
+            register("nepheline_syenite_block_smooth_heavy_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_HEAVY_WALL =
+            register("nepheline_syenite_block_smooth_heavy_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_heavy_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("nepheline_syenite_block_smooth_heavy_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_BRICK_SMOOTH_FINE =
+            register("nepheline_syenite_block_smooth_fine_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_FINE_STAIRS =
+            register("nepheline_syenite_block_smooth_fine_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_FINE_SLAB =
+            register("nepheline_syenite_block_smooth_fine_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_FINE_WALL =
+            register("nepheline_syenite_block_smooth_fine_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_fine_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_BRICK_SMOOTH_FINE_BUTTON =
+            register("nepheline_syenite_block_smooth_fine_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_LINED_BRICK =
+            register("nepheline_syenite_block_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_LINED_BRICK_STAIRS =
+            register("nepheline_syenite_block_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_LINED_BRICK_SLAB =
+            register("nepheline_syenite_block_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_LINED_BRICK_WALL =
+            register("nepheline_syenite_block_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_LINED_BRICK_PRESSURE_PLATE =
+            register("nepheline_syenite_block_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_LINED_BRICK_BUTTON =
+            register("nepheline_syenite_block_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_SLIGHT =
+            register("nepheline_syenite_block_smooth_slight_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("nepheline_syenite_block_smooth_slight_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("nepheline_syenite_block_smooth_slight_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_SLIGHT_WALL =
+            register("nepheline_syenite_block_smooth_slight_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_slight_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("nepheline_syenite_block_smooth_slight_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FAIR =
+            register("nepheline_syenite_block_smooth_fair_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FAIR_STAIRS =
+            register("nepheline_syenite_block_smooth_fair_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FAIR_SLAB =
+            register("nepheline_syenite_block_smooth_fair_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FAIR_WALL =
+            register("nepheline_syenite_block_smooth_fair_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_fair_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FAIR_BUTTON =
+            register("nepheline_syenite_block_smooth_fair_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_GREAT =
+            register("nepheline_syenite_block_smooth_great_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_GREAT_STAIRS =
+            register("nepheline_syenite_block_smooth_great_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_GREAT_SLAB =
+            register("nepheline_syenite_block_smooth_great_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_GREAT_WALL =
+            register("nepheline_syenite_block_smooth_great_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_great_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_GREAT_BUTTON =
+            register("nepheline_syenite_block_smooth_great_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_HEAVY =
+            register("nepheline_syenite_block_smooth_heavy_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("nepheline_syenite_block_smooth_heavy_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_HEAVY_SLAB =
+            register("nepheline_syenite_block_smooth_heavy_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_HEAVY_WALL =
+            register("nepheline_syenite_block_smooth_heavy_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_heavy_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("nepheline_syenite_block_smooth_heavy_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FINE =
+            register("nepheline_syenite_block_smooth_fine_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FINE_STAIRS =
+            register("nepheline_syenite_block_smooth_fine_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FINE_SLAB =
+            register("nepheline_syenite_block_smooth_fine_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FINE_WALL =
+            register("nepheline_syenite_block_smooth_fine_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_fine_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_LINED_BRICK_SMOOTH_FINE_BUTTON =
+            register("nepheline_syenite_block_smooth_fine_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_TILE_BRICK =
+            register("nepheline_syenite_block_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_TILE_BRICK_STAIRS =
+            register("nepheline_syenite_block_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_TILE_BRICK_SLAB =
+            register("nepheline_syenite_block_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_TILE_BRICK_WALL =
+            register("nepheline_syenite_block_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_TILE_BRICK_PRESSURE_PLATE =
+            register("nepheline_syenite_block_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_TILE_BRICK_BUTTON =
+            register("nepheline_syenite_block_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_SLIGHT =
+            register("nepheline_syenite_block_smooth_slight_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("nepheline_syenite_block_smooth_slight_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("nepheline_syenite_block_smooth_slight_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_SLIGHT_WALL =
+            register("nepheline_syenite_block_smooth_slight_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_slight_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("nepheline_syenite_block_smooth_slight_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FAIR =
+            register("nepheline_syenite_block_smooth_fair_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FAIR_STAIRS =
+            register("nepheline_syenite_block_smooth_fair_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FAIR_SLAB =
+            register("nepheline_syenite_block_smooth_fair_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FAIR_WALL =
+            register("nepheline_syenite_block_smooth_fair_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_fair_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FAIR_BUTTON =
+            register("nepheline_syenite_block_smooth_fair_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_GREAT =
+            register("nepheline_syenite_block_smooth_great_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_GREAT_STAIRS =
+            register("nepheline_syenite_block_smooth_great_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_GREAT_SLAB =
+            register("nepheline_syenite_block_smooth_great_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_GREAT_WALL =
+            register("nepheline_syenite_block_smooth_great_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_great_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_GREAT_BUTTON =
+            register("nepheline_syenite_block_smooth_great_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_HEAVY =
+            register("nepheline_syenite_block_smooth_heavy_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("nepheline_syenite_block_smooth_heavy_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_HEAVY_SLAB =
+            register("nepheline_syenite_block_smooth_heavy_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_HEAVY_WALL =
+            register("nepheline_syenite_block_smooth_heavy_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_heavy_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("nepheline_syenite_block_smooth_heavy_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE =
+            register("nepheline_syenite_block_smooth_fine_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE_STAIRS =
+            register("nepheline_syenite_block_smooth_fine_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.NEPHELINE_SYENITE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE_SLAB =
+            register("nepheline_syenite_block_smooth_fine_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE_WALL =
+            register("nepheline_syenite_block_smooth_fine_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("nepheline_syenite_block_smooth_fine_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE_BUTTON =
+            register("nepheline_syenite_block_smooth_fine_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    //endregion
+
+
+    //region Anorthosite
+
+    public static final RegistryObject<Block> ANORTHOSITE_BLOCK_PILLAR =
+            register("anorthosite_block_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> ANORTHOSITE_BLOCK_SMOOTH_SLIGHT_PILLAR =
+            register("anorthosite_block_smooth_slight_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> ANORTHOSITE_BLOCK_SMOOTH_FAIR_PILLAR =
+            register("anorthosite_block_smooth_fair_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> ANORTHOSITE_BLOCK_SMOOTH_GREAT_PILLAR =
+            register("anorthosite_block_smooth_great_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> ANORTHOSITE_BLOCK_SMOOTH_HEAVY_PILLAR =
+            register("anorthosite_block_smooth_heavy_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> ANORTHOSITE_BLOCK_SMOOTH_FINE_PILLAR =
+            register("anorthosite_block_smooth_fine_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+
+    public static final RegistryObject<Block> ANORTHOSITE_BLOCK =
+            register("anorthosite_block",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_STAIRS =
+            register("anorthosite_block_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_SLAB =
+            register("anorthosite_block_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_WALL =
+            register("anorthosite_block_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_PRESSURE_PLATE =
+            register("anorthosite_block_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_BUTTON =
+            register("anorthosite_block_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> ANORTHOSITE_SMOOTH_SLIGHT =
+            register("anorthosite_block_smooth_slight",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_SMOOTH_SLIGHT_STAIRS =
+            register("anorthosite_block_smooth_slight_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_SMOOTH_SLIGHT_SLAB =
+            register("anorthosite_block_smooth_slight_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_SMOOTH_SLIGHT_WALL =
+            register("anorthosite_block_smooth_slight_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_slight_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_SMOOTH_SLIGHT_BUTTON =
+            register("anorthosite_block_smooth_slight_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> ANORTHOSITE_SMOOTH_FAIR =
+            register("anorthosite_block_smooth_fair",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_SMOOTH_FAIR_STAIRS =
+            register("anorthosite_block_smooth_fair_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_SMOOTH_FAIR_SLAB =
+            register("anorthosite_block_smooth_fair_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_SMOOTH_FAIR_WALL =
+            register("anorthosite_block_smooth_fair_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_fair_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_SMOOTH_FAIR_BUTTON =
+            register("anorthosite_block_smooth_fair_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> ANORTHOSITE_SMOOTH_GREAT =
+            register("anorthosite_block_smooth_great",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_SMOOTH_GREAT_STAIRS =
+            register("anorthosite_block_smooth_great_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_SMOOTH_GREAT_SLAB =
+            register("anorthosite_block_smooth_great_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_SMOOTH_GREAT_WALL =
+            register("anorthosite_block_smooth_great_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_great_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_SMOOTH_GREAT_BUTTON =
+            register("anorthosite_block_smooth_great_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> ANORTHOSITE_SMOOTH_HEAVY =
+            register("anorthosite_block_smooth_heavy",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_SMOOTH_HEAVY_STAIRS =
+            register("anorthosite_block_smooth_heavy_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_SMOOTH_HEAVY_SLAB =
+            register("anorthosite_block_smooth_heavy_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_SMOOTH_HEAVY_WALL =
+            register("anorthosite_block_smooth_heavy_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_heavy_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_SMOOTH_HEAVY_BUTTON =
+            register("anorthosite_block_smooth_heavy_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> ANORTHOSITE_SMOOTH_FINE =
+            register("anorthosite_block_smooth_fine",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_SMOOTH_FINE_STAIRS =
+            register("anorthosite_block_smooth_fine_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_SMOOTH_FINE_SLAB =
+            register("anorthosite_block_smooth_fine_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_SMOOTH_FINE_WALL =
+            register("anorthosite_block_smooth_fine_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_SMOOTH_FINE_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_fine_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_SMOOTH_FINE_BUTTON =
+            register("anorthosite_block_smooth_fine_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> ANORTHOSITE_BRICK =
+            register("anorthosite_block_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_BRICK_STAIRS =
+            register("anorthosite_block_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_BRICK_SLAB =
+            register("anorthosite_block_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_BRICK_WALL =
+            register("anorthosite_block_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_BRICK_PRESSURE_PLATE =
+            register("anorthosite_block_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_BRICK_BUTTON =
+            register("anorthosite_block_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_BRICK_SMOOTH_SLIGHT =
+            register("anorthosite_block_smooth_slight_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("anorthosite_block_smooth_slight_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("anorthosite_block_smooth_slight_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_BRICK_SMOOTH_SLIGHT_WALL =
+            register("anorthosite_block_smooth_slight_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_slight_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("anorthosite_block_smooth_slight_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_BRICK_SMOOTH_FAIR =
+            register("anorthosite_block_smooth_fair_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_BRICK_SMOOTH_FAIR_STAIRS =
+            register("anorthosite_block_smooth_fair_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_BRICK_SMOOTH_FAIR_SLAB =
+            register("anorthosite_block_smooth_fair_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_BRICK_SMOOTH_FAIR_WALL =
+            register("anorthosite_block_smooth_fair_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_fair_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_BRICK_SMOOTH_FAIR_BUTTON =
+            register("anorthosite_block_smooth_fair_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_BRICK_SMOOTH_GREAT =
+            register("anorthosite_block_smooth_great_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_BRICK_SMOOTH_GREAT_STAIRS =
+            register("anorthosite_block_smooth_great_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_BRICK_SMOOTH_GREAT_SLAB =
+            register("anorthosite_block_smooth_great_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_BRICK_SMOOTH_GREAT_WALL =
+            register("anorthosite_block_smooth_great_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_great_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_BRICK_SMOOTH_GREAT_BUTTON =
+            register("anorthosite_block_smooth_great_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_BRICK_SMOOTH_HEAVY =
+            register("anorthosite_block_smooth_heavy_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("anorthosite_block_smooth_heavy_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_BRICK_SMOOTH_HEAVY_SLAB =
+            register("anorthosite_block_smooth_heavy_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_BRICK_SMOOTH_HEAVY_WALL =
+            register("anorthosite_block_smooth_heavy_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_heavy_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("anorthosite_block_smooth_heavy_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_BRICK_SMOOTH_FINE =
+            register("anorthosite_block_smooth_fine_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_BRICK_SMOOTH_FINE_STAIRS =
+            register("anorthosite_block_smooth_fine_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_BRICK_SMOOTH_FINE_SLAB =
+            register("anorthosite_block_smooth_fine_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_BRICK_SMOOTH_FINE_WALL =
+            register("anorthosite_block_smooth_fine_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_fine_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_BRICK_SMOOTH_FINE_BUTTON =
+            register("anorthosite_block_smooth_fine_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> ANORTHOSITE_LINED_BRICK =
+            register("anorthosite_block_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_LINED_BRICK_STAIRS =
+            register("anorthosite_block_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_LINED_BRICK_SLAB =
+            register("anorthosite_block_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_LINED_BRICK_WALL =
+            register("anorthosite_block_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_LINED_BRICK_PRESSURE_PLATE =
+            register("anorthosite_block_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_LINED_BRICK_BUTTON =
+            register("anorthosite_block_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_LINED_BRICK_SMOOTH_SLIGHT =
+            register("anorthosite_block_smooth_slight_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("anorthosite_block_smooth_slight_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("anorthosite_block_smooth_slight_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_SLIGHT_WALL =
+            register("anorthosite_block_smooth_slight_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_slight_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("anorthosite_block_smooth_slight_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_LINED_BRICK_SMOOTH_FAIR =
+            register("anorthosite_block_smooth_fair_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_FAIR_STAIRS =
+            register("anorthosite_block_smooth_fair_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_FAIR_SLAB =
+            register("anorthosite_block_smooth_fair_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_FAIR_WALL =
+            register("anorthosite_block_smooth_fair_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_fair_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_FAIR_BUTTON =
+            register("anorthosite_block_smooth_fair_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_LINED_BRICK_SMOOTH_GREAT =
+            register("anorthosite_block_smooth_great_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_GREAT_STAIRS =
+            register("anorthosite_block_smooth_great_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_GREAT_SLAB =
+            register("anorthosite_block_smooth_great_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_GREAT_WALL =
+            register("anorthosite_block_smooth_great_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_great_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_GREAT_BUTTON =
+            register("anorthosite_block_smooth_great_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_LINED_BRICK_SMOOTH_HEAVY =
+            register("anorthosite_block_smooth_heavy_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("anorthosite_block_smooth_heavy_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_HEAVY_SLAB =
+            register("anorthosite_block_smooth_heavy_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_HEAVY_WALL =
+            register("anorthosite_block_smooth_heavy_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_heavy_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("anorthosite_block_smooth_heavy_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_LINED_BRICK_SMOOTH_FINE =
+            register("anorthosite_block_smooth_fine_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_FINE_STAIRS =
+            register("anorthosite_block_smooth_fine_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_FINE_SLAB =
+            register("anorthosite_block_smooth_fine_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_FINE_WALL =
+            register("anorthosite_block_smooth_fine_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_fine_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_LINED_BRICK_SMOOTH_FINE_BUTTON =
+            register("anorthosite_block_smooth_fine_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> ANORTHOSITE_TILE_BRICK =
+            register("anorthosite_block_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_TILE_BRICK_STAIRS =
+            register("anorthosite_block_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_TILE_BRICK_SLAB =
+            register("anorthosite_block_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_TILE_BRICK_WALL =
+            register("anorthosite_block_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_TILE_BRICK_PRESSURE_PLATE =
+            register("anorthosite_block_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_TILE_BRICK_BUTTON =
+            register("anorthosite_block_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_TILE_BRICK_SMOOTH_SLIGHT =
+            register("anorthosite_block_smooth_slight_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("anorthosite_block_smooth_slight_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("anorthosite_block_smooth_slight_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_SLIGHT_WALL =
+            register("anorthosite_block_smooth_slight_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_slight_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("anorthosite_block_smooth_slight_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_TILE_BRICK_SMOOTH_FAIR =
+            register("anorthosite_block_smooth_fair_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_FAIR_STAIRS =
+            register("anorthosite_block_smooth_fair_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_FAIR_SLAB =
+            register("anorthosite_block_smooth_fair_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_FAIR_WALL =
+            register("anorthosite_block_smooth_fair_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_fair_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_FAIR_BUTTON =
+            register("anorthosite_block_smooth_fair_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_TILE_BRICK_SMOOTH_GREAT =
+            register("anorthosite_block_smooth_great_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_GREAT_STAIRS =
+            register("anorthosite_block_smooth_great_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_GREAT_SLAB =
+            register("anorthosite_block_smooth_great_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_GREAT_WALL =
+            register("anorthosite_block_smooth_great_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_great_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_GREAT_BUTTON =
+            register("anorthosite_block_smooth_great_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_TILE_BRICK_SMOOTH_HEAVY =
+            register("anorthosite_block_smooth_heavy_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("anorthosite_block_smooth_heavy_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_HEAVY_SLAB =
+            register("anorthosite_block_smooth_heavy_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_HEAVY_WALL =
+            register("anorthosite_block_smooth_heavy_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_heavy_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("anorthosite_block_smooth_heavy_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> ANORTHOSITE_TILE_BRICK_SMOOTH_FINE =
+            register("anorthosite_block_smooth_fine_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_FINE_STAIRS =
+            register("anorthosite_block_smooth_fine_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.ANORTHOSITE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_FINE_SLAB =
+            register("anorthosite_block_smooth_fine_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_FINE_WALL =
+            register("anorthosite_block_smooth_fine_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("anorthosite_block_smooth_fine_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> ANORTHOSITE_TILE_BRICK_SMOOTH_FINE_BUTTON =
+            register("anorthosite_block_smooth_fine_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
     //endregion
 
 
@@ -747,7 +1672,6 @@ public class ModBlocks {
     public static final RegistryObject<PressurePlateBlock> LIMESTONE_SMOOTH_GREAT_LINED_BRICK_PRESSURE_PLATE =
             register("limestone_block_smooth_great_lined_brick_pressure_plate",
                     () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
-
     public static final RegistryObject<Block> LIMESTONE_SMOOTH_GREAT_TILE_BRICK =
             register("limestone_block_smooth_great_tile_brick",
                     () -> new Block(Block.Properties.copy(Blocks.STONE)));
@@ -766,7 +1690,6 @@ public class ModBlocks {
     public static final RegistryObject<PressurePlateBlock> LIMESTONE_SMOOTH_GREAT_TILE_BRICK_PRESSURE_PLATE =
             register("limestone_block_smooth_great_tile_brick_pressure_plate",
                     () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
-
     public static final RegistryObject<Block> LIMESTONE_SMOOTH_GREAT_BRICK =
             register("limestone_block_smooth_great_brick",
                     () -> new Block(Block.Properties.copy(Blocks.STONE)));
@@ -785,7 +1708,6 @@ public class ModBlocks {
     public static final RegistryObject<PressurePlateBlock> LIMESTONE_SMOOTH_GREAT_BRICK_PRESSURE_PLATE =
             register("limestone_block_smooth_great_brick_pressure_plate",
                     () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
-
     public static final RegistryObject<Block> LIMESTONE_SMOOTH_GREAT_PILLAR =
             register("limestone_block_smooth_great_pillar",
                     () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
@@ -2020,12 +2942,6 @@ public class ModBlocks {
         if (inverted)
             return (p_50763_) -> !p_50763_.getValue(BlockStateProperties.POWERED) ? 15 : 0;
         return (p_50763_) -> p_50763_.getValue(BlockStateProperties.POWERED) ? 15 : 0;
-    }
-
-    private static ToIntFunction<BlockState> litBlockEmission(boolean inverted) {
-        if (inverted)
-            return (p_50763_) -> !p_50763_.getValue(BlockStateProperties.LIT) ? 15 : 0;
-        return (p_50763_) -> p_50763_.getValue(BlockStateProperties.LIT) ? 15 : 0;
     }
 
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "blocksmod:block/anorthosite_block_smooth_heavy_lined_brick"
+  }
+}

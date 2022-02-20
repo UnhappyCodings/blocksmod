@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "blocksmod:block/nepheline_syenite_block_smooth_fine_brick_pressure_plate"
+    },
+    "powered=true": {
+      "model": "blocksmod:block/nepheline_syenite_block_smooth_fine_brick_pressure_plate_down"
+    }
+  }
+}

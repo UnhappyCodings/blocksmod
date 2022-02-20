@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "side": "blocksmod:block/anorthosite_block_brick",
+    "bottom": "blocksmod:block/anorthosite_block_brick",
+    "top": "blocksmod:block/anorthosite_block_brick"
+  }
+}

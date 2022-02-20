@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "blocksmod:block/anorthosite_block_smooth_slight_tile_brick"
+  }
+}

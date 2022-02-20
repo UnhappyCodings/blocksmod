@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:nepheline_syenite_block_smooth_heavy"
+    }
+  },
+  "result": {
+    "item": "blocksmod:nepheline_syenite_block_smooth_heavy_wall",
+    "count": 6
+  }
+}

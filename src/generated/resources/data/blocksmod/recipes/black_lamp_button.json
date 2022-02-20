@@ -3,9 +3,13 @@
   "ingredients": [
     {
       "item": "blocksmod:black_lamp_block"
+    },
+    {
+      "item": "minecraft:stone_button"
     }
   ],
   "result": {
-    "item": "blocksmod:black_lamp_button"
+    "item": "blocksmod:black_lamp_button",
+    "count": 6
   }
 }

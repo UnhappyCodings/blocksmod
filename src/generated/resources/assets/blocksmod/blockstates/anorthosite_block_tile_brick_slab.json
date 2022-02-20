@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "blocksmod:block/anorthosite_block_tile_brick_slab_top"
+    },
+    "type=bottom": {
+      "model": "blocksmod:block/anorthosite_block_tile_brick_slab"
+    },
+    "type=double": {
+      "model": "blocksmod:block/anorthosite_block_tile_brick"
+    }
+  }
+}

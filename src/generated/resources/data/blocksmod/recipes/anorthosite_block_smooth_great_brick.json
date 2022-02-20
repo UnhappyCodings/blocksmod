@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aa ",
+    "aa ",
+    "   "
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:anorthosite_block_smooth_great"
+    }
+  },
+  "result": {
+    "item": "blocksmod:anorthosite_block_smooth_great_brick",
+    "count": 4
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:nepheline_syenite_block_smooth_slight_lined_brick"
+    }
+  },
+  "result": {
+    "item": "blocksmod:nepheline_syenite_block_smooth_slight_lined_brick_stairs",
+    "count": 4
+  }
+}

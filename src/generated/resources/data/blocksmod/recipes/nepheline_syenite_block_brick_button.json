@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blocksmod:nepheline_syenite_block_brick"
+    }
+  ],
+  "result": {
+    "item": "blocksmod:nepheline_syenite_block_brick_button"
+  }
+}

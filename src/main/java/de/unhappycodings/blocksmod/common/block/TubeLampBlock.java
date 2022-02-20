@@ -65,10 +65,6 @@ public class TubeLampBlock extends FaceAttachedHorizontalDirectionalBlock {
                 blockState = this.defaultBlockState().setValue(FACE, direction == Direction.UP ? AttachFace.CEILING : AttachFace.FLOOR)
                         .setValue(FACING, context.getHorizontalDirection());
             } else {
-                LOGGER.info(context.getHorizontalDirection());
-                LOGGER.info(context.getPlayer().getDirection());
-                LOGGER.info(context.getPlayer().getMotionDirection());
-                LOGGER.info(context.getPlayer().isShiftKeyDown());
                 blockState = this.defaultBlockState().setValue(FACE, AttachFace.WALL).setValue(FACING, direction.getOpposite());
             }
             blockState.setValue(REMOTED, false);

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "blocksmod:block/anorthosite_block_smooth_great_pillar_top",
+    "side": "blocksmod:block/anorthosite_block_smooth_great_pillar"
+  }
+}

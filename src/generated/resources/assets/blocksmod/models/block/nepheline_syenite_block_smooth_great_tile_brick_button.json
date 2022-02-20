@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "blocksmod:block/nepheline_syenite_block_smooth_great_tile_brick"
+  }
+}

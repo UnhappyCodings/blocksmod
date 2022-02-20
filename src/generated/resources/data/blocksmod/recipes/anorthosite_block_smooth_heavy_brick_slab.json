@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "blocksmod:anorthosite_block_smooth_heavy_brick"
+    }
+  },
+  "result": {
+    "item": "blocksmod:anorthosite_block_smooth_heavy_brick_slab",
+    "count": 6
+  }
+}

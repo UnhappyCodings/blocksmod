@@ -31,70 +31,70 @@ public class Generation {
                 Feature.ORE.configured(new OreConfiguration(List.of(
                         OreConfiguration.target(OreFeatures.NATURAL_STONE, ModBlocks.LIMESTONE.get().defaultBlockState())), CommonConfig.LIMESTONE_PER_CHUNK.get())));
         final PlacedFeature placedLimestoneBlock = PlacementUtils.register("limestone_block",
-                limestoneBlock.placed(OrePlacements.rareOrePlacement(CommonConfig.LIMESTONE_SOURCES_PER_CHUNK.get(), HeightRangePlacement
+                limestoneBlock.placed(OrePlacements.commonOrePlacement(CommonConfig.LIMESTONE_SOURCES_PER_CHUNK.get(), HeightRangePlacement
                         .uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(60)))));
 
         final ConfiguredFeature<?, ?> garatBlock = FeatureUtils.register("garat_block",
                 Feature.ORE.configured(new OreConfiguration(List.of(
                         OreConfiguration.target(OreFeatures.NATURAL_STONE, ModBlocks.GARAT_BLOCK.get().defaultBlockState())), CommonConfig.GARAT_PER_CHUNK.get())));
         final PlacedFeature placedGaratBlock = PlacementUtils.register("garat_block",
-                garatBlock.placed(OrePlacements.rareOrePlacement(CommonConfig.GARAT_SOURCES_PER_CHUNK.get(), HeightRangePlacement
+                garatBlock.placed(OrePlacements.commonOrePlacement(CommonConfig.GARAT_SOURCES_PER_CHUNK.get(), HeightRangePlacement
                         .uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(-10)))));
 
         final ConfiguredFeature<?, ?> slateBlock = FeatureUtils.register("slate_block",
                 Feature.ORE.configured(new OreConfiguration(List.of(
                         OreConfiguration.target(OreFeatures.NATURAL_STONE, ModBlocks.SLATE_BLOCK.get().defaultBlockState())), CommonConfig.SLATE_PER_CHUNK.get())));
         final PlacedFeature placedSlateBlock = PlacementUtils.register("slate_block",
-                slateBlock.placed(OrePlacements.rareOrePlacement(CommonConfig.SLATE_SOURCES_PER_CHUNK.get(), HeightRangePlacement
+                slateBlock.placed(OrePlacements.commonOrePlacement(CommonConfig.SLATE_SOURCES_PER_CHUNK.get(), HeightRangePlacement
                         .uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(-10)))));
 
         final ConfiguredFeature<?, ?> monzoniteBlock = FeatureUtils.register("monzonite_block",
                 Feature.ORE.configured(new OreConfiguration(List.of(
                         OreConfiguration.target(OreFeatures.NATURAL_STONE, ModBlocks.MONZONITE_BLOCK.get().defaultBlockState())), CommonConfig.MONZONITE_PER_CHUNK.get())));
         final PlacedFeature placedMonzoniteBlock = PlacementUtils.register("monzonite_block",
-                monzoniteBlock.placed(OrePlacements.rareOrePlacement(CommonConfig.MONZONITE_SOURCES_PER_CHUNK.get(), HeightRangePlacement
+                monzoniteBlock.placed(OrePlacements.commonOrePlacement(CommonConfig.MONZONITE_SOURCES_PER_CHUNK.get(), HeightRangePlacement
                         .uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(-10)))));
 
         final ConfiguredFeature<?, ?> nephelineSyeniteBlock = FeatureUtils.register("nepheline_syenite_block",
                 Feature.ORE.configured(new OreConfiguration(List.of(
                         OreConfiguration.target(OreFeatures.NATURAL_STONE, ModBlocks.NEPHELINE_SYENITE_BLOCK.get().defaultBlockState())), CommonConfig.NEPHELINE_SYENITE_PER_CHUNK.get())));
         final PlacedFeature placedNephelineSyeniteBlock = PlacementUtils.register("nepheline_syenite_block",
-                nephelineSyeniteBlock.placed(OrePlacements.rareOrePlacement(CommonConfig.NEPHELINE_SYENITE_SOURCES_PER_CHUNK.get(), HeightRangePlacement
+                nephelineSyeniteBlock.placed(OrePlacements.commonOrePlacement(CommonConfig.NEPHELINE_SYENITE_SOURCES_PER_CHUNK.get(), HeightRangePlacement
                         .uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(-20)))));
 
         final ConfiguredFeature<?, ?> gabbroBlock = FeatureUtils.register("gabbro_block",
                 Feature.ORE.configured(new OreConfiguration(List.of(
                         OreConfiguration.target(OreFeatures.NATURAL_STONE, ModBlocks.GABBRO_BLOCK.get().defaultBlockState())), CommonConfig.GABBRO_PER_CHUNK.get())));
         final PlacedFeature placedGabbroBlock = PlacementUtils.register("gabbro_block",
-                gabbroBlock.placed(OrePlacements.rareOrePlacement(CommonConfig.GABBRO_SOURCES_PER_CHUNK.get(), HeightRangePlacement
+                gabbroBlock.placed(OrePlacements.commonOrePlacement(CommonConfig.GABBRO_SOURCES_PER_CHUNK.get(), HeightRangePlacement
                         .uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(-15)))));
 
         final ConfiguredFeature<?, ?> whiteGabbroBlock = FeatureUtils.register("white_gabbro_block",
                 Feature.ORE.configured(new OreConfiguration(List.of(
                         OreConfiguration.target(OreFeatures.NATURAL_STONE, ModBlocks.WHITE_GABBRO_BLOCK.get().defaultBlockState())), CommonConfig.WHITE_GABBRO_PER_CHUNK.get())));
         final PlacedFeature placedWhiteGabbroBlock = PlacementUtils.register("white_gabbro_block",
-                whiteGabbroBlock.placed(OrePlacements.rareOrePlacement(CommonConfig.WHITE_GABBRO_SOURCES_PER_CHUNK.get(), HeightRangePlacement
+                whiteGabbroBlock.placed(OrePlacements.commonOrePlacement(CommonConfig.WHITE_GABBRO_SOURCES_PER_CHUNK.get(), HeightRangePlacement
                         .uniform(VerticalAnchor.absolute(5), VerticalAnchor.absolute(120)))));
 
         final ConfiguredFeature<?, ?> bimstoneBlock = FeatureUtils.register("bimstone_block",
                 Feature.ORE.configured(new OreConfiguration(List.of(
                         OreConfiguration.target(OreFeatures.NATURAL_STONE, ModBlocks.BIMSTONE_BLOCK.get().defaultBlockState())), CommonConfig.BIMSTONE_PER_CHUNK.get())));
         final PlacedFeature placedBimstoneBlock = PlacementUtils.register("bimstone_block",
-                bimstoneBlock.placed(OrePlacements.rareOrePlacement(CommonConfig.BIMSTONE_SOURCES_PER_CHUNK.get(), HeightRangePlacement
+                bimstoneBlock.placed(OrePlacements.commonOrePlacement(CommonConfig.BIMSTONE_SOURCES_PER_CHUNK.get(), HeightRangePlacement
                         .uniform(VerticalAnchor.bottom(), VerticalAnchor.absolute(-15)))));
 
         final ConfiguredFeature<?, ?> gneissBlock = FeatureUtils.register("gneiss_block",
                 Feature.ORE.configured(new OreConfiguration(List.of(
                         OreConfiguration.target(OreFeatures.NATURAL_STONE, ModBlocks.GNEISS_BLOCK.get().defaultBlockState())), CommonConfig.GNEISS_PER_CHUNK.get())));
         final PlacedFeature placedGneissBlock = PlacementUtils.register("gneiss_block",
-                gneissBlock.placed(OrePlacements.rareOrePlacement(CommonConfig.GNEISS_SOURCES_PER_CHUNK.get(), HeightRangePlacement
+                gneissBlock.placed(OrePlacements.commonOrePlacement(CommonConfig.GNEISS_SOURCES_PER_CHUNK.get(), HeightRangePlacement
                         .uniform(VerticalAnchor.absolute(-60), VerticalAnchor.absolute(-30)))));
 
         final ConfiguredFeature<?, ?> anorthositeBlock = FeatureUtils.register("anorthosite_block",
                 Feature.ORE.configured(new OreConfiguration(List.of(
                         OreConfiguration.target(OreFeatures.NATURAL_STONE, ModBlocks.ANORTHOSITE_BLOCK.get().defaultBlockState())), CommonConfig.ANORTHOSITE_PER_CHUNK.get())));
         final PlacedFeature placedAnorthositeBlock = PlacementUtils.register("anorthosite_block",
-                anorthositeBlock.placed(OrePlacements.rareOrePlacement(CommonConfig.ANORTHOSITE_SOURCES_PER_CHUNK.get(), HeightRangePlacement
+                anorthositeBlock.placed(OrePlacements.commonOrePlacement(CommonConfig.ANORTHOSITE_SOURCES_PER_CHUNK.get(), HeightRangePlacement
                         .uniform(VerticalAnchor.absolute(45), VerticalAnchor.absolute(120)))));
 
         if (CommonConfig.GENERATE_ARAGONIT_SOURCES.get())
