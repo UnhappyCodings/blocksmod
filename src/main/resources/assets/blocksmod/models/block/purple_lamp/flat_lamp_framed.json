@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "blocksmod:block/magenta_lamp_block",
-    "particle": "blocksmod:block/magenta_lamp_block"
+    "0": "blocksmod:block/black_lamp_block",
+    "particle": "blocksmod:block/black_lamp_block"
   },
   "elements": [
     {
