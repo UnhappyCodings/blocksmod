@@ -2,8 +2,8 @@ package de.unhappycodings.blocksmod.common.block;
 
 import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.client.KeyBindings;
-import de.unhappycodings.blocksmod.common.blockentity.WirelessLampControllerEntity;
 import de.unhappycodings.blocksmod.common.blockentity.ModBlockEntities;
+import de.unhappycodings.blocksmod.common.blockentity.WirelessLampControllerEntity;
 import de.unhappycodings.blocksmod.common.item.LinkingCardItem;
 import de.unhappycodings.blocksmod.common.util.TextComponentUtil;
 import net.minecraft.ChatFormatting;

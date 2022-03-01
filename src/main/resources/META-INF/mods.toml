@@ -3,17 +3,17 @@ loaderVersion = "[39,)"
 license = "All Rights Reserved"
 [[mods]]
 modId = "blocksmod"
-version = "0.1.2b"
+version = "0.1.4b"
 displayName = "Blocks"
 displayURL = "https://www.curseforge.com/minecraft/mc-mods/blocksmod"
-logoFile="blocks-logo.png"
+logoFile = "blocks-logo.png"
 authors = "UnhappyWithoutU"
 description = '''Adds a Big Variation of Different Building and Functional Blocks to Minecraft Forge!'''
 
 [[dependencies.blocksmod]]
 modId = "forge"
 mandatory = true
-versionRange = "[39.0.79,)"
+versionRange = "[39.1.0,)"
 ordering = "NONE"
 side = "BOTH"
 

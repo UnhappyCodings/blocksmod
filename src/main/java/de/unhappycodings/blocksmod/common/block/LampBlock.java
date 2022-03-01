@@ -2,11 +2,9 @@ package de.unhappycodings.blocksmod.common.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RedstoneLampBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -38,6 +36,12 @@ public class LampBlock extends RedstoneLampBlock {
                 .setValue(REMOTED, false));
     }
 
+    private static ToIntFunction<BlockState> litBlockEmission(boolean inverted) {
+        if (inverted)
+            return (p_50763_) -> !p_50763_.getValue(BlockStateProperties.LIT) ? 15 : 0;
+        return (p_50763_) -> p_50763_.getValue(BlockStateProperties.LIT) ? 15 : 0;
+    }
+
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(LIT, REMOTED);
@@ -48,12 +52,6 @@ public class LampBlock extends RedstoneLampBlock {
         if (!state.getValue(REMOTED)) {
             super.neighborChanged(state, level, pos, block, fromPos, isMoving);
         }
-    }
-
-    private static ToIntFunction<BlockState> litBlockEmission(boolean inverted) {
-        if (inverted)
-            return (p_50763_) -> !p_50763_.getValue(BlockStateProperties.LIT) ? 15 : 0;
-        return (p_50763_) -> p_50763_.getValue(BlockStateProperties.LIT) ? 15 : 0;
     }
 
 }

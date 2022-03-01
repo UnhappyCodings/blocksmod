@@ -12,7 +12,8 @@ public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister
             .create(ForgeRegistries.BLOCK_ENTITIES, BlocksMod.MOD_ID);
 
-    private ModBlockEntities() { }
+    private ModBlockEntities() {
+    }
 
     public static final RegistryObject<BlockEntityType<WirelessLampControllerEntity>> WIRELESS_LAMP_CONTROLLER =
             BLOCK_ENTITIES.register("wireless_lamp_controller", () ->

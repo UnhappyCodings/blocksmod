@@ -1,11 +1,10 @@
-package de.unhappycodings.blocksmod.client;
+package de.unhappycodings.blocksmod.client.event;
 
 import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.common.block.ModBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;

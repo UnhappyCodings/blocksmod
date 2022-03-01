@@ -13,7 +13,7 @@ public class CommonConfig {
     /* General */
 
     // FUTURE
-    public static ForgeConfigSpec.IntValue LINKING_TOOL_PARTICLE_COLOR;
+    public static ForgeConfigSpec.ConfigValue<String> LINKING_TOOL_OVERLAY_COLOR;
     public static ForgeConfigSpec.IntValue LINKING_TOOL_MAX_BOUNDS;
     // public static ForgeConfigSpec.BooleanValue ENABLE_LAMP_BLOCKS;
 
@@ -71,8 +71,8 @@ public class CommonConfig {
 
     private static void init(ForgeConfigSpec.Builder COMMON_BUILDER) {
         COMMON_BUILDER.push("General");
-        LINKING_TOOL_PARTICLE_COLOR = COMMON_BUILDER.comment("Which Color of Particls Should be spawned [0 = Red | 1 = Purple | 2 = White Star]")
-                .defineInRange("linking_tool_particle_color", 0, 0, 2);
+        LINKING_TOOL_OVERLAY_COLOR = COMMON_BUILDER.comment("What Color should the Overlay be [Format: #RRGGBB]")
+                .define("linking_tool_overlay_color", "#00b497");
         LINKING_TOOL_MAX_BOUNDS = COMMON_BUILDER.comment("How many Flat Lamps should be bound to one Linking Card?")
                 .defineInRange("linking_tool_max_bounds", 32, 1, 256);
         COMMON_BUILDER.pop();

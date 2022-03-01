@@ -1,10 +1,8 @@
 package de.unhappycodings.blocksmod.common.blockentity;
 
-import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.common.block.LampBlock;
 import de.unhappycodings.blocksmod.common.block.LampFlatBlock;
 import de.unhappycodings.blocksmod.common.block.TubeLampBlock;
-import de.unhappycodings.blocksmod.common.block.WirelessLampControllerBlock;
 import de.unhappycodings.blocksmod.common.util.NbtUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -43,7 +41,9 @@ public class WirelessLampControllerEntity extends BlockEntity {
 
     }
 
-    public ListTag getPositions() { return this.positions; }
+    public ListTag getPositions() {
+        return this.positions;
+    }
 
     public void setPositions(ListTag positions) {
         this.positions = positions;

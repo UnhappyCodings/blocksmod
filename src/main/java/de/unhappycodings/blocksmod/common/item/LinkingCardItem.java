@@ -30,10 +30,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.RedstoneLampBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -67,7 +64,7 @@ public class LinkingCardItem extends Item {
                     .append(TextComponentUtil.getTComp("message.flat_lamps", true)).append(" ")
                     .append(TextComponentUtil.getTComp("message.or", false, ChatFormatting.GRAY)).append(" ")
                     .append(TextComponentUtil.getTComp("message.lamp_controller", true)));
-            tooltipComponents.add( new TextComponent("Sneak").setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR)).append(" ")
+            tooltipComponents.add(new TextComponent("Sneak").setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR)).append(" ")
                     .append(TextComponentUtil.getTComp("message.to", false, ChatFormatting.GRAY)).append(" ")
                     .append(TextComponentUtil.getTComp("message.copy", false, ChatFormatting.GRAY)).append(" ")
                     .append(TextComponentUtil.getTComp("message.from", false, ChatFormatting.GRAY)).append(" ")
@@ -120,7 +117,8 @@ public class LinkingCardItem extends Item {
             if (level.isClientSide()) return InteractionResult.SUCCESS;
             if (player.isShiftKeyDown()) {
                 BlockEntity block = level.getBlockEntity(pos);
-                if (!(player.getItemInHand(InteractionHand.MAIN_HAND).getItem() instanceof LinkingCardItem)) return InteractionResult.SUCCESS;
+                if (!(player.getItemInHand(InteractionHand.MAIN_HAND).getItem() instanceof LinkingCardItem))
+                    return InteractionResult.SUCCESS;
                 if (!(block instanceof WirelessLampControllerEntity blockEntity)) return InteractionResult.SUCCESS;
                 ListTag tag = blockEntity.getPositions();
                 if (tag != null) {

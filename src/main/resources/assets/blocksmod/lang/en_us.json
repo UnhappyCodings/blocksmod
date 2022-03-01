@@ -741,7 +741,6 @@
   "block.blocksmod.purple_tube_lamp_edge_left_open_enlighted": "Purple Edge Tube Lamp (Enlighted Left Open)",
   "block.blocksmod.purple_tube_lamp_edge_right_open_enlighted": "Purple Edge Tube Lamp (Enlighted Right Open)",
   "block.blocksmod.purple_tube_lamp_edge_left_right_open_enlighted": "Purple Edge Tube Lamp (Enlighted Left-Right Open)",
-
   "block.blocksmod.anorthosite_block": "Anorthosite Block",
   "block.blocksmod.anorthosite_block_pillar": "Anorthosite Block Pillar",
   "block.blocksmod.anorthosite_block_stairs": "Anorthosite Block Stairs",
@@ -910,7 +909,6 @@
   "block.blocksmod.anorthosite_block_tile_brick_button": "Anorthosite Block Tile Brick Button",
   "block.blocksmod.anorthosite_block_lined_brick_button": "Anorthosite Block Lined Brick Button",
   "block.blocksmod.anorthosite_block_brick_button": "Anorthosite Block Brick Button",
-
   "block.blocksmod.nepheline_syenite_block": "Nepheline Syenite Block",
   "block.blocksmod.nepheline_syenite_block_pillar": "Nepheline Syenite Block Pillar",
   "block.blocksmod.nepheline_syenite_block_stairs": "Nepheline Syenite Block Stairs",
@@ -1079,7 +1077,6 @@
   "block.blocksmod.nepheline_syenite_block_tile_brick_button": "Nepheline Syenite Block Tile Brick Button",
   "block.blocksmod.nepheline_syenite_block_lined_brick_button": "Nepheline Syenite Block Lined Brick Button",
   "block.blocksmod.nepheline_syenite_block_brick_button": "Nepheline Syenite Block Brick Button",
-
   "block.blocksmod.aragonit_block": "Aragonit Block",
   "block.blocksmod.garat_block": "Garat Block (WIP)",
   "block.blocksmod.slate_block": "Slate Block (WIP)",
