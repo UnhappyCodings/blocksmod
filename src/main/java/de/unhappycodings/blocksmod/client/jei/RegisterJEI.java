@@ -19,6 +19,6 @@ public class RegisterJEI implements IModPlugin {
 
     @Override
     public void registerCategories(@NotNull IRecipeCategoryRegistration registration) {
-        new RegisterJER().init(true);
+        //new RegisterJER().init(true);
     }
 }

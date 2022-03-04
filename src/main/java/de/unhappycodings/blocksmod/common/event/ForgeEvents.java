@@ -13,6 +13,7 @@ import de.unhappycodings.blocksmod.common.util.NbtUtil;
 import de.unhappycodings.blocksmod.common.world.Generation;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;
 import net.minecraft.world.InteractionHand;
@@ -43,13 +44,11 @@ public class ForgeEvents {
 
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public static void biomeLoading(BiomeLoadingEvent event) {
-        final List<Supplier<PlacedFeature>> features = event.getGeneration()
-                .getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
+        final List<Holder<PlacedFeature>> features = event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
 
         switch (event.getCategory()) {
-            case NETHER, THEEND -> {
-            }
-            default -> Generation.OVERWORLD_ORES.forEach(ore -> features.add(() -> ore));
+            case NETHER, THEEND -> {}
+            default -> Generation.OVERWORLD_ORES.forEach(x -> features.add(new Holder.Direct<>(x)));
         }
     }
 

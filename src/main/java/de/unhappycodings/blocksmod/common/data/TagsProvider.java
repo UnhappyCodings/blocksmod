@@ -5,6 +5,7 @@ import de.unhappycodings.blocksmod.common.block.ModBlocks;
 import de.unhappycodings.blocksmod.common.util.Registration;
 import net.minecraft.core.Registry;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.HashCache;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
@@ -24,7 +25,6 @@ public class TagsProvider extends net.minecraft.data.tags.TagsProvider<Block> {
 
     @Override
     protected void addTags() {
-
         tag(BlockTags.WALLS).add(ModBlocks.LIMESTONE_WALL.get());
         tag(BlockTags.WALLS).add(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_WALL.get());
         tag(BlockTags.WALLS).add(ModBlocks.LIMESTONE_SMOOTH_FAIR_WALL.get());

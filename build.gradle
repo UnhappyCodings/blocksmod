@@ -109,7 +109,7 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
-    implementation fg.deobf("curse.maven:jer-${jer_version}")
+    compileOnly fg.deobf("curse.maven:jer-${jer_version}")
     implementation fg.deobf("curse.maven:jei-${jei_version}")
     implementation fg.deobf("curse.maven:conf-${conf_version}")
 }
