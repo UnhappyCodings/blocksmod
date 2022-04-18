@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "side": "blocksmod:block/gabbro_block",
+    "bottom": "blocksmod:block/gabbro_block",
+    "top": "blocksmod:block/gabbro_block"
+  }
+}

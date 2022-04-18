@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "side": "blocksmod:block/slate_block_lined_brick",
+    "bottom": "blocksmod:block/slate_block_lined_brick",
+    "top": "blocksmod:block/slate_block_lined_brick"
+  }
+}

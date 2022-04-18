@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "blocksmod:block/bimstone_block_smooth_great_tile_brick"
+  }
+}

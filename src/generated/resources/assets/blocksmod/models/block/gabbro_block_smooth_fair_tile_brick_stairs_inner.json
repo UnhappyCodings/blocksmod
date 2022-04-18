@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "side": "blocksmod:block/gabbro_block_smooth_fair_tile_brick",
+    "bottom": "blocksmod:block/gabbro_block_smooth_fair_tile_brick",
+    "top": "blocksmod:block/gabbro_block_smooth_fair_tile_brick"
+  }
+}

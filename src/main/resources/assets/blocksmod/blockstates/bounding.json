@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "blocksmod:block/bounding"
+    },
+    "facing=east": {
+      "model": "blocksmod:block/bounding",
+      "x": 180
+    },
+    "facing=south": {
+      "model": "blocksmod:block/bounding"
+    },
+    "facing=west": {
+      "model": "blocksmod:block/bounding",
+      "x": 180
+    }
+  }
+}

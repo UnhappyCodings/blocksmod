@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_down",
+  "textures": {
+    "texture": "blocksmod:block/white_gabbro_block_smooth_fine_lined_brick"
+  }
+}

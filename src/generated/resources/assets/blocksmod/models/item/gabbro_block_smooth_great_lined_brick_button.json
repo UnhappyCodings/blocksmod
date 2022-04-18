@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "blocksmod:block/gabbro_block_smooth_great_lined_brick"
+  }
+}

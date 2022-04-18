@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "side": "blocksmod:block/bimstone_block_smooth_heavy_brick",
+    "bottom": "blocksmod:block/bimstone_block_smooth_heavy_brick",
+    "top": "blocksmod:block/bimstone_block_smooth_heavy_brick"
+  }
+}

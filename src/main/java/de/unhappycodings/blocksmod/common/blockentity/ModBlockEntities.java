@@ -19,4 +19,12 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("wireless_lamp_controller", () ->
                     BlockEntityType.Builder.of(WirelessLampControllerEntity::new, ModBlocks.WIRELESS_LAMP_CONTROLLER.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<BigSlidingDoorEntity>> BIG_SLIDING_DOOR =
+            BLOCK_ENTITIES.register("big_sliding_door", () ->
+                    BlockEntityType.Builder.of(BigSlidingDoorEntity::new, ModBlocks.BIG_SLIDING_DOOR.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<BoundingBlockEntity>> BOUNDING_BLOCK =
+            BLOCK_ENTITIES.register("bounding", () ->
+                    BlockEntityType.Builder.of(BoundingBlockEntity::new, ModBlocks.BOUNDING.get()).build(null));
+
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "blocksmod:block/bimstone_block_smooth_fair_tile_brick"
+  }
+}

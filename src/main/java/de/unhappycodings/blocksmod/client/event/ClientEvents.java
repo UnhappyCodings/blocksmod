@@ -1,13 +1,23 @@
 package de.unhappycodings.blocksmod.client.event;
 
 import de.unhappycodings.blocksmod.BlocksMod;
+import de.unhappycodings.blocksmod.client.render.BigSlidingDoorRenderer;
+import de.unhappycodings.blocksmod.common.block.BoundingBlock;
 import de.unhappycodings.blocksmod.common.block.ModBlocks;
+import de.unhappycodings.blocksmod.common.blockentity.ModBlockEntities;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.Explosion;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
+import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import software.bernie.example.registry.TileRegistry;
 
 @Mod.EventBusSubscriber(modid = BlocksMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientEvents {
@@ -365,7 +375,14 @@ public class ClientEvents {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_TUBE_LAMP_EDGE_RIGHT_OPEN.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.WHITE_TUBE_LAMP_EDGE_LEFT_RIGHT_OPEN.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
 
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.BIG_SLIDING_DOOR.get(), RenderType.entityTranslucent(new ResourceLocation(BlocksMod.MOD_ID,"geo/textures/big_sliding_door.png")));
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.BOUNDING.get(), (renderType) -> renderType == RenderType.translucent() || renderType == RenderType.cutoutMipped());
 
+    }
+
+    @SubscribeEvent
+    public static void onRegisterRenderers(final EntityRenderersEvent.RegisterRenderers event) {
+        event.registerBlockEntityRenderer(ModBlockEntities.BIG_SLIDING_DOOR.get(), BigSlidingDoorRenderer::new);
     }
 
 }

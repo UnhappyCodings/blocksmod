@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "side": "blocksmod:block/white_gabbro_block_smooth_slight",
+    "bottom": "blocksmod:block/white_gabbro_block_smooth_slight",
+    "top": "blocksmod:block/white_gabbro_block_smooth_slight"
+  }
+}

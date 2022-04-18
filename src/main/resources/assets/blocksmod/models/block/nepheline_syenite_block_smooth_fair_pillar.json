@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "blocksmod:block/nepheline_syenite_block_smooth_fair_pillar_top",
-    "side": "blocksmod:block/nepheline_syenite_block_smooth_fair_pillar"
-  }
-}

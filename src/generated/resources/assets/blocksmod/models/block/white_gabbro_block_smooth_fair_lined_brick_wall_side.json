@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "blocksmod:block/white_gabbro_block_smooth_fair_lined_brick"
+  }
+}

@@ -15,7 +15,6 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import org.jetbrains.annotations.NotNull;
 
 public class WirelessLampControllerEntity extends BlockEntity {
-
     ListTag positions;
     boolean powered;
     boolean origin;
@@ -38,7 +37,6 @@ public class WirelessLampControllerEntity extends BlockEntity {
         this.powered = nbt.getBoolean("powered");
         if (!nbt.getList("positions", Tag.TAG_COMPOUND).isEmpty())
             this.positions = nbt.getList("positions", Tag.TAG_COMPOUND);
-
     }
 
     public ListTag getPositions() {

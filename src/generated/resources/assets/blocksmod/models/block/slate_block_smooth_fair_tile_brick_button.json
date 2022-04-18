@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "blocksmod:block/slate_block_smooth_fair_tile_brick"
+  }
+}

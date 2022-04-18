@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "blocksmod:block/gabbro_block_brick"
+  }
+}

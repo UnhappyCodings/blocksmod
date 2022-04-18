@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "blocksmod:block/white_gabbro_block_smooth_fair_lined_brick"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "side": "blocksmod:block/slate_block_smooth_fine",
+    "bottom": "blocksmod:block/slate_block_smooth_fine",
+    "top": "blocksmod:block/slate_block_smooth_fine"
+  }
+}

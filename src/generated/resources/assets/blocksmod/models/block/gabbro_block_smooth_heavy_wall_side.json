@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "blocksmod:block/gabbro_block_smooth_heavy"
+  }
+}

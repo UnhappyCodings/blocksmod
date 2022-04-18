@@ -19,32 +19,1232 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
     @Override
     protected void registerModels() {
 
-        //region Other
-        withExistingParent(Objects.requireNonNull(ModBlocks.ARAGONIT_BLOCK.get().getRegistryName()).toString(),
-                new ResourceLocation(BlocksMod.MOD_ID, "block/aragonit_block"));
-        withExistingParent(Objects.requireNonNull(ModBlocks.GNEISS_BLOCK.get().getRegistryName()).toString(),
-                new ResourceLocation(BlocksMod.MOD_ID, "block/gneiss_block"));
-        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BLOCK.get().getRegistryName()).toString(),
-                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"));
-        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BLOCK.get().getRegistryName()).toString(),
-                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block"));
-        withExistingParent(Objects.requireNonNull(ModBlocks.MONZONITE_BLOCK.get().getRegistryName()).toString(),
-                new ResourceLocation(BlocksMod.MOD_ID, "block/monzonite_block"));
-        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BLOCK.get().getRegistryName()).toString(),
-                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block"));
-        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BLOCK.get().getRegistryName()).toString(),
-                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block"));
-        withExistingParent(Objects.requireNonNull(ModBlocks.GARAT_BLOCK.get().getRegistryName()).toString(),
-                new ResourceLocation(BlocksMod.MOD_ID, "block/garat_block"));
+        //region Slate
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BLOCK_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BLOCK_SMOOTH_SLIGHT_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BLOCK_SMOOTH_FAIR_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BLOCK_SMOOTH_GREAT_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BLOCK_SMOOTH_HEAVY_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BLOCK_SMOOTH_FINE_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_pillar"));
+
         withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BLOCK.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine"));
 
-        withExistingParent(Objects.requireNonNull(ModBlocks.WIRELESS_LAMP_CONTROLLER.get().getRegistryName()).toString(),
-                new ResourceLocation(BlocksMod.MOD_ID, "block/wireless_lamp_controller"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_brick"));
 
-        simpleItem(ModItems.LUMINOUS_DUST.get());
-        simpleItem(ModItems.SANDING_PAPER.get());
-        simpleItem(ModItems.LINKING_CARD.get());
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_lined_brick"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_tile_brick"));
+        //endregion
+
+        //region Bimstone
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BLOCK_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BLOCK_SMOOTH_SLIGHT_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BLOCK_SMOOTH_FAIR_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BLOCK_SMOOTH_GREAT_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BLOCK_SMOOTH_HEAVY_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BLOCK_SMOOTH_FINE_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_pillar"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BLOCK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_brick"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_lined_brick"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_tile_brick"));
+        //endregion
+
+        //region Gabbro
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BLOCK_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BLOCK_SMOOTH_SLIGHT_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BLOCK_SMOOTH_FAIR_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BLOCK_SMOOTH_GREAT_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BLOCK_SMOOTH_HEAVY_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BLOCK_SMOOTH_FINE_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_pillar"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BLOCK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_brick"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_lined_brick"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_tile_brick"));
+        //endregion
+
+        //region White Gabbro
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BLOCK_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BLOCK_SMOOTH_SLIGHT_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BLOCK_SMOOTH_FAIR_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BLOCK_SMOOTH_GREAT_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BLOCK_SMOOTH_HEAVY_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_pillar"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BLOCK_SMOOTH_FINE_PILLAR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_pillar"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BLOCK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_brick"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_lined_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_lined_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_lined_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_lined_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_lined_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_lined_brick"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_tile_brick"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_STAIRS.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_tile_brick_stairs"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_SLAB.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_tile_brick_slab"));
+        buttonInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_BUTTON.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_tile_brick"));
+        pressurePlate(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_tile_brick"));
+        wallInventory(Objects.requireNonNull(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_tile_brick"));
         //endregion
 
         //region Nepheline Syenite
@@ -354,7 +1554,6 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_tile_brick"));
         //endregion
 
-
         //region Anorthosite
 
         withExistingParent(Objects.requireNonNull(ModBlocks.ANORTHOSITE_BLOCK_PILLAR.get().getRegistryName()).toString(),
@@ -663,8 +1862,7 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_tile_brick"));
         //endregion
 
-
-        //region LAMP BLOCKS
+        //region Lamp Blocks
         withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_LAMP.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/white_lamp_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.WHITE_LAMP_ENLIGHTED.get().getRegistryName()).toString(),
@@ -960,7 +2158,6 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/purple_lamp_block_on"));
         //endregion
 
-
         //region Limestone
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
@@ -980,10 +2177,7 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
         wallInventory(Objects.requireNonNull(ModBlocks.LIMESTONE_WALL.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
-        //endregion
 
-
-        //region Bricks Limestone
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_LINED_BRICK.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_lined_brick"));
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_LINED_BRICK_STAIRS.get().getRegistryName()).toString(),
@@ -1022,10 +2216,7 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_brick"));
         buttonInventory(Objects.requireNonNull(ModBlocks.LIMESTONE_BRICK_BUTTON.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_brick"));
-        //endregion
 
-
-        //region Slight Limestone
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_SLIGHT.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight"));
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_LINED_BRICK.get().getRegistryName()).toString(),
@@ -1083,10 +2274,7 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight"));
         wallInventory(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_WALL.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight"));
-        //endregion
 
-
-        //region Fair Limestone
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FAIR.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair"));
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FAIR_LINED_BRICK.get().getRegistryName()).toString(),
@@ -1144,10 +2332,7 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair"));
         wallInventory(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FAIR_WALL.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair"));
-        //endregion
 
-
-        //region Great Limestone
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_GREAT.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great"));
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_GREAT_LINED_BRICK.get().getRegistryName()).toString(),
@@ -1205,10 +2390,7 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair"));
         wallInventory(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_GREAT_WALL.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair"));
-        //endregion
 
-
-        //region Heavy Limestone
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_HEAVY.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy"));
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_HEAVY_LINED_BRICK.get().getRegistryName()).toString(),
@@ -1266,10 +2448,7 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy"));
         wallInventory(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_HEAVY_WALL.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy"));
-        //endregion
 
-
-        // region Fine Limestone
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine"));
         withExistingParent(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK.get().getRegistryName()).toString(),
@@ -1327,6 +2506,26 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine"));
         wallInventory(Objects.requireNonNull(ModBlocks.LIMESTONE_SMOOTH_FINE_WALL.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine"));
+        //endregion
+
+        //region Other
+        withExistingParent(Objects.requireNonNull(ModBlocks.ARAGONIT_BLOCK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/aragonit_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GNEISS_BLOCK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gneiss_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BLOCK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.MONZONITE_BLOCK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/monzonite_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.NEPHELINE_SYENITE_BLOCK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block"));
+
+        withExistingParent(Objects.requireNonNull(ModBlocks.WIRELESS_LAMP_CONTROLLER.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/wireless_lamp_controller"));
+
+        simpleItem(ModItems.LUMINOUS_DUST.get());
+        simpleItem(ModItems.SANDING_PAPER.get());
+        simpleItem(ModItems.LINKING_CARD.get());
         //endregion
 
     }

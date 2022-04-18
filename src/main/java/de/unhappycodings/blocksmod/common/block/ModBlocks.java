@@ -22,28 +22,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> GNEISS_BLOCK =
             register("gneiss_block",
                     () -> new Block(Block.Properties.copy(Blocks.STONE)));
-    public static final RegistryObject<Block> GABBRO_BLOCK =
-            register("gabbro_block",
-                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
-    public static final RegistryObject<Block> WHITE_GABBRO_BLOCK =
-            register("white_gabbro_block",
-                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> MONZONITE_BLOCK =
             register("monzonite_block",
                     () -> new Block(Block.Properties.copy(Blocks.STONE)));
-    public static final RegistryObject<Block> BIMSTONE_BLOCK =
-            register("bimstone_block",
-                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
-    /*
-    public static final RegistryObject<Block> NEPHELINE_SYENITE_BLOCK =
-            register("nepheline_syenite_block",
-                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
-     */
     public static final RegistryObject<Block> GARAT_BLOCK =
             register("garat_block",
-                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
-    public static final RegistryObject<Block> SLATE_BLOCK =
-            register("slate_block",
                     () -> new Block(Block.Properties.copy(Blocks.STONE)));
 
     //endregion
@@ -304,8 +287,7 @@ public class ModBlocks {
             register("white_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> WHITE_LAMP =
-            register("white_lamp_block",
-                    () -> new LampBlock());
+            register("white_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> WHITE_LAMP_ENLIGHTED =
             register("white_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -316,8 +298,7 @@ public class ModBlocks {
             register("light_gray_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> LIGHT_GRAY_LAMP =
-            register("light_gray_lamp_block",
-                    () -> new LampBlock());
+            register("light_gray_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> LIGHT_GRAY_LAMP_ENLIGHTED =
             register("light_gray_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -328,8 +309,7 @@ public class ModBlocks {
             register("gray_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> GRAY_LAMP =
-            register("gray_lamp_block",
-                    () -> new LampBlock());
+            register("gray_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> GRAY_LAMP_ENLIGHTED =
             register("gray_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -340,8 +320,7 @@ public class ModBlocks {
             register("black_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> BLACK_LAMP =
-            register("black_lamp_block",
-                    () -> new LampBlock());
+            register("black_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> BLACK_LAMP_ENLIGHTED =
             register("black_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -352,8 +331,7 @@ public class ModBlocks {
             register("yellow_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> YELLOW_LAMP =
-            register("yellow_lamp_block",
-                    () -> new LampBlock());
+            register("yellow_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> YELLOW_LAMP_ENLIGHTED =
             register("yellow_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -364,8 +342,7 @@ public class ModBlocks {
             register("orange_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> ORANGE_LAMP =
-            register("orange_lamp_block",
-                    () -> new LampBlock());
+            register("orange_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> ORANGE_LAMP_ENLIGHTED =
             register("orange_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -376,8 +353,7 @@ public class ModBlocks {
             register("red_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> RED_LAMP =
-            register("red_lamp_block",
-                    () -> new LampBlock());
+            register("red_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> RED_LAMP_ENLIGHTED =
             register("red_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -388,8 +364,7 @@ public class ModBlocks {
             register("green_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> GREEN_LAMP =
-            register("green_lamp_block",
-                    () -> new LampBlock());
+            register("green_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> GREEN_LAMP_ENLIGHTED =
             register("green_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -400,8 +375,7 @@ public class ModBlocks {
             register("cyan_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> CYAN_LAMP =
-            register("cyan_lamp_block",
-                    () -> new LampBlock());
+            register("cyan_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> CYAN_LAMP_ENLIGHTED =
             register("cyan_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -412,8 +386,7 @@ public class ModBlocks {
             register("blue_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> BLUE_LAMP =
-            register("blue_lamp_block",
-                    () -> new LampBlock());
+            register("blue_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> BLUE_LAMP_ENLIGHTED =
             register("blue_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -424,8 +397,7 @@ public class ModBlocks {
             register("light_blue_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> LIGHT_BLUE_LAMP =
-            register("light_blue_lamp_block",
-                    () -> new LampBlock());
+            register("light_blue_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> LIGHT_BLUE_LAMP_ENLIGHTED =
             register("light_blue_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -436,8 +408,7 @@ public class ModBlocks {
             register("pink_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> PINK_LAMP =
-            register("pink_lamp_block",
-                    () -> new LampBlock());
+            register("pink_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> PINK_LAMP_ENLIGHTED =
             register("pink_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -448,8 +419,7 @@ public class ModBlocks {
             register("magenta_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> MAGENTA_LAMP =
-            register("magenta_lamp_block",
-                    () -> new LampBlock());
+            register("magenta_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> MAGENTA_LAMP_ENLIGHTED =
             register("magenta_lamp_block_enlighted",
                     () -> new LampBlock(""));
@@ -460,11 +430,1862 @@ public class ModBlocks {
             register("purple_lamp_block_static_enlighted",
                     () -> new LampStaticBlock(true));
     public static final RegistryObject<RedstoneLampBlock> PURPLE_LAMP =
-            register("purple_lamp_block",
-                    () -> new LampBlock());
+            register("purple_lamp_block", LampBlock::new);
     public static final RegistryObject<RedstoneLampBlock> PURPLE_LAMP_ENLIGHTED =
             register("purple_lamp_block_enlighted",
                     () -> new LampBlock(""));
+    //endregion
+
+    //region Slate
+    public static final RegistryObject<Block> SLATE_BLOCK_PILLAR =
+            register("slate_block_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> SLATE_BLOCK_SMOOTH_SLIGHT_PILLAR =
+            register("slate_block_smooth_slight_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> SLATE_BLOCK_SMOOTH_FAIR_PILLAR =
+            register("slate_block_smooth_fair_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> SLATE_BLOCK_SMOOTH_GREAT_PILLAR =
+            register("slate_block_smooth_great_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> SLATE_BLOCK_SMOOTH_HEAVY_PILLAR =
+            register("slate_block_smooth_heavy_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> SLATE_BLOCK_SMOOTH_FINE_PILLAR =
+            register("slate_block_smooth_fine_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+
+    public static final RegistryObject<Block> SLATE_BLOCK =
+            register("slate_block",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_STAIRS =
+            register("slate_block_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_SLAB =
+            register("slate_block_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_WALL =
+            register("slate_block_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_PRESSURE_PLATE =
+            register("slate_block_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_BUTTON =
+            register("slate_block_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> SLATE_SMOOTH_SLIGHT =
+            register("slate_block_smooth_slight",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_SMOOTH_SLIGHT_STAIRS =
+            register("slate_block_smooth_slight_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_SMOOTH_SLIGHT_SLAB =
+            register("slate_block_smooth_slight_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_SMOOTH_SLIGHT_WALL =
+            register("slate_block_smooth_slight_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("slate_block_smooth_slight_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_SMOOTH_SLIGHT_BUTTON =
+            register("slate_block_smooth_slight_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> SLATE_SMOOTH_FAIR =
+            register("slate_block_smooth_fair",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_SMOOTH_FAIR_STAIRS =
+            register("slate_block_smooth_fair_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_SMOOTH_FAIR_SLAB =
+            register("slate_block_smooth_fair_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_SMOOTH_FAIR_WALL =
+            register("slate_block_smooth_fair_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("slate_block_smooth_fair_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_SMOOTH_FAIR_BUTTON =
+            register("slate_block_smooth_fair_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> SLATE_SMOOTH_GREAT =
+            register("slate_block_smooth_great",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_SMOOTH_GREAT_STAIRS =
+            register("slate_block_smooth_great_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_SMOOTH_GREAT_SLAB =
+            register("slate_block_smooth_great_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_SMOOTH_GREAT_WALL =
+            register("slate_block_smooth_great_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("slate_block_smooth_great_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_SMOOTH_GREAT_BUTTON =
+            register("slate_block_smooth_great_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> SLATE_SMOOTH_HEAVY =
+            register("slate_block_smooth_heavy",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_SMOOTH_HEAVY_STAIRS =
+            register("slate_block_smooth_heavy_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_SMOOTH_HEAVY_SLAB =
+            register("slate_block_smooth_heavy_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_SMOOTH_HEAVY_WALL =
+            register("slate_block_smooth_heavy_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("slate_block_smooth_heavy_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_SMOOTH_HEAVY_BUTTON =
+            register("slate_block_smooth_heavy_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> SLATE_SMOOTH_FINE =
+            register("slate_block_smooth_fine",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_SMOOTH_FINE_STAIRS =
+            register("slate_block_smooth_fine_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_SMOOTH_FINE_SLAB =
+            register("slate_block_smooth_fine_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_SMOOTH_FINE_WALL =
+            register("slate_block_smooth_fine_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_SMOOTH_FINE_PRESSURE_PLATE =
+            register("slate_block_smooth_fine_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_SMOOTH_FINE_BUTTON =
+            register("slate_block_smooth_fine_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+
+    public static final RegistryObject<Block> SLATE_BRICK =
+            register("slate_block_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_BRICK_STAIRS =
+            register("slate_block_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_BRICK_SLAB =
+            register("slate_block_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_BRICK_WALL =
+            register("slate_block_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_BRICK_PRESSURE_PLATE =
+            register("slate_block_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_BRICK_BUTTON =
+            register("slate_block_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_BRICK_SMOOTH_SLIGHT =
+            register("slate_block_smooth_slight_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("slate_block_smooth_slight_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("slate_block_smooth_slight_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_BRICK_SMOOTH_SLIGHT_WALL =
+            register("slate_block_smooth_slight_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("slate_block_smooth_slight_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("slate_block_smooth_slight_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_BRICK_SMOOTH_FAIR =
+            register("slate_block_smooth_fair_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_BRICK_SMOOTH_FAIR_STAIRS =
+            register("slate_block_smooth_fair_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_BRICK_SMOOTH_FAIR_SLAB =
+            register("slate_block_smooth_fair_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_BRICK_SMOOTH_FAIR_WALL =
+            register("slate_block_smooth_fair_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("slate_block_smooth_fair_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_BRICK_SMOOTH_FAIR_BUTTON =
+            register("slate_block_smooth_fair_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_BRICK_SMOOTH_GREAT =
+            register("slate_block_smooth_great_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_BRICK_SMOOTH_GREAT_STAIRS =
+            register("slate_block_smooth_great_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_BRICK_SMOOTH_GREAT_SLAB =
+            register("slate_block_smooth_great_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_BRICK_SMOOTH_GREAT_WALL =
+            register("slate_block_smooth_great_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("slate_block_smooth_great_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_BRICK_SMOOTH_GREAT_BUTTON =
+            register("slate_block_smooth_great_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_BRICK_SMOOTH_HEAVY =
+            register("slate_block_smooth_heavy_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("slate_block_smooth_heavy_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_BRICK_SMOOTH_HEAVY_SLAB =
+            register("slate_block_smooth_heavy_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_BRICK_SMOOTH_HEAVY_WALL =
+            register("slate_block_smooth_heavy_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("slate_block_smooth_heavy_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("slate_block_smooth_heavy_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_BRICK_SMOOTH_FINE =
+            register("slate_block_smooth_fine_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_BRICK_SMOOTH_FINE_STAIRS =
+            register("slate_block_smooth_fine_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_BRICK_SMOOTH_FINE_SLAB =
+            register("slate_block_smooth_fine_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_BRICK_SMOOTH_FINE_WALL =
+            register("slate_block_smooth_fine_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("slate_block_smooth_fine_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_BRICK_SMOOTH_FINE_BUTTON =
+            register("slate_block_smooth_fine_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> SLATE_LINED_BRICK =
+            register("slate_block_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_LINED_BRICK_STAIRS =
+            register("slate_block_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_LINED_BRICK_SLAB =
+            register("slate_block_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_LINED_BRICK_WALL =
+            register("slate_block_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_LINED_BRICK_PRESSURE_PLATE =
+            register("slate_block_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_LINED_BRICK_BUTTON =
+            register("slate_block_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_LINED_BRICK_SMOOTH_SLIGHT =
+            register("slate_block_smooth_slight_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_LINED_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("slate_block_smooth_slight_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_LINED_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("slate_block_smooth_slight_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_LINED_BRICK_SMOOTH_SLIGHT_WALL =
+            register("slate_block_smooth_slight_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("slate_block_smooth_slight_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_LINED_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("slate_block_smooth_slight_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_LINED_BRICK_SMOOTH_FAIR =
+            register("slate_block_smooth_fair_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_LINED_BRICK_SMOOTH_FAIR_STAIRS =
+            register("slate_block_smooth_fair_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_LINED_BRICK_SMOOTH_FAIR_SLAB =
+            register("slate_block_smooth_fair_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_LINED_BRICK_SMOOTH_FAIR_WALL =
+            register("slate_block_smooth_fair_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("slate_block_smooth_fair_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_LINED_BRICK_SMOOTH_FAIR_BUTTON =
+            register("slate_block_smooth_fair_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_LINED_BRICK_SMOOTH_GREAT =
+            register("slate_block_smooth_great_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_LINED_BRICK_SMOOTH_GREAT_STAIRS =
+            register("slate_block_smooth_great_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_LINED_BRICK_SMOOTH_GREAT_SLAB =
+            register("slate_block_smooth_great_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_LINED_BRICK_SMOOTH_GREAT_WALL =
+            register("slate_block_smooth_great_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("slate_block_smooth_great_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_LINED_BRICK_SMOOTH_GREAT_BUTTON =
+            register("slate_block_smooth_great_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_LINED_BRICK_SMOOTH_HEAVY =
+            register("slate_block_smooth_heavy_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_LINED_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("slate_block_smooth_heavy_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_LINED_BRICK_SMOOTH_HEAVY_SLAB =
+            register("slate_block_smooth_heavy_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_LINED_BRICK_SMOOTH_HEAVY_WALL =
+            register("slate_block_smooth_heavy_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("slate_block_smooth_heavy_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_LINED_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("slate_block_smooth_heavy_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_LINED_BRICK_SMOOTH_FINE =
+            register("slate_block_smooth_fine_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_LINED_BRICK_SMOOTH_FINE_STAIRS =
+            register("slate_block_smooth_fine_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_LINED_BRICK_SMOOTH_FINE_SLAB =
+            register("slate_block_smooth_fine_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_LINED_BRICK_SMOOTH_FINE_WALL =
+            register("slate_block_smooth_fine_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("slate_block_smooth_fine_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_LINED_BRICK_SMOOTH_FINE_BUTTON =
+            register("slate_block_smooth_fine_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> SLATE_TILE_BRICK =
+            register("slate_block_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_TILE_BRICK_STAIRS =
+            register("slate_block_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_TILE_BRICK_SLAB =
+            register("slate_block_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_TILE_BRICK_WALL =
+            register("slate_block_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_TILE_BRICK_PRESSURE_PLATE =
+            register("slate_block_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_TILE_BRICK_BUTTON =
+            register("slate_block_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_TILE_BRICK_SMOOTH_SLIGHT =
+            register("slate_block_smooth_slight_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_TILE_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("slate_block_smooth_slight_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_TILE_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("slate_block_smooth_slight_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_TILE_BRICK_SMOOTH_SLIGHT_WALL =
+            register("slate_block_smooth_slight_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("slate_block_smooth_slight_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_TILE_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("slate_block_smooth_slight_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_TILE_BRICK_SMOOTH_FAIR =
+            register("slate_block_smooth_fair_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_TILE_BRICK_SMOOTH_FAIR_STAIRS =
+            register("slate_block_smooth_fair_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_TILE_BRICK_SMOOTH_FAIR_SLAB =
+            register("slate_block_smooth_fair_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_TILE_BRICK_SMOOTH_FAIR_WALL =
+            register("slate_block_smooth_fair_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("slate_block_smooth_fair_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_TILE_BRICK_SMOOTH_FAIR_BUTTON =
+            register("slate_block_smooth_fair_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_TILE_BRICK_SMOOTH_GREAT =
+            register("slate_block_smooth_great_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_TILE_BRICK_SMOOTH_GREAT_STAIRS =
+            register("slate_block_smooth_great_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_TILE_BRICK_SMOOTH_GREAT_SLAB =
+            register("slate_block_smooth_great_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_TILE_BRICK_SMOOTH_GREAT_WALL =
+            register("slate_block_smooth_great_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("slate_block_smooth_great_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_TILE_BRICK_SMOOTH_GREAT_BUTTON =
+            register("slate_block_smooth_great_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_TILE_BRICK_SMOOTH_HEAVY =
+            register("slate_block_smooth_heavy_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_TILE_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("slate_block_smooth_heavy_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_TILE_BRICK_SMOOTH_HEAVY_SLAB =
+            register("slate_block_smooth_heavy_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_TILE_BRICK_SMOOTH_HEAVY_WALL =
+            register("slate_block_smooth_heavy_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("slate_block_smooth_heavy_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_TILE_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("slate_block_smooth_heavy_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> SLATE_TILE_BRICK_SMOOTH_FINE =
+            register("slate_block_smooth_fine_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> SLATE_TILE_BRICK_SMOOTH_FINE_STAIRS =
+            register("slate_block_smooth_fine_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.SLATE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> SLATE_TILE_BRICK_SMOOTH_FINE_SLAB =
+            register("slate_block_smooth_fine_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> SLATE_TILE_BRICK_SMOOTH_FINE_WALL =
+            register("slate_block_smooth_fine_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> SLATE_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("slate_block_smooth_fine_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> SLATE_TILE_BRICK_SMOOTH_FINE_BUTTON =
+            register("slate_block_smooth_fine_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    //endregion
+
+    //region Bimstone
+    public static final RegistryObject<Block> BIMSTONE_BLOCK_PILLAR =
+            register("bimstone_block_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> BIMSTONE_BLOCK_SMOOTH_SLIGHT_PILLAR =
+            register("bimstone_block_smooth_slight_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> BIMSTONE_BLOCK_SMOOTH_FAIR_PILLAR =
+            register("bimstone_block_smooth_fair_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> BIMSTONE_BLOCK_SMOOTH_GREAT_PILLAR =
+            register("bimstone_block_smooth_great_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> BIMSTONE_BLOCK_SMOOTH_HEAVY_PILLAR =
+            register("bimstone_block_smooth_heavy_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> BIMSTONE_BLOCK_SMOOTH_FINE_PILLAR =
+            register("bimstone_block_smooth_fine_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+
+    public static final RegistryObject<Block> BIMSTONE_BLOCK =
+            register("bimstone_block",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_STAIRS =
+            register("bimstone_block_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_SLAB =
+            register("bimstone_block_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_WALL =
+            register("bimstone_block_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_PRESSURE_PLATE =
+            register("bimstone_block_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_BUTTON =
+            register("bimstone_block_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> BIMSTONE_SMOOTH_SLIGHT =
+            register("bimstone_block_smooth_slight",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_SMOOTH_SLIGHT_STAIRS =
+            register("bimstone_block_smooth_slight_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_SMOOTH_SLIGHT_SLAB =
+            register("bimstone_block_smooth_slight_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_SMOOTH_SLIGHT_WALL =
+            register("bimstone_block_smooth_slight_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("bimstone_block_smooth_slight_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_SMOOTH_SLIGHT_BUTTON =
+            register("bimstone_block_smooth_slight_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> BIMSTONE_SMOOTH_FAIR =
+            register("bimstone_block_smooth_fair",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_SMOOTH_FAIR_STAIRS =
+            register("bimstone_block_smooth_fair_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_SMOOTH_FAIR_SLAB =
+            register("bimstone_block_smooth_fair_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_SMOOTH_FAIR_WALL =
+            register("bimstone_block_smooth_fair_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("bimstone_block_smooth_fair_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_SMOOTH_FAIR_BUTTON =
+            register("bimstone_block_smooth_fair_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> BIMSTONE_SMOOTH_GREAT =
+            register("bimstone_block_smooth_great",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_SMOOTH_GREAT_STAIRS =
+            register("bimstone_block_smooth_great_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_SMOOTH_GREAT_SLAB =
+            register("bimstone_block_smooth_great_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_SMOOTH_GREAT_WALL =
+            register("bimstone_block_smooth_great_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("bimstone_block_smooth_great_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_SMOOTH_GREAT_BUTTON =
+            register("bimstone_block_smooth_great_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> BIMSTONE_SMOOTH_HEAVY =
+            register("bimstone_block_smooth_heavy",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_SMOOTH_HEAVY_STAIRS =
+            register("bimstone_block_smooth_heavy_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_SMOOTH_HEAVY_SLAB =
+            register("bimstone_block_smooth_heavy_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_SMOOTH_HEAVY_WALL =
+            register("bimstone_block_smooth_heavy_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("bimstone_block_smooth_heavy_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_SMOOTH_HEAVY_BUTTON =
+            register("bimstone_block_smooth_heavy_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> BIMSTONE_SMOOTH_FINE =
+            register("bimstone_block_smooth_fine",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_SMOOTH_FINE_STAIRS =
+            register("bimstone_block_smooth_fine_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_SMOOTH_FINE_SLAB =
+            register("bimstone_block_smooth_fine_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_SMOOTH_FINE_WALL =
+            register("bimstone_block_smooth_fine_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_SMOOTH_FINE_PRESSURE_PLATE =
+            register("bimstone_block_smooth_fine_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_SMOOTH_FINE_BUTTON =
+            register("bimstone_block_smooth_fine_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+
+    public static final RegistryObject<Block> BIMSTONE_BRICK =
+            register("bimstone_block_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_BRICK_STAIRS =
+            register("bimstone_block_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_BRICK_SLAB =
+            register("bimstone_block_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_BRICK_WALL =
+            register("bimstone_block_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_BRICK_PRESSURE_PLATE =
+            register("bimstone_block_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_BRICK_BUTTON =
+            register("bimstone_block_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_BRICK_SMOOTH_SLIGHT =
+            register("bimstone_block_smooth_slight_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("bimstone_block_smooth_slight_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("bimstone_block_smooth_slight_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_BRICK_SMOOTH_SLIGHT_WALL =
+            register("bimstone_block_smooth_slight_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("bimstone_block_smooth_slight_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("bimstone_block_smooth_slight_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_BRICK_SMOOTH_FAIR =
+            register("bimstone_block_smooth_fair_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_BRICK_SMOOTH_FAIR_STAIRS =
+            register("bimstone_block_smooth_fair_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_BRICK_SMOOTH_FAIR_SLAB =
+            register("bimstone_block_smooth_fair_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_BRICK_SMOOTH_FAIR_WALL =
+            register("bimstone_block_smooth_fair_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("bimstone_block_smooth_fair_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_BRICK_SMOOTH_FAIR_BUTTON =
+            register("bimstone_block_smooth_fair_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_BRICK_SMOOTH_GREAT =
+            register("bimstone_block_smooth_great_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_BRICK_SMOOTH_GREAT_STAIRS =
+            register("bimstone_block_smooth_great_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_BRICK_SMOOTH_GREAT_SLAB =
+            register("bimstone_block_smooth_great_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_BRICK_SMOOTH_GREAT_WALL =
+            register("bimstone_block_smooth_great_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("bimstone_block_smooth_great_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_BRICK_SMOOTH_GREAT_BUTTON =
+            register("bimstone_block_smooth_great_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_BRICK_SMOOTH_HEAVY =
+            register("bimstone_block_smooth_heavy_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("bimstone_block_smooth_heavy_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_BRICK_SMOOTH_HEAVY_SLAB =
+            register("bimstone_block_smooth_heavy_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_BRICK_SMOOTH_HEAVY_WALL =
+            register("bimstone_block_smooth_heavy_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("bimstone_block_smooth_heavy_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("bimstone_block_smooth_heavy_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_BRICK_SMOOTH_FINE =
+            register("bimstone_block_smooth_fine_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_BRICK_SMOOTH_FINE_STAIRS =
+            register("bimstone_block_smooth_fine_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_BRICK_SMOOTH_FINE_SLAB =
+            register("bimstone_block_smooth_fine_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_BRICK_SMOOTH_FINE_WALL =
+            register("bimstone_block_smooth_fine_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("bimstone_block_smooth_fine_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_BRICK_SMOOTH_FINE_BUTTON =
+            register("bimstone_block_smooth_fine_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> BIMSTONE_LINED_BRICK =
+            register("bimstone_block_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_LINED_BRICK_STAIRS =
+            register("bimstone_block_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_LINED_BRICK_SLAB =
+            register("bimstone_block_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_LINED_BRICK_WALL =
+            register("bimstone_block_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_LINED_BRICK_PRESSURE_PLATE =
+            register("bimstone_block_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_LINED_BRICK_BUTTON =
+            register("bimstone_block_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT =
+            register("bimstone_block_smooth_slight_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("bimstone_block_smooth_slight_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("bimstone_block_smooth_slight_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_WALL =
+            register("bimstone_block_smooth_slight_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("bimstone_block_smooth_slight_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("bimstone_block_smooth_slight_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_LINED_BRICK_SMOOTH_FAIR =
+            register("bimstone_block_smooth_fair_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_LINED_BRICK_SMOOTH_FAIR_STAIRS =
+            register("bimstone_block_smooth_fair_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_LINED_BRICK_SMOOTH_FAIR_SLAB =
+            register("bimstone_block_smooth_fair_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_LINED_BRICK_SMOOTH_FAIR_WALL =
+            register("bimstone_block_smooth_fair_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("bimstone_block_smooth_fair_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_LINED_BRICK_SMOOTH_FAIR_BUTTON =
+            register("bimstone_block_smooth_fair_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_LINED_BRICK_SMOOTH_GREAT =
+            register("bimstone_block_smooth_great_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_LINED_BRICK_SMOOTH_GREAT_STAIRS =
+            register("bimstone_block_smooth_great_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_LINED_BRICK_SMOOTH_GREAT_SLAB =
+            register("bimstone_block_smooth_great_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_LINED_BRICK_SMOOTH_GREAT_WALL =
+            register("bimstone_block_smooth_great_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("bimstone_block_smooth_great_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_LINED_BRICK_SMOOTH_GREAT_BUTTON =
+            register("bimstone_block_smooth_great_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_LINED_BRICK_SMOOTH_HEAVY =
+            register("bimstone_block_smooth_heavy_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("bimstone_block_smooth_heavy_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_SLAB =
+            register("bimstone_block_smooth_heavy_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_WALL =
+            register("bimstone_block_smooth_heavy_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("bimstone_block_smooth_heavy_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("bimstone_block_smooth_heavy_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_LINED_BRICK_SMOOTH_FINE =
+            register("bimstone_block_smooth_fine_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_LINED_BRICK_SMOOTH_FINE_STAIRS =
+            register("bimstone_block_smooth_fine_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_LINED_BRICK_SMOOTH_FINE_SLAB =
+            register("bimstone_block_smooth_fine_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_LINED_BRICK_SMOOTH_FINE_WALL =
+            register("bimstone_block_smooth_fine_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("bimstone_block_smooth_fine_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_LINED_BRICK_SMOOTH_FINE_BUTTON =
+            register("bimstone_block_smooth_fine_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> BIMSTONE_TILE_BRICK =
+            register("bimstone_block_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_TILE_BRICK_STAIRS =
+            register("bimstone_block_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_TILE_BRICK_SLAB =
+            register("bimstone_block_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_TILE_BRICK_WALL =
+            register("bimstone_block_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_TILE_BRICK_PRESSURE_PLATE =
+            register("bimstone_block_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_TILE_BRICK_BUTTON =
+            register("bimstone_block_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT =
+            register("bimstone_block_smooth_slight_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("bimstone_block_smooth_slight_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("bimstone_block_smooth_slight_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_WALL =
+            register("bimstone_block_smooth_slight_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("bimstone_block_smooth_slight_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("bimstone_block_smooth_slight_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_TILE_BRICK_SMOOTH_FAIR =
+            register("bimstone_block_smooth_fair_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_TILE_BRICK_SMOOTH_FAIR_STAIRS =
+            register("bimstone_block_smooth_fair_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_TILE_BRICK_SMOOTH_FAIR_SLAB =
+            register("bimstone_block_smooth_fair_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_TILE_BRICK_SMOOTH_FAIR_WALL =
+            register("bimstone_block_smooth_fair_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("bimstone_block_smooth_fair_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_TILE_BRICK_SMOOTH_FAIR_BUTTON =
+            register("bimstone_block_smooth_fair_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_TILE_BRICK_SMOOTH_GREAT =
+            register("bimstone_block_smooth_great_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_TILE_BRICK_SMOOTH_GREAT_STAIRS =
+            register("bimstone_block_smooth_great_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_TILE_BRICK_SMOOTH_GREAT_SLAB =
+            register("bimstone_block_smooth_great_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_TILE_BRICK_SMOOTH_GREAT_WALL =
+            register("bimstone_block_smooth_great_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("bimstone_block_smooth_great_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_TILE_BRICK_SMOOTH_GREAT_BUTTON =
+            register("bimstone_block_smooth_great_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_TILE_BRICK_SMOOTH_HEAVY =
+            register("bimstone_block_smooth_heavy_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("bimstone_block_smooth_heavy_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_SLAB =
+            register("bimstone_block_smooth_heavy_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_WALL =
+            register("bimstone_block_smooth_heavy_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("bimstone_block_smooth_heavy_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("bimstone_block_smooth_heavy_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> BIMSTONE_TILE_BRICK_SMOOTH_FINE =
+            register("bimstone_block_smooth_fine_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> BIMSTONE_TILE_BRICK_SMOOTH_FINE_STAIRS =
+            register("bimstone_block_smooth_fine_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.BIMSTONE_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> BIMSTONE_TILE_BRICK_SMOOTH_FINE_SLAB =
+            register("bimstone_block_smooth_fine_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> BIMSTONE_TILE_BRICK_SMOOTH_FINE_WALL =
+            register("bimstone_block_smooth_fine_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> BIMSTONE_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("bimstone_block_smooth_fine_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> BIMSTONE_TILE_BRICK_SMOOTH_FINE_BUTTON =
+            register("bimstone_block_smooth_fine_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    //endregion
+
+    //region Gabbro
+    public static final RegistryObject<Block> GABBRO_BLOCK_PILLAR =
+            register("gabbro_block_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> GABBRO_BLOCK_SMOOTH_SLIGHT_PILLAR =
+            register("gabbro_block_smooth_slight_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> GABBRO_BLOCK_SMOOTH_FAIR_PILLAR =
+            register("gabbro_block_smooth_fair_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> GABBRO_BLOCK_SMOOTH_GREAT_PILLAR =
+            register("gabbro_block_smooth_great_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> GABBRO_BLOCK_SMOOTH_HEAVY_PILLAR =
+            register("gabbro_block_smooth_heavy_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> GABBRO_BLOCK_SMOOTH_FINE_PILLAR =
+            register("gabbro_block_smooth_fine_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+
+    public static final RegistryObject<Block> GABBRO_BLOCK =
+            register("gabbro_block",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_STAIRS =
+            register("gabbro_block_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_SLAB =
+            register("gabbro_block_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_WALL =
+            register("gabbro_block_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_PRESSURE_PLATE =
+            register("gabbro_block_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_BUTTON =
+            register("gabbro_block_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> GABBRO_SMOOTH_SLIGHT =
+            register("gabbro_block_smooth_slight",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_SMOOTH_SLIGHT_STAIRS =
+            register("gabbro_block_smooth_slight_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_SMOOTH_SLIGHT_SLAB =
+            register("gabbro_block_smooth_slight_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_SMOOTH_SLIGHT_WALL =
+            register("gabbro_block_smooth_slight_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("gabbro_block_smooth_slight_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_SMOOTH_SLIGHT_BUTTON =
+            register("gabbro_block_smooth_slight_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> GABBRO_SMOOTH_FAIR =
+            register("gabbro_block_smooth_fair",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_SMOOTH_FAIR_STAIRS =
+            register("gabbro_block_smooth_fair_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_SMOOTH_FAIR_SLAB =
+            register("gabbro_block_smooth_fair_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_SMOOTH_FAIR_WALL =
+            register("gabbro_block_smooth_fair_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("gabbro_block_smooth_fair_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_SMOOTH_FAIR_BUTTON =
+            register("gabbro_block_smooth_fair_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> GABBRO_SMOOTH_GREAT =
+            register("gabbro_block_smooth_great",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_SMOOTH_GREAT_STAIRS =
+            register("gabbro_block_smooth_great_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_SMOOTH_GREAT_SLAB =
+            register("gabbro_block_smooth_great_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_SMOOTH_GREAT_WALL =
+            register("gabbro_block_smooth_great_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("gabbro_block_smooth_great_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_SMOOTH_GREAT_BUTTON =
+            register("gabbro_block_smooth_great_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> GABBRO_SMOOTH_HEAVY =
+            register("gabbro_block_smooth_heavy",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_SMOOTH_HEAVY_STAIRS =
+            register("gabbro_block_smooth_heavy_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_SMOOTH_HEAVY_SLAB =
+            register("gabbro_block_smooth_heavy_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_SMOOTH_HEAVY_WALL =
+            register("gabbro_block_smooth_heavy_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("gabbro_block_smooth_heavy_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_SMOOTH_HEAVY_BUTTON =
+            register("gabbro_block_smooth_heavy_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> GABBRO_SMOOTH_FINE =
+            register("gabbro_block_smooth_fine",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_SMOOTH_FINE_STAIRS =
+            register("gabbro_block_smooth_fine_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_SMOOTH_FINE_SLAB =
+            register("gabbro_block_smooth_fine_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_SMOOTH_FINE_WALL =
+            register("gabbro_block_smooth_fine_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_SMOOTH_FINE_PRESSURE_PLATE =
+            register("gabbro_block_smooth_fine_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_SMOOTH_FINE_BUTTON =
+            register("gabbro_block_smooth_fine_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+
+    public static final RegistryObject<Block> GABBRO_BRICK =
+            register("gabbro_block_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_BRICK_STAIRS =
+            register("gabbro_block_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_BRICK_SLAB =
+            register("gabbro_block_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_BRICK_WALL =
+            register("gabbro_block_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_BRICK_PRESSURE_PLATE =
+            register("gabbro_block_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_BRICK_BUTTON =
+            register("gabbro_block_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_BRICK_SMOOTH_SLIGHT =
+            register("gabbro_block_smooth_slight_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("gabbro_block_smooth_slight_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("gabbro_block_smooth_slight_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_BRICK_SMOOTH_SLIGHT_WALL =
+            register("gabbro_block_smooth_slight_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("gabbro_block_smooth_slight_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("gabbro_block_smooth_slight_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_BRICK_SMOOTH_FAIR =
+            register("gabbro_block_smooth_fair_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_BRICK_SMOOTH_FAIR_STAIRS =
+            register("gabbro_block_smooth_fair_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_BRICK_SMOOTH_FAIR_SLAB =
+            register("gabbro_block_smooth_fair_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_BRICK_SMOOTH_FAIR_WALL =
+            register("gabbro_block_smooth_fair_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("gabbro_block_smooth_fair_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_BRICK_SMOOTH_FAIR_BUTTON =
+            register("gabbro_block_smooth_fair_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_BRICK_SMOOTH_GREAT =
+            register("gabbro_block_smooth_great_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_BRICK_SMOOTH_GREAT_STAIRS =
+            register("gabbro_block_smooth_great_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_BRICK_SMOOTH_GREAT_SLAB =
+            register("gabbro_block_smooth_great_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_BRICK_SMOOTH_GREAT_WALL =
+            register("gabbro_block_smooth_great_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("gabbro_block_smooth_great_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_BRICK_SMOOTH_GREAT_BUTTON =
+            register("gabbro_block_smooth_great_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_BRICK_SMOOTH_HEAVY =
+            register("gabbro_block_smooth_heavy_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("gabbro_block_smooth_heavy_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_BRICK_SMOOTH_HEAVY_SLAB =
+            register("gabbro_block_smooth_heavy_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_BRICK_SMOOTH_HEAVY_WALL =
+            register("gabbro_block_smooth_heavy_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("gabbro_block_smooth_heavy_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("gabbro_block_smooth_heavy_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_BRICK_SMOOTH_FINE =
+            register("gabbro_block_smooth_fine_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_BRICK_SMOOTH_FINE_STAIRS =
+            register("gabbro_block_smooth_fine_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_BRICK_SMOOTH_FINE_SLAB =
+            register("gabbro_block_smooth_fine_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_BRICK_SMOOTH_FINE_WALL =
+            register("gabbro_block_smooth_fine_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("gabbro_block_smooth_fine_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_BRICK_SMOOTH_FINE_BUTTON =
+            register("gabbro_block_smooth_fine_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> GABBRO_LINED_BRICK =
+            register("gabbro_block_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_LINED_BRICK_STAIRS =
+            register("gabbro_block_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_LINED_BRICK_SLAB =
+            register("gabbro_block_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_LINED_BRICK_WALL =
+            register("gabbro_block_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_LINED_BRICK_PRESSURE_PLATE =
+            register("gabbro_block_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_LINED_BRICK_BUTTON =
+            register("gabbro_block_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_LINED_BRICK_SMOOTH_SLIGHT =
+            register("gabbro_block_smooth_slight_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_LINED_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("gabbro_block_smooth_slight_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_LINED_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("gabbro_block_smooth_slight_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_LINED_BRICK_SMOOTH_SLIGHT_WALL =
+            register("gabbro_block_smooth_slight_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("gabbro_block_smooth_slight_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_LINED_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("gabbro_block_smooth_slight_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_LINED_BRICK_SMOOTH_FAIR =
+            register("gabbro_block_smooth_fair_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_LINED_BRICK_SMOOTH_FAIR_STAIRS =
+            register("gabbro_block_smooth_fair_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_LINED_BRICK_SMOOTH_FAIR_SLAB =
+            register("gabbro_block_smooth_fair_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_LINED_BRICK_SMOOTH_FAIR_WALL =
+            register("gabbro_block_smooth_fair_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("gabbro_block_smooth_fair_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_LINED_BRICK_SMOOTH_FAIR_BUTTON =
+            register("gabbro_block_smooth_fair_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_LINED_BRICK_SMOOTH_GREAT =
+            register("gabbro_block_smooth_great_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_LINED_BRICK_SMOOTH_GREAT_STAIRS =
+            register("gabbro_block_smooth_great_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_LINED_BRICK_SMOOTH_GREAT_SLAB =
+            register("gabbro_block_smooth_great_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_LINED_BRICK_SMOOTH_GREAT_WALL =
+            register("gabbro_block_smooth_great_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("gabbro_block_smooth_great_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_LINED_BRICK_SMOOTH_GREAT_BUTTON =
+            register("gabbro_block_smooth_great_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_LINED_BRICK_SMOOTH_HEAVY =
+            register("gabbro_block_smooth_heavy_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_LINED_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("gabbro_block_smooth_heavy_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_LINED_BRICK_SMOOTH_HEAVY_SLAB =
+            register("gabbro_block_smooth_heavy_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_LINED_BRICK_SMOOTH_HEAVY_WALL =
+            register("gabbro_block_smooth_heavy_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("gabbro_block_smooth_heavy_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_LINED_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("gabbro_block_smooth_heavy_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_LINED_BRICK_SMOOTH_FINE =
+            register("gabbro_block_smooth_fine_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_LINED_BRICK_SMOOTH_FINE_STAIRS =
+            register("gabbro_block_smooth_fine_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_LINED_BRICK_SMOOTH_FINE_SLAB =
+            register("gabbro_block_smooth_fine_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_LINED_BRICK_SMOOTH_FINE_WALL =
+            register("gabbro_block_smooth_fine_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("gabbro_block_smooth_fine_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_LINED_BRICK_SMOOTH_FINE_BUTTON =
+            register("gabbro_block_smooth_fine_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> GABBRO_TILE_BRICK =
+            register("gabbro_block_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_TILE_BRICK_STAIRS =
+            register("gabbro_block_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_TILE_BRICK_SLAB =
+            register("gabbro_block_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_TILE_BRICK_WALL =
+            register("gabbro_block_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_TILE_BRICK_PRESSURE_PLATE =
+            register("gabbro_block_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_TILE_BRICK_BUTTON =
+            register("gabbro_block_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_TILE_BRICK_SMOOTH_SLIGHT =
+            register("gabbro_block_smooth_slight_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_TILE_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("gabbro_block_smooth_slight_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_TILE_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("gabbro_block_smooth_slight_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_TILE_BRICK_SMOOTH_SLIGHT_WALL =
+            register("gabbro_block_smooth_slight_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("gabbro_block_smooth_slight_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_TILE_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("gabbro_block_smooth_slight_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_TILE_BRICK_SMOOTH_FAIR =
+            register("gabbro_block_smooth_fair_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_TILE_BRICK_SMOOTH_FAIR_STAIRS =
+            register("gabbro_block_smooth_fair_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_TILE_BRICK_SMOOTH_FAIR_SLAB =
+            register("gabbro_block_smooth_fair_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_TILE_BRICK_SMOOTH_FAIR_WALL =
+            register("gabbro_block_smooth_fair_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("gabbro_block_smooth_fair_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_TILE_BRICK_SMOOTH_FAIR_BUTTON =
+            register("gabbro_block_smooth_fair_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_TILE_BRICK_SMOOTH_GREAT =
+            register("gabbro_block_smooth_great_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_TILE_BRICK_SMOOTH_GREAT_STAIRS =
+            register("gabbro_block_smooth_great_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_TILE_BRICK_SMOOTH_GREAT_SLAB =
+            register("gabbro_block_smooth_great_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_TILE_BRICK_SMOOTH_GREAT_WALL =
+            register("gabbro_block_smooth_great_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("gabbro_block_smooth_great_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_TILE_BRICK_SMOOTH_GREAT_BUTTON =
+            register("gabbro_block_smooth_great_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_TILE_BRICK_SMOOTH_HEAVY =
+            register("gabbro_block_smooth_heavy_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_TILE_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("gabbro_block_smooth_heavy_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_TILE_BRICK_SMOOTH_HEAVY_SLAB =
+            register("gabbro_block_smooth_heavy_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_TILE_BRICK_SMOOTH_HEAVY_WALL =
+            register("gabbro_block_smooth_heavy_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("gabbro_block_smooth_heavy_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_TILE_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("gabbro_block_smooth_heavy_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> GABBRO_TILE_BRICK_SMOOTH_FINE =
+            register("gabbro_block_smooth_fine_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> GABBRO_TILE_BRICK_SMOOTH_FINE_STAIRS =
+            register("gabbro_block_smooth_fine_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.GABBRO_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> GABBRO_TILE_BRICK_SMOOTH_FINE_SLAB =
+            register("gabbro_block_smooth_fine_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> GABBRO_TILE_BRICK_SMOOTH_FINE_WALL =
+            register("gabbro_block_smooth_fine_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> GABBRO_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("gabbro_block_smooth_fine_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> GABBRO_TILE_BRICK_SMOOTH_FINE_BUTTON =
+            register("gabbro_block_smooth_fine_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    //endregion
+
+    //region White Gabbro
+    public static final RegistryObject<Block> WHITE_GABBRO_BLOCK_PILLAR =
+            register("white_gabbro_block_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> WHITE_GABBRO_BLOCK_SMOOTH_SLIGHT_PILLAR =
+            register("white_gabbro_block_smooth_slight_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> WHITE_GABBRO_BLOCK_SMOOTH_FAIR_PILLAR =
+            register("white_gabbro_block_smooth_fair_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> WHITE_GABBRO_BLOCK_SMOOTH_GREAT_PILLAR =
+            register("white_gabbro_block_smooth_great_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> WHITE_GABBRO_BLOCK_SMOOTH_HEAVY_PILLAR =
+            register("white_gabbro_block_smooth_heavy_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+    public static final RegistryObject<Block> WHITE_GABBRO_BLOCK_SMOOTH_FINE_PILLAR =
+            register("white_gabbro_block_smooth_fine_pillar",
+                    () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
+
+    public static final RegistryObject<Block> WHITE_GABBRO_BLOCK =
+            register("white_gabbro_block",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_STAIRS =
+            register("white_gabbro_block_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_SLAB =
+            register("white_gabbro_block_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_WALL =
+            register("white_gabbro_block_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_PRESSURE_PLATE =
+            register("white_gabbro_block_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_BUTTON =
+            register("white_gabbro_block_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> WHITE_GABBRO_SMOOTH_SLIGHT =
+            register("white_gabbro_block_smooth_slight",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_SMOOTH_SLIGHT_STAIRS =
+            register("white_gabbro_block_smooth_slight_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_SMOOTH_SLIGHT_SLAB =
+            register("white_gabbro_block_smooth_slight_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_SMOOTH_SLIGHT_WALL =
+            register("white_gabbro_block_smooth_slight_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_slight_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_SMOOTH_SLIGHT_BUTTON =
+            register("white_gabbro_block_smooth_slight_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> WHITE_GABBRO_SMOOTH_FAIR =
+            register("white_gabbro_block_smooth_fair",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_SMOOTH_FAIR_STAIRS =
+            register("white_gabbro_block_smooth_fair_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_SMOOTH_FAIR_SLAB =
+            register("white_gabbro_block_smooth_fair_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_SMOOTH_FAIR_WALL =
+            register("white_gabbro_block_smooth_fair_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_fair_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_SMOOTH_FAIR_BUTTON =
+            register("white_gabbro_block_smooth_fair_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> WHITE_GABBRO_SMOOTH_GREAT =
+            register("white_gabbro_block_smooth_great",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_SMOOTH_GREAT_STAIRS =
+            register("white_gabbro_block_smooth_great_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_SMOOTH_GREAT_SLAB =
+            register("white_gabbro_block_smooth_great_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_SMOOTH_GREAT_WALL =
+            register("white_gabbro_block_smooth_great_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_great_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_SMOOTH_GREAT_BUTTON =
+            register("white_gabbro_block_smooth_great_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> WHITE_GABBRO_SMOOTH_HEAVY =
+            register("white_gabbro_block_smooth_heavy",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_SMOOTH_HEAVY_STAIRS =
+            register("white_gabbro_block_smooth_heavy_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_SMOOTH_HEAVY_SLAB =
+            register("white_gabbro_block_smooth_heavy_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_SMOOTH_HEAVY_WALL =
+            register("white_gabbro_block_smooth_heavy_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_heavy_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_SMOOTH_HEAVY_BUTTON =
+            register("white_gabbro_block_smooth_heavy_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> WHITE_GABBRO_SMOOTH_FINE =
+            register("white_gabbro_block_smooth_fine",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_SMOOTH_FINE_STAIRS =
+            register("white_gabbro_block_smooth_fine_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_BLOCK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_SMOOTH_FINE_SLAB =
+            register("white_gabbro_block_smooth_fine_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_SMOOTH_FINE_WALL =
+            register("white_gabbro_block_smooth_fine_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_SMOOTH_FINE_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_fine_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_SMOOTH_FINE_BUTTON =
+            register("white_gabbro_block_smooth_fine_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+
+    public static final RegistryObject<Block> WHITE_GABBRO_BRICK =
+            register("white_gabbro_block_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_BRICK_STAIRS =
+            register("white_gabbro_block_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_BRICK_SLAB =
+            register("white_gabbro_block_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_BRICK_WALL =
+            register("white_gabbro_block_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_BRICK_PRESSURE_PLATE =
+            register("white_gabbro_block_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_BRICK_BUTTON =
+            register("white_gabbro_block_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_BRICK_SMOOTH_SLIGHT =
+            register("white_gabbro_block_smooth_slight_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("white_gabbro_block_smooth_slight_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("white_gabbro_block_smooth_slight_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_WALL =
+            register("white_gabbro_block_smooth_slight_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_slight_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("white_gabbro_block_smooth_slight_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_BRICK_SMOOTH_FAIR =
+            register("white_gabbro_block_smooth_fair_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_BRICK_SMOOTH_FAIR_STAIRS =
+            register("white_gabbro_block_smooth_fair_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_BRICK_SMOOTH_FAIR_SLAB =
+            register("white_gabbro_block_smooth_fair_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_BRICK_SMOOTH_FAIR_WALL =
+            register("white_gabbro_block_smooth_fair_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_fair_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_BRICK_SMOOTH_FAIR_BUTTON =
+            register("white_gabbro_block_smooth_fair_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_BRICK_SMOOTH_GREAT =
+            register("white_gabbro_block_smooth_great_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_BRICK_SMOOTH_GREAT_STAIRS =
+            register("white_gabbro_block_smooth_great_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_BRICK_SMOOTH_GREAT_SLAB =
+            register("white_gabbro_block_smooth_great_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_BRICK_SMOOTH_GREAT_WALL =
+            register("white_gabbro_block_smooth_great_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_great_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_BRICK_SMOOTH_GREAT_BUTTON =
+            register("white_gabbro_block_smooth_great_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_BRICK_SMOOTH_HEAVY =
+            register("white_gabbro_block_smooth_heavy_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("white_gabbro_block_smooth_heavy_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_BRICK_SMOOTH_HEAVY_SLAB =
+            register("white_gabbro_block_smooth_heavy_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_BRICK_SMOOTH_HEAVY_WALL =
+            register("white_gabbro_block_smooth_heavy_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_heavy_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("white_gabbro_block_smooth_heavy_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_BRICK_SMOOTH_FINE =
+            register("white_gabbro_block_smooth_fine_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_BRICK_SMOOTH_FINE_STAIRS =
+            register("white_gabbro_block_smooth_fine_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_BRICK_SMOOTH_FINE_SLAB =
+            register("white_gabbro_block_smooth_fine_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_BRICK_SMOOTH_FINE_WALL =
+            register("white_gabbro_block_smooth_fine_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_fine_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_BRICK_SMOOTH_FINE_BUTTON =
+            register("white_gabbro_block_smooth_fine_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> WHITE_GABBRO_LINED_BRICK =
+            register("white_gabbro_block_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_LINED_BRICK_STAIRS =
+            register("white_gabbro_block_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_LINED_BRICK_SLAB =
+            register("white_gabbro_block_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_LINED_BRICK_WALL =
+            register("white_gabbro_block_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_LINED_BRICK_PRESSURE_PLATE =
+            register("white_gabbro_block_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_LINED_BRICK_BUTTON =
+            register("white_gabbro_block_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT =
+            register("white_gabbro_block_smooth_slight_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("white_gabbro_block_smooth_slight_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("white_gabbro_block_smooth_slight_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_WALL =
+            register("white_gabbro_block_smooth_slight_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_slight_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("white_gabbro_block_smooth_slight_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR =
+            register("white_gabbro_block_smooth_fair_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_STAIRS =
+            register("white_gabbro_block_smooth_fair_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_SLAB =
+            register("white_gabbro_block_smooth_fair_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_WALL =
+            register("white_gabbro_block_smooth_fair_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_fair_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_BUTTON =
+            register("white_gabbro_block_smooth_fair_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT =
+            register("white_gabbro_block_smooth_great_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_STAIRS =
+            register("white_gabbro_block_smooth_great_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_SLAB =
+            register("white_gabbro_block_smooth_great_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_WALL =
+            register("white_gabbro_block_smooth_great_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_great_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_BUTTON =
+            register("white_gabbro_block_smooth_great_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY =
+            register("white_gabbro_block_smooth_heavy_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("white_gabbro_block_smooth_heavy_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_SLAB =
+            register("white_gabbro_block_smooth_heavy_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_WALL =
+            register("white_gabbro_block_smooth_heavy_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_heavy_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("white_gabbro_block_smooth_heavy_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE =
+            register("white_gabbro_block_smooth_fine_lined_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_STAIRS =
+            register("white_gabbro_block_smooth_fine_lined_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_LINED_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_SLAB =
+            register("white_gabbro_block_smooth_fine_lined_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_WALL =
+            register("white_gabbro_block_smooth_fine_lined_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_fine_lined_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_BUTTON =
+            register("white_gabbro_block_smooth_fine_lined_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+
+    public static final RegistryObject<Block> WHITE_GABBRO_TILE_BRICK =
+            register("white_gabbro_block_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_TILE_BRICK_STAIRS =
+            register("white_gabbro_block_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_TILE_BRICK_SLAB =
+            register("white_gabbro_block_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_TILE_BRICK_WALL =
+            register("white_gabbro_block_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_TILE_BRICK_PRESSURE_PLATE =
+            register("white_gabbro_block_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_TILE_BRICK_BUTTON =
+            register("white_gabbro_block_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT =
+            register("white_gabbro_block_smooth_slight_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_STAIRS =
+            register("white_gabbro_block_smooth_slight_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_SLAB =
+            register("white_gabbro_block_smooth_slight_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_WALL =
+            register("white_gabbro_block_smooth_slight_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_slight_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_BUTTON =
+            register("white_gabbro_block_smooth_slight_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR =
+            register("white_gabbro_block_smooth_fair_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_STAIRS =
+            register("white_gabbro_block_smooth_fair_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_SLAB =
+            register("white_gabbro_block_smooth_fair_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_WALL =
+            register("white_gabbro_block_smooth_fair_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_fair_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_BUTTON =
+            register("white_gabbro_block_smooth_fair_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT =
+            register("white_gabbro_block_smooth_great_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_STAIRS =
+            register("white_gabbro_block_smooth_great_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_SLAB =
+            register("white_gabbro_block_smooth_great_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_WALL =
+            register("white_gabbro_block_smooth_great_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_great_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_BUTTON =
+            register("white_gabbro_block_smooth_great_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY =
+            register("white_gabbro_block_smooth_heavy_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_STAIRS =
+            register("white_gabbro_block_smooth_heavy_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_SLAB =
+            register("white_gabbro_block_smooth_heavy_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_WALL =
+            register("white_gabbro_block_smooth_heavy_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_heavy_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_BUTTON =
+            register("white_gabbro_block_smooth_heavy_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
+    public static final RegistryObject<Block> WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE =
+            register("white_gabbro_block_smooth_fine_tile_brick",
+                    () -> new Block(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<StairBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_STAIRS =
+            register("white_gabbro_block_smooth_fine_tile_brick_stairs",
+                    () -> new StairBlock(() -> ModBlocks.WHITE_GABBRO_TILE_BRICK.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<SlabBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_SLAB =
+            register("white_gabbro_block_smooth_fine_tile_brick_slab",
+                    () -> new SlabBlock(Block.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<WallBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_WALL =
+            register("white_gabbro_block_smooth_fine_tile_brick_wall",
+                    () -> new WallBlock(Block.Properties.copy(Blocks.STONE_BRICK_WALL)));
+    public static final RegistryObject<PressurePlateBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE =
+            register("white_gabbro_block_smooth_fine_tile_brick_pressure_plate",
+                    () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, Block.Properties.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final RegistryObject<ButtonBlock> WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_BUTTON =
+            register("white_gabbro_block_smooth_fine_tile_brick_button",
+                    () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
     //endregion
 
     //region Nepheline Syenite
@@ -930,9 +2751,7 @@ public class ModBlocks {
                     () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
     //endregion
 
-
     //region Anorthosite
-
     public static final RegistryObject<Block> ANORTHOSITE_BLOCK_PILLAR =
             register("anorthosite_block_pillar",
                     () -> new RotatedPillarBlock(Block.Properties.copy(Blocks.QUARTZ_PILLAR)));
@@ -1394,7 +3213,6 @@ public class ModBlocks {
                     () -> new StoneButtonBlock(Block.Properties.copy(Blocks.STONE_BUTTON)));
     //endregion
 
-
     //region Limestone
     public static final RegistryObject<Block> LIMESTONE =
             register("limestone_block",
@@ -1478,7 +3296,6 @@ public class ModBlocks {
             register("limestone_lever",
                     () -> new LeverBlock(Block.Properties.copy(Blocks.LEVER)));
     //endregion
-
 
     //region Slight Limestone
     public static final RegistryObject<Block> LIMESTONE_SMOOTH_SLIGHT =
@@ -1564,7 +3381,6 @@ public class ModBlocks {
                     () -> new LeverBlock(Block.Properties.copy(Blocks.LEVER)));
     //endregion
 
-
     //region Fair Limestone
     public static final RegistryObject<Block> LIMESTONE_SMOOTH_FAIR =
             register("limestone_block_smooth_fair",
@@ -1649,7 +3465,6 @@ public class ModBlocks {
                     () -> new LeverBlock(Block.Properties.copy(Blocks.LEVER)));
     //endregion
 
-
     //region Great Limestone
     public static final RegistryObject<Block> LIMESTONE_SMOOTH_GREAT =
             register("limestone_block_smooth_great",
@@ -1730,7 +3545,6 @@ public class ModBlocks {
             register("limestone_block_smooth_great_lever",
                     () -> new LeverBlock(Block.Properties.copy(Blocks.LEVER)));
     //endregion
-
 
     //region Heavy Limestone
     public static final RegistryObject<Block> LIMESTONE_SMOOTH_HEAVY =
@@ -1816,7 +3630,6 @@ public class ModBlocks {
                     () -> new LeverBlock(Block.Properties.copy(Blocks.LEVER)));
     //endregion
 
-
     //region Fine Limestone
     public static final RegistryObject<Block> LIMESTONE_SMOOTH_FINE =
             register("limestone_block_smooth_fine",
@@ -1900,7 +3713,6 @@ public class ModBlocks {
             register("limestone_block_smooth_fine_lever",
                     () -> new LeverBlock(Block.Properties.copy(Blocks.LEVER)));
     //endregion
-
 
     //region Glowstone & Shroomlight Limestone
     public static final RegistryObject<GlowstoneBlock> LIMESTONE_GLOWSTONE =
@@ -2451,6 +4263,10 @@ public class ModBlocks {
 
     public static final RegistryObject<WirelessLampControllerBlock> WIRELESS_LAMP_CONTROLLER =
             register("wireless_lamp_controller", WirelessLampControllerBlock::new);
+    public static final RegistryObject<BigSlidingDoorBlock> BIG_SLIDING_DOOR =
+            register("big_sliding_door", BigSlidingDoorBlock::new);
+    public static final RegistryObject<BoundingBlock> BOUNDING=
+            register("bounding", BoundingBlock::new);
 
     public static final RegistryObject<TubeLampBlock> WHITE_TUBE_LAMP =
             register("white_tube_lamp", () -> new TubeLampBlock(true, false));

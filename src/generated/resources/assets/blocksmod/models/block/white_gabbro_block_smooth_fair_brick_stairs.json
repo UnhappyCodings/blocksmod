@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "side": "blocksmod:block/white_gabbro_block_smooth_fair_brick",
+    "bottom": "blocksmod:block/white_gabbro_block_smooth_fair_brick",
+    "top": "blocksmod:block/white_gabbro_block_smooth_fair_brick"
+  }
+}

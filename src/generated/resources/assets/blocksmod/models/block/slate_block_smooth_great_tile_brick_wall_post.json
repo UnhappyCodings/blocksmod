@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "blocksmod:block/slate_block_smooth_great_tile_brick"
+  }
+}

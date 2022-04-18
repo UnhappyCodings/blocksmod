@@ -4,6 +4,7 @@ import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.common.block.ModBlocks;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -15,14 +16,643 @@ public class ModelAndBlockStatesProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlock(ModBlocks.LIMESTONE.get());
-        stairsBlock(ModBlocks.LIMESTONE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
-        slabBlock(ModBlocks.LIMESTONE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
-        buttonBlock(ModBlocks.LIMESTONE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
-        pressurePlateBlock(ModBlocks.LIMESTONE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
-        wallBlock(ModBlocks.LIMESTONE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
+
+        //region Slate
+        axisBlock((RotatedPillarBlock) ModBlocks.SLATE_BLOCK_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.SLATE_BLOCK_SMOOTH_SLIGHT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.SLATE_BLOCK_SMOOTH_FAIR_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.SLATE_BLOCK_SMOOTH_GREAT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.SLATE_BLOCK_SMOOTH_HEAVY_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.SLATE_BLOCK_SMOOTH_FINE_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_pillar_top"));
+
+        simpleBlock(ModBlocks.SLATE_BLOCK.get());
+        stairsBlock(ModBlocks.SLATE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block"));
+        slabBlock(ModBlocks.SLATE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block"));
+        buttonBlock(ModBlocks.SLATE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block"));
+        pressurePlateBlock(ModBlocks.SLATE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block"));
+        wallBlock(ModBlocks.SLATE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block"));
+        simpleBlock(ModBlocks.SLATE_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.SLATE_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight"));
+        slabBlock(ModBlocks.SLATE_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight"));
+        buttonBlock(ModBlocks.SLATE_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight"));
+        pressurePlateBlock(ModBlocks.SLATE_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight"));
+        wallBlock(ModBlocks.SLATE_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight"));
+        simpleBlock(ModBlocks.SLATE_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.SLATE_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair"));
+        slabBlock(ModBlocks.SLATE_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair"));
+        buttonBlock(ModBlocks.SLATE_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair"));
+        pressurePlateBlock(ModBlocks.SLATE_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair"));
+        wallBlock(ModBlocks.SLATE_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair"));
+        simpleBlock(ModBlocks.SLATE_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.SLATE_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great"));
+        slabBlock(ModBlocks.SLATE_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great"));
+        buttonBlock(ModBlocks.SLATE_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great"));
+        pressurePlateBlock(ModBlocks.SLATE_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great"));
+        wallBlock(ModBlocks.SLATE_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great"));
+        simpleBlock(ModBlocks.SLATE_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.SLATE_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy"));
+        slabBlock(ModBlocks.SLATE_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy"));
+        buttonBlock(ModBlocks.SLATE_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy"));
+        pressurePlateBlock(ModBlocks.SLATE_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy"));
+        wallBlock(ModBlocks.SLATE_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy"));
+        simpleBlock(ModBlocks.SLATE_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.SLATE_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine"));
+        slabBlock(ModBlocks.SLATE_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine"));
+        buttonBlock(ModBlocks.SLATE_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine"));
+        pressurePlateBlock(ModBlocks.SLATE_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine"));
+        wallBlock(ModBlocks.SLATE_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine"));
+
+        simpleBlock(ModBlocks.SLATE_BRICK.get());
+        stairsBlock(ModBlocks.SLATE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_brick"));
+        slabBlock(ModBlocks.SLATE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_brick"));
+        buttonBlock(ModBlocks.SLATE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_brick"));
+        wallBlock(ModBlocks.SLATE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_brick"));
+        simpleBlock(ModBlocks.SLATE_BRICK_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.SLATE_BRICK_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_brick"));
+        slabBlock(ModBlocks.SLATE_BRICK_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_brick"));
+        buttonBlock(ModBlocks.SLATE_BRICK_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_brick"));
+        wallBlock(ModBlocks.SLATE_BRICK_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_brick"));
+        simpleBlock(ModBlocks.SLATE_BRICK_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.SLATE_BRICK_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_brick"));
+        slabBlock(ModBlocks.SLATE_BRICK_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_brick"));
+        buttonBlock(ModBlocks.SLATE_BRICK_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_brick"));
+        wallBlock(ModBlocks.SLATE_BRICK_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_brick"));
+        simpleBlock(ModBlocks.SLATE_BRICK_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.SLATE_BRICK_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_brick"));
+        slabBlock(ModBlocks.SLATE_BRICK_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_brick"));
+        buttonBlock(ModBlocks.SLATE_BRICK_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_brick"));
+        wallBlock(ModBlocks.SLATE_BRICK_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_brick"));
+        simpleBlock(ModBlocks.SLATE_BRICK_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.SLATE_BRICK_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_brick"));
+        slabBlock(ModBlocks.SLATE_BRICK_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_brick"));
+        buttonBlock(ModBlocks.SLATE_BRICK_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_brick"));
+        wallBlock(ModBlocks.SLATE_BRICK_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_brick"));
+        simpleBlock(ModBlocks.SLATE_BRICK_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.SLATE_BRICK_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_brick"));
+        slabBlock(ModBlocks.SLATE_BRICK_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_brick"));
+        buttonBlock(ModBlocks.SLATE_BRICK_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_brick"));
+        wallBlock(ModBlocks.SLATE_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_brick"));
+
+        simpleBlock(ModBlocks.SLATE_LINED_BRICK.get());
+        stairsBlock(ModBlocks.SLATE_LINED_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_lined_brick"));
+        slabBlock(ModBlocks.SLATE_LINED_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_lined_brick"));
+        buttonBlock(ModBlocks.SLATE_LINED_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_lined_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_LINED_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_lined_brick"));
+        wallBlock(ModBlocks.SLATE_LINED_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_lined_brick"));
+        simpleBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_lined_brick"));
+        slabBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_lined_brick"));
+        buttonBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_lined_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_lined_brick"));
+        wallBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_lined_brick"));
+        simpleBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_lined_brick"));
+        slabBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_lined_brick"));
+        buttonBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_lined_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_lined_brick"));
+        wallBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_lined_brick"));
+        simpleBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_lined_brick"));
+        slabBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_lined_brick"));
+        buttonBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_lined_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_lined_brick"));
+        wallBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_lined_brick"));
+        simpleBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_lined_brick"));
+        slabBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_lined_brick"));
+        buttonBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_lined_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_lined_brick"));
+        wallBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_lined_brick"));
+        simpleBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_lined_brick"));
+        slabBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_lined_brick"));
+        buttonBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_lined_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_lined_brick"));
+        wallBlock(ModBlocks.SLATE_LINED_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_lined_brick"));
+
+        simpleBlock(ModBlocks.SLATE_TILE_BRICK.get());
+        stairsBlock(ModBlocks.SLATE_TILE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_tile_brick"));
+        slabBlock(ModBlocks.SLATE_TILE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_tile_brick"));
+        buttonBlock(ModBlocks.SLATE_TILE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_tile_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_TILE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_tile_brick"));
+        wallBlock(ModBlocks.SLATE_TILE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_tile_brick"));
+        simpleBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_tile_brick"));
+        slabBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_tile_brick"));
+        buttonBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_tile_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_tile_brick"));
+        wallBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_slight_tile_brick"));
+        simpleBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_tile_brick"));
+        slabBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_tile_brick"));
+        buttonBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_tile_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_tile_brick"));
+        wallBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fair_tile_brick"));
+        simpleBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_tile_brick"));
+        slabBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_tile_brick"));
+        buttonBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_tile_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_tile_brick"));
+        wallBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_great_tile_brick"));
+        simpleBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_tile_brick"));
+        slabBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_tile_brick"));
+        buttonBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_tile_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_tile_brick"));
+        wallBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_heavy_tile_brick"));
+        simpleBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_tile_brick"));
+        slabBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_tile_brick"));
+        buttonBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_tile_brick"));
+        pressurePlateBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_tile_brick"));
+        wallBlock(ModBlocks.SLATE_TILE_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/slate_block_smooth_fine_tile_brick"));
+        //endregion
+
+        //region Bimstone
+        axisBlock((RotatedPillarBlock) ModBlocks.BIMSTONE_BLOCK_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.BIMSTONE_BLOCK_SMOOTH_SLIGHT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.BIMSTONE_BLOCK_SMOOTH_FAIR_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.BIMSTONE_BLOCK_SMOOTH_GREAT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.BIMSTONE_BLOCK_SMOOTH_HEAVY_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.BIMSTONE_BLOCK_SMOOTH_FINE_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_pillar_top"));
+
+        simpleBlock(ModBlocks.BIMSTONE_BLOCK.get());
+        stairsBlock(ModBlocks.BIMSTONE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block"));
+        slabBlock(ModBlocks.BIMSTONE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block"));
+        buttonBlock(ModBlocks.BIMSTONE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block"));
+        wallBlock(ModBlocks.BIMSTONE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block"));
+        simpleBlock(ModBlocks.BIMSTONE_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.BIMSTONE_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight"));
+        slabBlock(ModBlocks.BIMSTONE_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight"));
+        buttonBlock(ModBlocks.BIMSTONE_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight"));
+        wallBlock(ModBlocks.BIMSTONE_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight"));
+        simpleBlock(ModBlocks.BIMSTONE_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.BIMSTONE_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair"));
+        slabBlock(ModBlocks.BIMSTONE_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair"));
+        buttonBlock(ModBlocks.BIMSTONE_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair"));
+        wallBlock(ModBlocks.BIMSTONE_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair"));
+        simpleBlock(ModBlocks.BIMSTONE_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.BIMSTONE_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great"));
+        slabBlock(ModBlocks.BIMSTONE_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great"));
+        buttonBlock(ModBlocks.BIMSTONE_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great"));
+        wallBlock(ModBlocks.BIMSTONE_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great"));
+        simpleBlock(ModBlocks.BIMSTONE_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.BIMSTONE_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy"));
+        slabBlock(ModBlocks.BIMSTONE_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy"));
+        buttonBlock(ModBlocks.BIMSTONE_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy"));
+        wallBlock(ModBlocks.BIMSTONE_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy"));
+        simpleBlock(ModBlocks.BIMSTONE_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.BIMSTONE_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine"));
+        slabBlock(ModBlocks.BIMSTONE_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine"));
+        buttonBlock(ModBlocks.BIMSTONE_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine"));
+        wallBlock(ModBlocks.BIMSTONE_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine"));
+
+        simpleBlock(ModBlocks.BIMSTONE_BRICK.get());
+        stairsBlock(ModBlocks.BIMSTONE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_brick"));
+        slabBlock(ModBlocks.BIMSTONE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_brick"));
+        wallBlock(ModBlocks.BIMSTONE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_brick"));
+        slabBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_brick"));
+        wallBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_brick"));
+        slabBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_brick"));
+        wallBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_brick"));
+        slabBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_brick"));
+        wallBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_brick"));
+        slabBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_brick"));
+        wallBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_brick"));
+        slabBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_brick"));
+        wallBlock(ModBlocks.BIMSTONE_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_brick"));
+
+        simpleBlock(ModBlocks.BIMSTONE_LINED_BRICK.get());
+        stairsBlock(ModBlocks.BIMSTONE_LINED_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_lined_brick"));
+        slabBlock(ModBlocks.BIMSTONE_LINED_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_lined_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_LINED_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_lined_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_LINED_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_lined_brick"));
+        wallBlock(ModBlocks.BIMSTONE_LINED_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_lined_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_lined_brick"));
+        slabBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_lined_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_lined_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_lined_brick"));
+        wallBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_lined_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_lined_brick"));
+        slabBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_lined_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_lined_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_lined_brick"));
+        wallBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_lined_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_lined_brick"));
+        slabBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_lined_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_lined_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_lined_brick"));
+        wallBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_lined_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_lined_brick"));
+        slabBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_lined_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_lined_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_lined_brick"));
+        wallBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_lined_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_lined_brick"));
+        slabBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_lined_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_lined_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_lined_brick"));
+        wallBlock(ModBlocks.BIMSTONE_LINED_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_lined_brick"));
+
+        simpleBlock(ModBlocks.BIMSTONE_TILE_BRICK.get());
+        stairsBlock(ModBlocks.BIMSTONE_TILE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_tile_brick"));
+        slabBlock(ModBlocks.BIMSTONE_TILE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_tile_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_TILE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_tile_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_TILE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_tile_brick"));
+        wallBlock(ModBlocks.BIMSTONE_TILE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_tile_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_tile_brick"));
+        slabBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_tile_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_tile_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_tile_brick"));
+        wallBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_slight_tile_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_tile_brick"));
+        slabBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_tile_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_tile_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_tile_brick"));
+        wallBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fair_tile_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_tile_brick"));
+        slabBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_tile_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_tile_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_tile_brick"));
+        wallBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_great_tile_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_tile_brick"));
+        slabBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_tile_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_tile_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_tile_brick"));
+        wallBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_heavy_tile_brick"));
+        simpleBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_tile_brick"));
+        slabBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_tile_brick"));
+        buttonBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_tile_brick"));
+        pressurePlateBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_tile_brick"));
+        wallBlock(ModBlocks.BIMSTONE_TILE_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/bimstone_block_smooth_fine_tile_brick"));
+        //endregion
+
+        //region Gabbro
+        axisBlock((RotatedPillarBlock) ModBlocks.GABBRO_BLOCK_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.GABBRO_BLOCK_SMOOTH_SLIGHT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.GABBRO_BLOCK_SMOOTH_FAIR_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.GABBRO_BLOCK_SMOOTH_GREAT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.GABBRO_BLOCK_SMOOTH_HEAVY_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.GABBRO_BLOCK_SMOOTH_FINE_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_pillar_top"));
+
+        simpleBlock(ModBlocks.GABBRO_BLOCK.get());
+        stairsBlock(ModBlocks.GABBRO_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"));
+        slabBlock(ModBlocks.GABBRO_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"));
+        buttonBlock(ModBlocks.GABBRO_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"));
+        pressurePlateBlock(ModBlocks.GABBRO_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"));
+        wallBlock(ModBlocks.GABBRO_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"));
+        simpleBlock(ModBlocks.GABBRO_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.GABBRO_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight"));
+        slabBlock(ModBlocks.GABBRO_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight"));
+        buttonBlock(ModBlocks.GABBRO_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight"));
+        pressurePlateBlock(ModBlocks.GABBRO_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight"));
+        wallBlock(ModBlocks.GABBRO_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight"));
+        simpleBlock(ModBlocks.GABBRO_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.GABBRO_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair"));
+        slabBlock(ModBlocks.GABBRO_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair"));
+        buttonBlock(ModBlocks.GABBRO_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair"));
+        pressurePlateBlock(ModBlocks.GABBRO_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair"));
+        wallBlock(ModBlocks.GABBRO_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair"));
+        simpleBlock(ModBlocks.GABBRO_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.GABBRO_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great"));
+        slabBlock(ModBlocks.GABBRO_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great"));
+        buttonBlock(ModBlocks.GABBRO_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great"));
+        pressurePlateBlock(ModBlocks.GABBRO_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great"));
+        wallBlock(ModBlocks.GABBRO_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great"));
+        simpleBlock(ModBlocks.GABBRO_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.GABBRO_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy"));
+        slabBlock(ModBlocks.GABBRO_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy"));
+        buttonBlock(ModBlocks.GABBRO_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy"));
+        pressurePlateBlock(ModBlocks.GABBRO_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy"));
+        wallBlock(ModBlocks.GABBRO_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy"));
+        simpleBlock(ModBlocks.GABBRO_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.GABBRO_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine"));
+        slabBlock(ModBlocks.GABBRO_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine"));
+        buttonBlock(ModBlocks.GABBRO_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine"));
+        pressurePlateBlock(ModBlocks.GABBRO_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine"));
+        wallBlock(ModBlocks.GABBRO_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine"));
+
+        simpleBlock(ModBlocks.GABBRO_BRICK.get());
+        stairsBlock(ModBlocks.GABBRO_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_brick"));
+        slabBlock(ModBlocks.GABBRO_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_brick"));
+        buttonBlock(ModBlocks.GABBRO_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_brick"));
+        wallBlock(ModBlocks.GABBRO_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_brick"));
+        simpleBlock(ModBlocks.GABBRO_BRICK_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.GABBRO_BRICK_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_brick"));
+        slabBlock(ModBlocks.GABBRO_BRICK_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_brick"));
+        buttonBlock(ModBlocks.GABBRO_BRICK_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_brick"));
+        wallBlock(ModBlocks.GABBRO_BRICK_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_brick"));
+        simpleBlock(ModBlocks.GABBRO_BRICK_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.GABBRO_BRICK_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_brick"));
+        slabBlock(ModBlocks.GABBRO_BRICK_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_brick"));
+        buttonBlock(ModBlocks.GABBRO_BRICK_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_brick"));
+        wallBlock(ModBlocks.GABBRO_BRICK_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_brick"));
+        simpleBlock(ModBlocks.GABBRO_BRICK_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.GABBRO_BRICK_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_brick"));
+        slabBlock(ModBlocks.GABBRO_BRICK_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_brick"));
+        buttonBlock(ModBlocks.GABBRO_BRICK_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_brick"));
+        wallBlock(ModBlocks.GABBRO_BRICK_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_brick"));
+        simpleBlock(ModBlocks.GABBRO_BRICK_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.GABBRO_BRICK_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_brick"));
+        slabBlock(ModBlocks.GABBRO_BRICK_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_brick"));
+        buttonBlock(ModBlocks.GABBRO_BRICK_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_brick"));
+        wallBlock(ModBlocks.GABBRO_BRICK_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_brick"));
+        simpleBlock(ModBlocks.GABBRO_BRICK_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.GABBRO_BRICK_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_brick"));
+        slabBlock(ModBlocks.GABBRO_BRICK_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_brick"));
+        buttonBlock(ModBlocks.GABBRO_BRICK_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_brick"));
+        wallBlock(ModBlocks.GABBRO_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_brick"));
+
+        simpleBlock(ModBlocks.GABBRO_LINED_BRICK.get());
+        stairsBlock(ModBlocks.GABBRO_LINED_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_lined_brick"));
+        slabBlock(ModBlocks.GABBRO_LINED_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_lined_brick"));
+        buttonBlock(ModBlocks.GABBRO_LINED_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_lined_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_LINED_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_lined_brick"));
+        wallBlock(ModBlocks.GABBRO_LINED_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_lined_brick"));
+        simpleBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_lined_brick"));
+        slabBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_lined_brick"));
+        buttonBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_lined_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_lined_brick"));
+        wallBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_lined_brick"));
+        simpleBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_lined_brick"));
+        slabBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_lined_brick"));
+        buttonBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_lined_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_lined_brick"));
+        wallBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_lined_brick"));
+        simpleBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_lined_brick"));
+        slabBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_lined_brick"));
+        buttonBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_lined_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_lined_brick"));
+        wallBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_lined_brick"));
+        simpleBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_lined_brick"));
+        slabBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_lined_brick"));
+        buttonBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_lined_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_lined_brick"));
+        wallBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_lined_brick"));
+        simpleBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_lined_brick"));
+        slabBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_lined_brick"));
+        buttonBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_lined_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_lined_brick"));
+        wallBlock(ModBlocks.GABBRO_LINED_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_lined_brick"));
+
+        simpleBlock(ModBlocks.GABBRO_TILE_BRICK.get());
+        stairsBlock(ModBlocks.GABBRO_TILE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_tile_brick"));
+        slabBlock(ModBlocks.GABBRO_TILE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_tile_brick"));
+        buttonBlock(ModBlocks.GABBRO_TILE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_tile_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_TILE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_tile_brick"));
+        wallBlock(ModBlocks.GABBRO_TILE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_tile_brick"));
+        simpleBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_tile_brick"));
+        slabBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_tile_brick"));
+        buttonBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_tile_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_tile_brick"));
+        wallBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_slight_tile_brick"));
+        simpleBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_tile_brick"));
+        slabBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_tile_brick"));
+        buttonBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_tile_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_tile_brick"));
+        wallBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fair_tile_brick"));
+        simpleBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_tile_brick"));
+        slabBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_tile_brick"));
+        buttonBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_tile_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_tile_brick"));
+        wallBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_great_tile_brick"));
+        simpleBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_tile_brick"));
+        slabBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_tile_brick"));
+        buttonBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_tile_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_tile_brick"));
+        wallBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_heavy_tile_brick"));
+        simpleBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_tile_brick"));
+        slabBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_tile_brick"));
+        buttonBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_tile_brick"));
+        pressurePlateBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_tile_brick"));
+        wallBlock(ModBlocks.GABBRO_TILE_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block_smooth_fine_tile_brick"));
+        //endregion
+
+        //region White Gabbro
+        axisBlock((RotatedPillarBlock) ModBlocks.WHITE_GABBRO_BLOCK_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.WHITE_GABBRO_BLOCK_SMOOTH_SLIGHT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.WHITE_GABBRO_BLOCK_SMOOTH_FAIR_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.WHITE_GABBRO_BLOCK_SMOOTH_GREAT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.WHITE_GABBRO_BLOCK_SMOOTH_HEAVY_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.WHITE_GABBRO_BLOCK_SMOOTH_FINE_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_pillar_top"));
+
+        simpleBlock(ModBlocks.WHITE_GABBRO_BLOCK.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block"));
+        slabBlock(ModBlocks.WHITE_GABBRO_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block"));
+        wallBlock(ModBlocks.WHITE_GABBRO_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight"));
+        slabBlock(ModBlocks.WHITE_GABBRO_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight"));
+        wallBlock(ModBlocks.WHITE_GABBRO_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair"));
+        slabBlock(ModBlocks.WHITE_GABBRO_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair"));
+        wallBlock(ModBlocks.WHITE_GABBRO_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great"));
+        slabBlock(ModBlocks.WHITE_GABBRO_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great"));
+        wallBlock(ModBlocks.WHITE_GABBRO_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy"));
+        slabBlock(ModBlocks.WHITE_GABBRO_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy"));
+        wallBlock(ModBlocks.WHITE_GABBRO_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine"));
+        slabBlock(ModBlocks.WHITE_GABBRO_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine"));
+        wallBlock(ModBlocks.WHITE_GABBRO_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine"));
+
+        simpleBlock(ModBlocks.WHITE_GABBRO_BRICK.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_brick"));
+
+        simpleBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_lined_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_lined_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_lined_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_lined_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_lined_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_lined_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_lined_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_lined_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_lined_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_lined_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_lined_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_lined_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_lined_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_lined_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_lined_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_lined_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_lined_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_lined_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_lined_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_lined_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_lined_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_lined_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_lined_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_lined_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_lined_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_lined_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_lined_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_lined_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_lined_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_LINED_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_lined_brick"));
+
+        simpleBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_tile_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_tile_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_tile_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_tile_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_tile_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_tile_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_tile_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_tile_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_tile_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_slight_tile_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_tile_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_tile_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_tile_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_tile_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fair_tile_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_tile_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_tile_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_tile_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_tile_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_great_tile_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_tile_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_tile_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_tile_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_tile_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_heavy_tile_brick"));
+        simpleBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE.get());
+        stairsBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_tile_brick"));
+        slabBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_tile_brick"));
+        buttonBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_tile_brick"));
+        pressurePlateBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_tile_brick"));
+        wallBlock(ModBlocks.WHITE_GABBRO_TILE_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/white_gabbro_block_smooth_fine_tile_brick"));
+        //endregion
 
         //region Nepheline Syenite
+        axisBlock((RotatedPillarBlock) ModBlocks.NEPHELINE_SYENITE_BLOCK_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.NEPHELINE_SYENITE_BLOCK_SMOOTH_SLIGHT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_slight_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.NEPHELINE_SYENITE_BLOCK_SMOOTH_FAIR_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fair_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.NEPHELINE_SYENITE_BLOCK_SMOOTH_GREAT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_great_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.NEPHELINE_SYENITE_BLOCK_SMOOTH_HEAVY_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_heavy_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.NEPHELINE_SYENITE_BLOCK_SMOOTH_FINE_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_pillar_top"));
+
         simpleBlock(ModBlocks.NEPHELINE_SYENITE_BLOCK.get());
         stairsBlock(ModBlocks.NEPHELINE_SYENITE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block"));
         slabBlock(ModBlocks.NEPHELINE_SYENITE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block"), new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block"));
@@ -172,8 +802,14 @@ public class ModelAndBlockStatesProvider extends BlockStateProvider {
         wallBlock(ModBlocks.NEPHELINE_SYENITE_TILE_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/nepheline_syenite_block_smooth_fine_tile_brick"));
         //endregion
 
-
         //region Anorthosite
+        axisBlock((RotatedPillarBlock) ModBlocks.ANORTHOSITE_BLOCK_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.ANORTHOSITE_BLOCK_SMOOTH_SLIGHT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_slight_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.ANORTHOSITE_BLOCK_SMOOTH_FAIR_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fair_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.ANORTHOSITE_BLOCK_SMOOTH_GREAT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_great_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.ANORTHOSITE_BLOCK_SMOOTH_HEAVY_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_heavy_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.ANORTHOSITE_BLOCK_SMOOTH_FINE_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_pillar_top"));
+
         simpleBlock(ModBlocks.ANORTHOSITE_BLOCK.get());
         stairsBlock(ModBlocks.ANORTHOSITE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block"));
         slabBlock(ModBlocks.ANORTHOSITE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block"), new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block"));
@@ -323,46 +959,40 @@ public class ModelAndBlockStatesProvider extends BlockStateProvider {
         wallBlock(ModBlocks.ANORTHOSITE_TILE_BRICK_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/anorthosite_block_smooth_fine_tile_brick"));
         //endregion
 
-
-        //region Other
-        simpleBlock(ModBlocks.ARAGONIT_BLOCK.get());
-        simpleBlock(ModBlocks.GNEISS_BLOCK.get());
-        simpleBlock(ModBlocks.GABBRO_BLOCK.get());
-        simpleBlock(ModBlocks.WHITE_GABBRO_BLOCK.get());
-        simpleBlock(ModBlocks.MONZONITE_BLOCK.get());
-        simpleBlock(ModBlocks.BIMSTONE_BLOCK.get());
-        simpleBlock(ModBlocks.GARAT_BLOCK.get());
-        simpleBlock(ModBlocks.SLATE_BLOCK.get());
-
-        simpleBlock(ModBlocks.WIRELESS_LAMP_CONTROLLER.get());
-        //endregion
+        //region Limestone
+        axisBlock((RotatedPillarBlock) ModBlocks.LIMESTONE_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.LIMESTONE_SMOOTH_SLIGHT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.LIMESTONE_SMOOTH_FAIR_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.LIMESTONE_SMOOTH_GREAT_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.LIMESTONE_SMOOTH_HEAVY_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_pillar_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.LIMESTONE_SMOOTH_FINE_PILLAR.get(),new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_pillar"),new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_pillar_top"));
 
 
-        //region Bricks Limestone
+        simpleBlock(ModBlocks.LIMESTONE.get());
+        stairsBlock(ModBlocks.LIMESTONE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
+        slabBlock(ModBlocks.LIMESTONE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
+        buttonBlock(ModBlocks.LIMESTONE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
+        pressurePlateBlock(ModBlocks.LIMESTONE_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
+        wallBlock(ModBlocks.LIMESTONE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block"));
         simpleBlock(ModBlocks.LIMESTONE_LINED_BRICK.get());
         buttonBlock(ModBlocks.LIMESTONE_LINED_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_lined_brick"));
         stairsBlock(ModBlocks.LIMESTONE_LINED_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_lined_brick"));
         slabBlock(ModBlocks.LIMESTONE_LINED_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_lined_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_lined_brick"));
         wallBlock(ModBlocks.LIMESTONE_LINED_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_lined_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_LINED_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_lined_brick"));
-
         simpleBlock(ModBlocks.LIMESTONE_TILE_BRICK.get());
         buttonBlock(ModBlocks.LIMESTONE_TILE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_tile_brick"));
         stairsBlock(ModBlocks.LIMESTONE_TILE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_tile_brick"));
         slabBlock(ModBlocks.LIMESTONE_TILE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_tile_brick"));
         wallBlock(ModBlocks.LIMESTONE_TILE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_tile_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_TILE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_tile_brick"));
-
         simpleBlock(ModBlocks.LIMESTONE_BRICK.get());
         buttonBlock(ModBlocks.LIMESTONE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_brick"));
         stairsBlock(ModBlocks.LIMESTONE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_brick"));
         slabBlock(ModBlocks.LIMESTONE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_brick"));
         wallBlock(ModBlocks.LIMESTONE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_brick"));
-        //endregion
 
-
-        //region Slight Limestone
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT.get());
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_LINED_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_LINED_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_lined_brick"));
@@ -370,30 +1000,24 @@ public class ModelAndBlockStatesProvider extends BlockStateProvider {
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_LINED_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_lined_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_LINED_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_lined_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_LINED_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_lined_brick"));
-
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_TILE_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_TILE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_tile_brick"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_TILE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_tile_brick"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_TILE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_tile_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_TILE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_tile_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_TILE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_tile_brick"));
-
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_brick"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_brick"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight_brick"));
-
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_SLIGHT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_slight"));
-        //endregion
 
-
-        //region Fair Limestone
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR.get());
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_LINED_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_LINED_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_lined_brick"));
@@ -401,30 +1025,24 @@ public class ModelAndBlockStatesProvider extends BlockStateProvider {
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_LINED_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_lined_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_LINED_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_lined_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_LINED_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_lined_brick"));
-
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_TILE_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_TILE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_tile_brick"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_TILE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_tile_brick"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_TILE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_tile_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_TILE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_tile_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_TILE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_tile_brick"));
-
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_brick"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_brick"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair_brick"));
-
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_FAIR_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fair"));
-        //endregion
 
-
-        //region Great Limestone
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT.get());
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_LINED_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_LINED_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_lined_brick"));
@@ -432,30 +1050,24 @@ public class ModelAndBlockStatesProvider extends BlockStateProvider {
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_LINED_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_lined_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_LINED_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_lined_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_LINED_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_lined_brick"));
-
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_TILE_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_TILE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_tile_brick"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_TILE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_tile_brick"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_TILE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_tile_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_TILE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_tile_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_TILE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_tile_brick"));
-
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_brick"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_brick"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great_brick"));
-
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_GREAT_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_great"));
-        //endregion
 
-
-        //region Heavy Limestone
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY.get());
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_LINED_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_LINED_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_lined_brick"));
@@ -463,30 +1075,24 @@ public class ModelAndBlockStatesProvider extends BlockStateProvider {
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_LINED_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_lined_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_LINED_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_lined_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_LINED_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_lined_brick"));
-
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_TILE_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_TILE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_tile_brick"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_TILE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_tile_brick"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_TILE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_tile_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_TILE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_tile_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_TILE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_tile_brick"));
-
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_brick"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_brick"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy_brick"));
-
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_HEAVY_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_heavy"));
-        //endregion
 
-
-        //region Fine Limestone
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_FINE.get());
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_lined_brick"));
@@ -494,21 +1100,18 @@ public class ModelAndBlockStatesProvider extends BlockStateProvider {
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_lined_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_lined_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_LINED_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_lined_brick"));
-
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_tile_brick"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_tile_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_tile_brick"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_tile_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_tile_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_TILE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_tile_brick"));
-
         simpleBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK.get());
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_brick"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_brick"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_brick"));
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_brick"));
         pressurePlateBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_PRESSURE_PLATE.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_brick"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_BRICK_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine_brick"));
-
         stairsBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_STAIRS.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine"));
         slabBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_SLAB.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine"), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine"));
         buttonBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_BUTTON.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine"));
@@ -516,6 +1119,14 @@ public class ModelAndBlockStatesProvider extends BlockStateProvider {
         wallBlock(ModBlocks.LIMESTONE_SMOOTH_FINE_WALL.get(), new ResourceLocation(BlocksMod.MOD_ID, "block/limestone_block_smooth_fine"));
         //endregion
 
+        //region Other
+        simpleBlock(ModBlocks.ARAGONIT_BLOCK.get());
+        simpleBlock(ModBlocks.GNEISS_BLOCK.get());
+        simpleBlock(ModBlocks.MONZONITE_BLOCK.get());
+        simpleBlock(ModBlocks.GARAT_BLOCK.get());
+
+        simpleBlock(ModBlocks.WIRELESS_LAMP_CONTROLLER.get());
+        //endregion
 
     }
 }

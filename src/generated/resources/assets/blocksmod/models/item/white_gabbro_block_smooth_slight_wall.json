@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "blocksmod:block/white_gabbro_block_smooth_slight"
+  }
+}
