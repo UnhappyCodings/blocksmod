@@ -58,7 +58,7 @@
 						},
 						"1.0": {
 							"vector": [-21, 0, 0],
-							"easing": "easeInOutSine"
+							"easing": "easeOutSine"
 						}
 					}
 				},
@@ -69,7 +69,7 @@
 						},
 						"1.0": {
 							"vector": [21, 0, 0],
-							"easing": "easeInOutSine"
+							"easing": "easeOutSine"
 						}
 					}
 				},
@@ -165,6 +165,11 @@
 							"vector": [1, 1, 1]
 						}
 					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "open"
 				}
 			}
 		},
@@ -337,6 +342,11 @@
 							"vector": [1, 1, 0.84]
 						}
 					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "close"
 				}
 			}
 		}

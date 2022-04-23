@@ -46,7 +46,6 @@ import java.util.List;
 public class BigSlidingDoorBlock extends BaseEntityBlock {
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-    public byte state;
 
     protected static final VoxelShape CLOSED_NS = Block.box(-16, 0, 7, 32, 32, 9);
     protected static final VoxelShape CLOSED_EW = Block.box(7, 0, -16, 9, 32, 32);
@@ -94,68 +93,33 @@ public class BigSlidingDoorBlock extends BaseEntityBlock {
         if (!(level.getBlockEntity(pos) instanceof BigSlidingDoorEntity blockEntity)) return Shapes.empty();
         CompoundTag tag = new CompoundTag();
         blockEntity.saveAdditional(tag);
-        long difference = ((System.currentTimeMillis() - tag.getLong("timestamp"))/100);
-        boolean open = level.getBlockState(pos).getValue(POWERED);
-
-        if (open) {
-            switch ((int) (difference * 2)) {
-                case 38: tag.putByte("state", (byte) 5); break;
-                case 32: tag.putByte("state", (byte) 4); break;
-                case 27: tag.putByte("state", (byte) 3); break;
-                case 23: tag.putByte("state", (byte) 2); break;
-                case 20: tag.putByte("state", (byte) 1);
-            }
-        } else {
-            switch ((int) (difference * 2)) {
-                case 18: tag.putByte("state", (byte) 1); break;
-                case 13: tag.putByte("state", (byte) 2); break;
-                case 8: tag.putByte("state", (byte) 3); break;
-                case 4: tag.putByte("state", (byte) 4); break;
-                case 1: tag.putByte("state", (byte) 5);
-            }
-        }
-        blockEntity.load(tag);
-        blockEntity.setChanged();
-
-        System.out.println(tag.getByte("state"));
 
         if (direction == Direction.NORTH || direction == Direction.SOUTH) {
             switch (tag.getByte("state")) {
                 case 1:
-                    System.out.println("NS 1");
                     return OPEN_NS_1;
                 case 2:
-                    System.out.println("NS 2");
                     return OPEN_NS_2;
                 case 3:
-                    System.out.println("NS 3");
                     return OPEN_NS_3;
                 case 4:
-                    System.out.println("NS 4");
                     return OPEN_NS_4;
                 case 5:
-                    System.out.println("NS 5");
                     return OPEN_NS_5;
             }
         }
         switch (tag.getByte("state")) {
             case 1:
-                System.out.println("EW 1");
                 return OPEN_EW_1;
             case 2:
-                System.out.println("EW 2");
                 return OPEN_EW_2;
             case 3:
-                System.out.println("EW 3");
                 return OPEN_EW_3;
             case 4:
-                System.out.println("EW 4");
                 return OPEN_EW_4;
             case 5:
-                System.out.println("EW 5");
                 return OPEN_EW_5;
         }
-        System.out.println("northing " + tag.getByte("state"));
         return Shapes.empty();
     }
 

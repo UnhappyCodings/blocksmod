@@ -1,6 +1,6 @@
 package de.unhappycodings.blocksmod.common.data;
 
-import de.unhappycodings.blocksmod.common.util.Registration;
+import de.unhappycodings.blocksmod.common.registration.Registration;
 import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;

@@ -17,6 +17,8 @@ import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -27,16 +29,18 @@ import org.jetbrains.annotations.Nullable;
 
 public class BoundingBlock extends BaseEntityBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+    public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 
     public BoundingBlock() {
         super(Properties.copy(Blocks.STONE));
         this.registerDefaultState(this.stateDefinition.any()
-                .setValue(FACING, Direction.NORTH));
+                .setValue(FACING, Direction.NORTH)
+                .setValue(POWERED, false));
     }
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(POWERED, context.getLevel().hasNeighborSignal(context.getClickedPos()));
     }
 
     @NotNull
@@ -73,54 +77,46 @@ public class BoundingBlock extends BaseEntityBlock {
         CompoundTag tagDoor = new CompoundTag();
         doorBlockEntity.saveAdditional(tagDoor);
 
-        System.out.println("  ");
-        System.out.println(blockPosDoor);
-        System.out.println(tagBounding);
-        System.out.println(tagDoor);
-        System.out.println("  ");
-
         if (direction == Direction.SOUTH || direction == Direction.WEST) {
             switch (tagBounding.getByte("pos")) {
                 case 2: x1 = 16; y1 = -16; break;
-                case 3: x1 = 0; y1 = -16; break;
+                case 3: y1 = -16; break;
                 case 4: x1 = -16; y1 = -16; break;
-                case 5: x1 = -16; y1 = 0; break;
-                default: x1 = 16; y1 = 0;
+                case 5: x1 = -16; break;
+                default: x1 = 16;
             }
         }
         if (direction == Direction.NORTH || direction == Direction.EAST) {
             switch (tagBounding.getByte("pos")) {
                 case 2: x1 = -16; y1 = -16; break;
-                case 3: x1 = 0; y1 = -16; break;
+                case 3: y1 = -16; break;
                 case 4: x1 = 16; y1 = -16; break;
-                case 5: x1 = 16; y1 = 0; break;
-                default: x1 = -16; y1 = 0;
+                case 5: x1 = 16; break;
+                default: x1 = -16;
             }
         }
         if (direction == Direction.NORTH || direction == Direction.SOUTH) {
             switch (tagDoor.getByte("state")) {
-                case 2: return Shapes.or(Block.box(-16 + x1, 0 + y1, 7, 3.5 + x1, 32 + y1, 9), Block.box(12.5 + x1, 0 + y1, 7, 32 + x1, 32 + y1, 9));
-                case 3: return Shapes.or(Block.box(-16 + x1, 0 + y1, 7, -1 + x1, 32 + y1, 9), Block.box(17 + x1, 0 + y1, 7, 32 + x1, 32 + y1, 9));
-                case 4: return Shapes.or(Block.box(-16 + x1, 0 + y1, 7, -5.5 + x1, 32 + y1, 9), Block.box(21.5 + x1, 0 + y1, 7, 32 + x1, 32 + y1, 9));
-                case 5: return Shapes.or(Block.box(-16 + x1, 0 + y1, 7, -11.15 + x1, 32 + y1, 9), Block.box(27.15 + x1, 0 + y1, 7, 32 + x1, 32 + y1, 9));
-                case 1: return Shapes.or(Block.box(-16 + x1, 0 + y1, 7, 8 + x1, 32 + y1, 9), Block.box(8 + x1, 0 + y1, 7, 32 + x1, 32 + y1, 9));
+                case 2: return Shapes.or(Block.box(-16 + x1, y1, 7, 3.5 + x1, 32 + y1, 9), Block.box(12.5 + x1, y1, 7, 32 + x1, 32 + y1, 9));
+                case 3: return Shapes.or(Block.box(-16 + x1, y1, 7, -1 + x1, 32 + y1, 9), Block.box(17 + x1, y1, 7, 32 + x1, 32 + y1, 9));
+                case 4: return Shapes.or(Block.box(-16 + x1, y1, 7, -5.5 + x1, 32 + y1, 9), Block.box(21.5 + x1, y1, 7, 32 + x1, 32 + y1, 9));
+                case 5: return Shapes.or(Block.box(-16 + x1, y1, 7, -11.15 + x1, 32 + y1, 9), Block.box(27.15 + x1, y1, 7, 32 + x1, 32 + y1, 9));
+                case 1: return Shapes.or(Block.box(-16 + x1, y1, 7, 8 + x1, 32 + y1, 9), Block.box(8 + x1, y1, 7, 32 + x1, 32 + y1, 9));
             };
         }
-
         switch (tagDoor.getByte("state")) {
-            case 2: return Shapes.or(Block.box(7, 0 + y1, 12.5 + x1, 9, 32 + y1, 32 + x1), Block.box(7, 0 + y1, -16 + x1, 9, 32 + y1, 3.5 + x1));
-            case 3: return Shapes.or(Block.box(7, 0 + y1, 17 + x1, 9, 32 + y1, 32 + x1), Block.box(7, 0 + y1, -16 + x1, 9, 32 + y1, -1 + x1));
-            case 4: return Shapes.or(Block.box(7, 0 + y1, 21.5 + x1, 9, 32 + y1, 32 + x1), Block.box(7, 0 + y1, -16 + x1, 9, 32 + y1, -5.5 + x1));
-            case 5: return Shapes.or(Block.box(7, 0 + y1, 27.15 + x1, 9, 32 + y1, 32 + x1), Block.box(7, 0 + y1, -16 + x1, 9, 32 + y1, -11.15 + x1));
-            case 1: return Shapes.or(Block.box(7, 0 + y1, 8 + x1, 9, 32 + y1, 32 + x1), Block.box(7, 0 + y1, -16 + x1, 9, 32 + y1, 8.0 + x1));
+            case 2: return Shapes.or(Block.box(7, y1, 12.5 + x1, 9, 32 + y1, 32 + x1), Block.box(7, y1, -16 + x1, 9, 32 + y1, 3.5 + x1));
+            case 3: return Shapes.or(Block.box(7, y1, 17 + x1, 9, 32 + y1, 32 + x1), Block.box(7, y1, -16 + x1, 9, 32 + y1, -1 + x1));
+            case 4: return Shapes.or(Block.box(7, y1, 21.5 + x1, 9, 32 + y1, 32 + x1), Block.box(7, y1, -16 + x1, 9, 32 + y1, -5.5 + x1));
+            case 5: return Shapes.or(Block.box(7, y1, 27.15 + x1, 9, 32 + y1, 32 + x1), Block.box(7, y1, -16 + x1, 9, 32 + y1, -11.15 + x1));
+            case 1: return Shapes.or(Block.box(7, y1, 8 + x1, 9, 32 + y1, 32 + x1), Block.box(7, y1, -16 + x1, 9, 32 + y1, 8.0 + x1));
         }
-        System.out.println("nothing " + tagDoor.getByte("state"));
         return Shapes.empty();
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+        builder.add(FACING, POWERED);
     }
 
     @Override

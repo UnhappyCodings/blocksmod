@@ -1,15 +1,19 @@
 package de.unhappycodings.blocksmod.common.blockentity;
 
 import de.unhappycodings.blocksmod.common.block.BigSlidingDoorBlock;
+import de.unhappycodings.blocksmod.common.registration.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.Connection;
 import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -26,49 +30,20 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
+import java.util.Objects;
+
 public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, AnimationController.ISoundListener<BigSlidingDoorEntity> {
-    boolean last;
-    boolean lasts;
-    long timestamp;
-    byte state = 1;
     private AnimationFactory factory = new AnimationFactory(this);
+    boolean lasts;
+    boolean last;
+    byte state = 1;
+    int ticks;
 
     public BigSlidingDoorEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.BIG_SLIDING_DOOR.get(), pos, state);
     }
 
-    @NotNull
-    @Override
-    public CompoundTag getUpdateTag() {
-        CompoundTag tag = super.getUpdateTag();
-        this.timestamp = System.currentTimeMillis();
-        this.saveAdditional(tag);
-        return tag;
-    }
-
-    @Nullable
-    @Override
-    public Packet<ClientGamePacketListener> getUpdatePacket() {
-        return ClientboundBlockEntityDataPacket.create(this);
-    }
-
-    @Override
-    public void saveAdditional(@NotNull CompoundTag nbt) {
-        super.saveAdditional(nbt);
-        nbt.putBoolean("last", this.last);
-        nbt.putByte("state", this.state);
-        nbt.putLong("timestamp", this.timestamp);
-    }
-
-    @Override
-    public void load(@NotNull CompoundTag nbt) {
-        super.load(nbt);
-        this.last = nbt.getBoolean("last");
-        this.state = nbt.getByte("state");
-        this.timestamp = nbt.getLong("timestamp");
-    }
-
-    public void tick() { // SERVER
+    public void tick() {
         Level level = getLevel();
         BlockPos blockPos = getBlockPos();
         BlockState blockState = level.getBlockState(blockPos);
@@ -79,19 +54,41 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
             if (level.hasNeighborSignal(blockPos)) {
                 if (!this.lasts) {
                     tag.putBoolean("last", true);
+                    ticks = 0;
                     this.lasts = true;
                     this.load(tag);
-                    this.setChanged();
                 }
             } else {
                 if (this.lasts) {
                     tag.putBoolean("last", false);
+                    ticks = 0;
                     this.lasts = false;
                     this.load(tag);
-                    this.setChanged();
                 }
             }
         }
+        if (blockState.getValue(BigSlidingDoorBlock.POWERED)) {
+            switch (ticks) {
+                case 36 -> tag.putByte("state", (byte) 5);
+                case 30 -> tag.putByte("state", (byte) 4);
+                case 25 -> tag.putByte("state", (byte) 3);
+                case 21 -> tag.putByte("state", (byte) 2);
+                case 18 -> tag.putByte("state", (byte) 1);
+            }
+            this.load(tag);
+        } else {
+            switch (ticks) {
+                case 28 -> tag.putByte("state", (byte) 1);
+                case 23 -> tag.putByte("state", (byte) 2);
+                case 18 -> tag.putByte("state", (byte) 3);
+                case 14 -> tag.putByte("state", (byte) 4);
+                case 0 -> tag.putByte("state", (byte) 5);
+            }
+            this.load(tag);
+        }
+        level.sendBlockUpdated(blockPos, blockState, blockState, Block.UPDATE_ALL);
+        this.setChanged();
+        ticks++;
     }
 
     @Override
@@ -99,11 +96,13 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
         return new AABB(getBlockPos().offset(-2, -2, -2), getBlockPos().offset(2, 2, 2));
     }
 
-    @Override
-    public void playSound(SoundKeyframeEvent<BigSlidingDoorEntity> event) {
+    private <ENTITY extends IAnimatable> void soundListener(SoundKeyframeEvent<ENTITY> event) {
         LocalPlayer player = Minecraft.getInstance().player;
         if (player != null) {
-            player.playSound(SoundEvents.ANVIL_BREAK, 1, 1);
+            if (Objects.equals(event.sound, "open"))
+                player.playSound(ModSounds.BIG_SLIDING_DOOR_OPEN.get(), 1f, 1f);
+            if (Objects.equals(event.sound, "close"))
+                player.playSound(ModSounds.BIG_SLIDING_DOOR_CLOSE.get(), 1f, 1f);
         }
     }
 
@@ -139,12 +138,63 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
     }
 
     @Override
+    public void onDataPacket(Connection net, ClientboundBlockEntityDataPacket pkt) {
+        if (level.isClientSide && net.getDirection() == PacketFlow.CLIENTBOUND) {
+            //Handle the update tag when we are on the client
+            handleUpdateTag(pkt.getTag());
+        }
+    }
+
+    @NotNull
+    @Override
+    public CompoundTag getUpdateTag() {
+        super.getUpdateTag();
+        CompoundTag nbt = new CompoundTag();
+        nbt.putBoolean("last", this.last);
+        nbt.putByte("state", this.state);
+        return nbt;
+    }
+
+    @Override
+    public void handleUpdateTag(CompoundTag nbt) {
+        this.last = nbt.getBoolean("last");
+        this.state = nbt.getByte("state");
+    }
+
+    @Nullable
+    @Override
+    public ClientboundBlockEntityDataPacket getUpdatePacket() {
+        return ClientboundBlockEntityDataPacket.create(this);
+    }
+
+    @Override
+    public void saveAdditional(@NotNull CompoundTag nbt) {
+        super.saveAdditional(nbt);
+        nbt.putBoolean("last", this.last);
+        nbt.putByte("state", this.state);
+    }
+
+    @Override
+    public void load(@NotNull CompoundTag nbt) {
+        super.load(nbt);
+        this.last = nbt.getBoolean("last");
+        this.state = nbt.getByte("state");
+    }
+
+    @Override
     public void registerControllers(AnimationData data) {
-        data.addAnimationController(new AnimationController<BigSlidingDoorEntity>(this, "animation.big_sliding_door.idle_closed", 9, this::predicate));
+        AnimationController<BigSlidingDoorEntity> controller = new AnimationController<BigSlidingDoorEntity>(this, "animation.big_sliding_door.idle_closed", 9, this::predicate);
+
+        data.addAnimationController(controller);
+        controller.registerSoundListener(this::soundListener);
     }
 
     @Override
     public AnimationFactory getFactory() {
         return this.factory;
+    }
+
+    @Override
+    public void playSound(SoundKeyframeEvent<BigSlidingDoorEntity> event) {
     }
 }

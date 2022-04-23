@@ -20,6 +20,7 @@ public class DataProvider {
         generator.addProvider(new TagsProvider(generator, existingFileHelper));
         generator.addProvider(new RecipeProvider(generator));
         generator.addProvider(new SecondRecipeProvider(generator));
+        generator.addProvider(new SoundProvider(generator, BlocksMod.MOD_ID, existingFileHelper));
         generator.addProvider(new LootTableProvider(generator));
 
     }

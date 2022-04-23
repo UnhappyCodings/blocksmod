@@ -1,7 +1,7 @@
 package de.unhappycodings.blocksmod.common.item;
 
 import de.unhappycodings.blocksmod.BlocksMod;
-import de.unhappycodings.blocksmod.common.util.Registration;
+import de.unhappycodings.blocksmod.common.registration.Registration;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.RegistryObject;
 

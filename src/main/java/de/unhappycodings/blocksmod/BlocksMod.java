@@ -1,16 +1,13 @@
 package de.unhappycodings.blocksmod;
 
 import de.unhappycodings.blocksmod.common.block.ModBlocks;
-import de.unhappycodings.blocksmod.common.blockentity.BigSlidingDoorEntity;
 import de.unhappycodings.blocksmod.common.blockentity.ModBlockEntities;
 import de.unhappycodings.blocksmod.common.config.CommonConfig;
 import de.unhappycodings.blocksmod.common.event.ModEvents;
 import de.unhappycodings.blocksmod.common.item.ModItems;
-import de.unhappycodings.blocksmod.common.util.Registration;
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
+import de.unhappycodings.blocksmod.common.registration.ModSounds;
+import de.unhappycodings.blocksmod.common.registration.Registration;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -18,7 +15,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
-import net.minecraftforge.registries.RegistryObject;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import software.bernie.geckolib3.GeckoLib;
@@ -45,6 +41,7 @@ public class BlocksMod {
 
         Registration.register();
         ModItems.register();
+        ModSounds.register();
         ModBlocks.register();
         MinecraftForge.EVENT_BUS.register(new ModEvents());
         ModBlockEntities.BLOCK_ENTITIES.register(bus);

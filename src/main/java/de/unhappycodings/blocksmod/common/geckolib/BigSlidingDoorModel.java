@@ -1,4 +1,4 @@
-package de.unhappycodings.blocksmod.common.geckolib.models;
+package de.unhappycodings.blocksmod.common.geckolib;
 
 import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.common.blockentity.BigSlidingDoorEntity;

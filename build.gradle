@@ -41,6 +41,9 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
             property 'mixin.env.remapRefMap', 'true'
 
+            args "--username", "${username}"
+            args "--uuid", "${uuid}"
+
             mods {
                 blocksmod {
                     source sourceSets.main

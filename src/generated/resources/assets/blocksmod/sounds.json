@@ -1,0 +1,18 @@
+{
+  "tile.door.big_sliding_door.close": {
+    "sounds": [
+      {
+        "name": "blocksmod:tile.door.big_sliding_door.close",
+        "attenuation_distance": 6
+      }
+    ]
+  },
+  "tile.door.big_sliding_door.open": {
+    "sounds": [
+      {
+        "name": "blocksmod:tile.door.big_sliding_door.open",
+        "attenuation_distance": 6
+      }
+    ]
+  }
+}

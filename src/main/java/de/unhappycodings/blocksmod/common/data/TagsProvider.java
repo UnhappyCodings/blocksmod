@@ -2,10 +2,9 @@ package de.unhappycodings.blocksmod.common.data;
 
 import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.common.block.ModBlocks;
-import de.unhappycodings.blocksmod.common.util.Registration;
+import de.unhappycodings.blocksmod.common.registration.Registration;
 import net.minecraft.core.Registry;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.HashCache;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;

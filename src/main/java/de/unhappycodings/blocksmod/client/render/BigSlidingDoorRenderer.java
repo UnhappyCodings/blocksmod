@@ -4,7 +4,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.common.blockentity.BigSlidingDoorEntity;
-import de.unhappycodings.blocksmod.common.geckolib.models.BigSlidingDoorModel;
+import de.unhappycodings.blocksmod.common.geckolib.BigSlidingDoorModel;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;

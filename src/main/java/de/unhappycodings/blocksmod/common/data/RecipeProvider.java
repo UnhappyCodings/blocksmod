@@ -2,7 +2,7 @@ package de.unhappycodings.blocksmod.common.data;
 
 import de.unhappycodings.blocksmod.common.block.ModBlocks;
 import de.unhappycodings.blocksmod.common.item.ModItems;
-import de.unhappycodings.blocksmod.common.util.Registration;
+import de.unhappycodings.blocksmod.common.registration.Registration;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;

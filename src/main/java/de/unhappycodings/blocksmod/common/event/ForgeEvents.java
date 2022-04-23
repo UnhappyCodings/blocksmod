@@ -10,6 +10,7 @@ import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.common.block.BigSlidingDoorBlock;
 import de.unhappycodings.blocksmod.common.block.BoundingBlock;
 import de.unhappycodings.blocksmod.common.block.ModBlocks;
+import de.unhappycodings.blocksmod.common.blockentity.BigSlidingDoorEntity;
 import de.unhappycodings.blocksmod.common.blockentity.BoundingBlockEntity;
 import de.unhappycodings.blocksmod.common.blockentity.WirelessLampControllerEntity;
 import de.unhappycodings.blocksmod.common.config.CommonConfig;
@@ -33,6 +34,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.StructureBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
@@ -57,8 +59,6 @@ import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(modid = BlocksMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ForgeEvents {
-
-    public static final BooleanProperty LIT = BlockStateProperties.LIT;
 
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public static void biomeLoading(BiomeLoadingEvent event) {
@@ -146,6 +146,42 @@ public class ForgeEvents {
                 tes.end();
                 RenderSystem.enableDepthTest();
                 RenderSystem.depthFunc(0x207);
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onSlidingDoorBreak(BlockEvent.BreakEvent event) {
+        Block block = event.getWorld().getBlockState(event.getPos()).getBlock();
+        if (block instanceof BoundingBlock) {
+            LevelAccessor level = event.getWorld();
+            BlockState blockState = level.getBlockState(event.getPos());
+            Direction facing = blockState.getValue(BigSlidingDoorBlock.FACING);
+
+            BoundingBlockEntity blockEntity = (BoundingBlockEntity) event.getWorld().getBlockEntity(event.getPos());
+            CompoundTag tag = new CompoundTag();
+            blockEntity.saveAdditional(tag);
+            BlockPos blockOriginPos = new BlockPos(tag.getInt("origin-x"), tag.getInt("origin-y"), tag.getInt("origin-z"));
+
+            BlockPos above; BlockPos left; BlockPos leftAbove; BlockPos right; BlockPos rightAbove;
+            if (facing == Direction.NORTH || facing == Direction.SOUTH) {
+                left = blockOriginPos.offset(-1, 0, 0);
+                leftAbove = blockOriginPos.offset(-1, 1, 0);
+                above = blockOriginPos.offset(0, 1, 0);
+                rightAbove = blockOriginPos.offset(1, 1, 0);
+                right = blockOriginPos.offset(1, 0, 0);
+            } else {
+                left = blockOriginPos.offset(0, 0, -1);
+                leftAbove = blockOriginPos.offset(0, 1, -1);
+                above = blockOriginPos.offset(0, 1, 0);
+                rightAbove = blockOriginPos.offset(0, 1, 1);
+                right = blockOriginPos.offset(0, 0, 1);
+            }
+
+            BlockPos[] posList = {left, leftAbove, above, rightAbove, right};
+            level.destroyBlock(blockOriginPos, !event.getPlayer().isCreative());
+            for (BlockPos pos : posList) {
+                level.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
             }
         }
     }
@@ -251,7 +287,6 @@ public class ForgeEvents {
                 event.setCanceled(true);
                 return;
             }
-            System.out.println("final 1");
         }
     }
 
