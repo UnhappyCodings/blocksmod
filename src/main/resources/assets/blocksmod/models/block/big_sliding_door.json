@@ -1,35 +1,7 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/cube_all",
 	"textures": {
-		"1": "blocksmod:block/anorthosite_block_smooth_fine",
-		"particle": "blocksmod:block/anorthosite_block_smooth_fine"
-	},
-	"elements": [
-		{
-			"from": [-16, 0, 7],
-			"to": [8, 32, 9],
-			"color": 7,
-			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"east": {"uv": [0, 0, 2, 16], "texture": "#1"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"west": {"uv": [0, 0, 2, 16], "texture": "#1"},
-				"up": {"uv": [0, 0, 16, 2], "texture": "#1"},
-				"down": {"uv": [0, 0, 16, 2], "texture": "#1"}
-			}
-		},
-		{
-			"from": [8, 0, 7],
-			"to": [32, 32, 9],
-			"color": 7,
-			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"east": {"uv": [0, 0, 2, 16], "texture": "#1"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
-				"west": {"uv": [0, 0, 2, 16], "texture": "#1"},
-				"up": {"uv": [0, 0, 16, 2], "texture": "#1"},
-				"down": {"uv": [0, 0, 16, 2], "texture": "#1"}
-			}
-		}
-	]
+		"all": "blocksmod:block/anorthosite_block_smooth_fine"
+	}
 }

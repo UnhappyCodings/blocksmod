@@ -153,16 +153,19 @@ public class ForgeEvents {
     @SubscribeEvent
     public static void onSlidingDoorBreak(BlockEvent.BreakEvent event) {
         Block block = event.getWorld().getBlockState(event.getPos()).getBlock();
-        if (block instanceof BoundingBlock) {
+        if (block instanceof BoundingBlock || block instanceof BigSlidingDoorBlock) {
             LevelAccessor level = event.getWorld();
             BlockState blockState = level.getBlockState(event.getPos());
             Direction facing = blockState.getValue(BigSlidingDoorBlock.FACING);
-
-            BoundingBlockEntity blockEntity = (BoundingBlockEntity) event.getWorld().getBlockEntity(event.getPos());
-            CompoundTag tag = new CompoundTag();
-            blockEntity.saveAdditional(tag);
-            BlockPos blockOriginPos = new BlockPos(tag.getInt("origin-x"), tag.getInt("origin-y"), tag.getInt("origin-z"));
-
+            BlockPos blockOriginPos;
+            if (block instanceof BoundingBlock) {
+                BoundingBlockEntity blockEntity = (BoundingBlockEntity) event.getWorld().getBlockEntity(event.getPos());
+                CompoundTag tag = new CompoundTag();
+                blockEntity.saveAdditional(tag);
+                blockOriginPos = new BlockPos(tag.getInt("origin-x"), tag.getInt("origin-y"), tag.getInt("origin-z"));
+            } else {
+                blockOriginPos = event.getPos();
+            }
             BlockPos above; BlockPos left; BlockPos leftAbove; BlockPos right; BlockPos rightAbove;
             if (facing == Direction.NORTH || facing == Direction.SOUTH) {
                 left = blockOriginPos.offset(-1, 0, 0);
@@ -181,7 +184,7 @@ public class ForgeEvents {
             BlockPos[] posList = {left, leftAbove, above, rightAbove, right};
             level.destroyBlock(blockOriginPos, !event.getPlayer().isCreative());
             for (BlockPos pos : posList) {
-                level.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
+                level.destroyBlock(pos, false);
             }
         }
     }
