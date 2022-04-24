@@ -2,15 +2,18 @@ package de.unhappycodings.blocksmod.common.blockentity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.world.Nameable;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class BoundingBlockEntity extends BlockEntity {
+public class BoundingBlockEntity extends BlockEntity implements Nameable {
     byte pos;
     int x;
     int y;
@@ -56,4 +59,20 @@ public class BoundingBlockEntity extends BlockEntity {
         this.z = nbt.getInt("origin-z");
     }
 
+    @NotNull
+    @Override
+    public Component getName() {
+        return new TranslatableComponent("block.blocksmod.big_sliding_door");
+    }
+
+    @Nullable
+    @Override
+    public Component getCustomName() {
+        return new TranslatableComponent("block.blocksmod.big_sliding_door");
+    }
+
+    @Override
+    public boolean hasCustomName() {
+        return true;
+    }
 }

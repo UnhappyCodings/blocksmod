@@ -7,11 +7,15 @@ import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.Connection;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.Nameable;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -100,9 +104,9 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
         LocalPlayer player = Minecraft.getInstance().player;
         if (player != null) {
             if (Objects.equals(event.sound, "open"))
-                player.playSound(ModSounds.BIG_SLIDING_DOOR_OPEN.get(), 1f, 1f);
+                player.getLevel().playLocalSound(this.getBlockPos().getX(), this.getBlockPos().getY(), this.getBlockPos().getZ(), ModSounds.BIG_SLIDING_DOOR_OPEN.get(), SoundSource.BLOCKS, 1f, 1f, false);
             if (Objects.equals(event.sound, "close"))
-                player.playSound(ModSounds.BIG_SLIDING_DOOR_CLOSE.get(), 1f, 1f);
+                player.getLevel().playLocalSound(this.getBlockPos().getX(), this.getBlockPos().getY(), this.getBlockPos().getZ(), ModSounds.BIG_SLIDING_DOOR_CLOSE.get(), SoundSource.BLOCKS, 1f, 1f, false);
         }
     }
 
