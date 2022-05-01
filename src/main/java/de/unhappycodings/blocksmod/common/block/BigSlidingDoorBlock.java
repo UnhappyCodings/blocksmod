@@ -63,7 +63,7 @@ public class BigSlidingDoorBlock extends BaseEntityBlock {
     protected static final VoxelShape OPEN_EW_5 = Shapes.or(Block.box(7, 0, 27.15, 9, 32, 32), Block.box(7, 0, -16, 9, 32, -11.15));
 
     protected BigSlidingDoorBlock() {
-        super(Properties.copy(Blocks.STONE));
+        super(Properties.copy(Blocks.BLACK_STAINED_GLASS).noOcclusion());
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(POWERED, false));

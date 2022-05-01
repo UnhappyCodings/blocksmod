@@ -32,7 +32,7 @@ public class BoundingBlock extends BaseEntityBlock {
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 
     public BoundingBlock() {
-        super(Properties.copy(Blocks.STONE));
+        super(Properties.copy(Blocks.BLACK_STAINED_GLASS).noOcclusion());
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(POWERED, false));
