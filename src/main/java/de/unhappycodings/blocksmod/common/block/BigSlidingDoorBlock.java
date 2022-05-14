@@ -3,13 +3,9 @@ package de.unhappycodings.blocksmod.common.block;
 import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.client.KeyBindings;
 import de.unhappycodings.blocksmod.common.blockentity.BigSlidingDoorEntity;
-import de.unhappycodings.blocksmod.common.blockentity.BoundingBlockEntity;
 import de.unhappycodings.blocksmod.common.blockentity.ModBlockEntities;
-import de.unhappycodings.blocksmod.common.blockentity.WirelessLampControllerEntity;
 import de.unhappycodings.blocksmod.common.util.TextComponentUtil;
 import net.minecraft.ChatFormatting;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -22,24 +18,20 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.*;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.event.world.BlockEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import software.bernie.example.registry.SoundRegistry;
-import software.bernie.geckolib3.core.IAnimatable;
-import software.bernie.geckolib3.core.event.SoundKeyframeEvent;
 
 import java.util.List;
 
@@ -47,10 +39,7 @@ public class BigSlidingDoorBlock extends BaseEntityBlock {
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-    protected static final VoxelShape CLOSED_NS = Block.box(-16, 0, 7, 32, 32, 9);
-    protected static final VoxelShape CLOSED_EW = Block.box(7, 0, -16, 9, 32, 32);
-
-    protected static final VoxelShape OPEN_NS_1 = Shapes.or(Block.box(-16, 0, 7, 8, 32, 9),Block.box(8, 0, 7, 32, 32, 9));
+    protected static final VoxelShape OPEN_NS_1 = Shapes.or(Block.box(-16, 0, 7, 8, 32, 9), Block.box(8, 0, 7, 32, 32, 9));
     protected static final VoxelShape OPEN_NS_2 = Shapes.or(Block.box(-16, 0, 7, 3.5, 32, 9), Block.box(12.5, 0, 7, 32, 32, 9));
     protected static final VoxelShape OPEN_NS_3 = Shapes.or(Block.box(-16, 0, 7, -1, 32, 9), Block.box(17, 0, 7, 32, 32, 9));
     protected static final VoxelShape OPEN_NS_4 = Shapes.or(Block.box(-16, 0, 7, -5.5, 32, 9), Block.box(21.5, 0, 7, 32, 32, 9));

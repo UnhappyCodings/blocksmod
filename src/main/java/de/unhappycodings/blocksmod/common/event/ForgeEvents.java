@@ -50,12 +50,10 @@ import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import observable.shadow.imgui.Dir;
 import org.lwjgl.opengl.GL11;
 
 import java.awt.*;
 import java.util.List;
-import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(modid = BlocksMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class ForgeEvents {

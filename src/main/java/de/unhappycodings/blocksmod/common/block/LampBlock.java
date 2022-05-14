@@ -2,6 +2,7 @@ package de.unhappycodings.blocksmod.common.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RedstoneLampBlock;
@@ -34,6 +35,11 @@ public class LampBlock extends RedstoneLampBlock {
         registerDefaultState(this.getStateDefinition().any()
                 .setValue(LIT, false)
                 .setValue(REMOTED, false));
+    }
+
+    @Override
+    public float getEnchantPowerBonus(BlockState state, LevelReader level, BlockPos pos) {
+        return 1;
     }
 
     private static ToIntFunction<BlockState> litBlockEmission(boolean inverted) {

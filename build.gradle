@@ -120,7 +120,6 @@ dependencies {
     implementation fg.deobf("curse.maven:conf-${conf_version}")
     implementation fg.deobf("curse.maven:architectury-${architectury_version}")
     implementation fg.deobf("curse.maven:kotlin-${kotlin_version}")
-    implementation fg.deobf("curse.maven:observable-${observable_version}")
     implementation fg.deobf('software.bernie.geckolib:geckolib-1.18-forge:3.0.13')
 }
 

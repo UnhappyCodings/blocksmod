@@ -43,7 +43,6 @@ public class BlocksMod {
         ModItems.register();
         ModSounds.register();
         ModBlocks.register();
-        MinecraftForge.EVENT_BUS.register(new ModEvents());
         ModBlockEntities.BLOCK_ENTITIES.register(bus);
 
         CommonConfig.loadConfigFile(CommonConfig.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("blocksmod-common.toml").toString());
