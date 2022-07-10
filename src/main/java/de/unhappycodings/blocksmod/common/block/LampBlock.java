@@ -37,15 +37,15 @@ public class LampBlock extends RedstoneLampBlock {
                 .setValue(REMOTED, false));
     }
 
-    @Override
-    public float getEnchantPowerBonus(BlockState state, LevelReader level, BlockPos pos) {
-        return 1;
-    }
-
     private static ToIntFunction<BlockState> litBlockEmission(boolean inverted) {
         if (inverted)
             return (p_50763_) -> !p_50763_.getValue(BlockStateProperties.LIT) ? 15 : 0;
         return (p_50763_) -> p_50763_.getValue(BlockStateProperties.LIT) ? 15 : 0;
+    }
+
+    @Override
+    public float getEnchantPowerBonus(BlockState state, LevelReader level, BlockPos pos) {
+        return 1;
     }
 
     @Override

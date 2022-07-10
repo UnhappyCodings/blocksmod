@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "blocksmod:geo/textures/anorthosite_big_sliding_door"
+  }
+}

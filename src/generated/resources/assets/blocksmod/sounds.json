@@ -3,7 +3,7 @@
     "sounds": [
       {
         "name": "blocksmod:tile.door.big_sliding_door.close",
-        "attenuation_distance": 6
+        "attenuation_distance": 9
       }
     ]
   },
@@ -11,7 +11,23 @@
     "sounds": [
       {
         "name": "blocksmod:tile.door.big_sliding_door.open",
-        "attenuation_distance": 6
+        "attenuation_distance": 9
+      }
+    ]
+  },
+  "tile.door.player_sensor.on": {
+    "sounds": [
+      {
+        "name": "blocksmod:tile.door.player_sensor.on",
+        "attenuation_distance": 4
+      }
+    ]
+  },
+  "tile.door.player_sensor.off": {
+    "sounds": [
+      {
+        "name": "blocksmod:tile.door.player_sensor.off",
+        "attenuation_distance": 4
       }
     ]
   }

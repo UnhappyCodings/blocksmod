@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "blocksmod:big_sliding_door"
+          "name": "blocksmod:player_sensor"
         }
       ],
       "conditions": [

@@ -1,5 +1,4 @@
 {
-  "credit": "Made with Blockbench",
   "textures": {
     "0": "blocksmod:block/cyan_lamp_block",
     "particle": "blocksmod:block/cyan_lamp_block"

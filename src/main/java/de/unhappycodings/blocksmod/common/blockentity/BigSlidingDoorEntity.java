@@ -1,7 +1,7 @@
 package de.unhappycodings.blocksmod.common.blockentity;
 
-import de.unhappycodings.blocksmod.common.block.BigSlidingDoorBlock;
 import de.unhappycodings.blocksmod.common.registration.ModSounds;
+import de.unhappycodings.blocksmod.common.util.LocationUtil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
@@ -9,13 +9,16 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.Connection;
 import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
+import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.AnimationState;
@@ -36,9 +39,11 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
     boolean last;
     byte state = 1;
     int ticks;
+    ResourceLocation texture;
 
-    public BigSlidingDoorEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.BIG_SLIDING_DOOR.get(), pos, state);
+    public BigSlidingDoorEntity(BlockPos pos, BlockState state, ResourceLocation texture, RegistryObject<BlockEntityType<BigSlidingDoorEntity>> registryObject) {
+        super(registryObject.get(), pos, state);
+        this.texture = texture;
     }
 
     public void tick() {
@@ -46,10 +51,10 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
         BlockPos blockPos = getBlockPos();
         BlockState blockState = level.getBlockState(blockPos);
         CompoundTag tag = new CompoundTag();
+        boolean xState = LocationUtil.getBigSlidingDoorRedstoneState(level, blockPos);
         this.saveAdditional(tag);
-
         if (blockState.getBlock() != Blocks.AIR) {
-            if (level.hasNeighborSignal(blockPos)) {
+            if (xState) {
                 if (!this.lasts) {
                     tag.putBoolean("last", true);
                     ticks = 0;
@@ -65,7 +70,7 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
                 }
             }
         }
-        if (blockState.getValue(BigSlidingDoorBlock.POWERED)) {
+        if (xState) {
             switch (ticks) {
                 case 36 -> tag.putByte("state", (byte) 5);
                 case 30 -> tag.putByte("state", (byte) 4);
@@ -91,16 +96,20 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
 
     @Override
     public AABB getRenderBoundingBox() {
-        return new AABB(getBlockPos().offset(-2, -2, -2), getBlockPos().offset(2, 2, 2));
+        return new AABB(getBlockPos().offset(-2, -2, -2), getBlockPos().offset(3, 3, 3)); //Relative to BlockOrigin | So 2- and 3+
+    }
+
+    public ResourceLocation getTexture() {
+        return this.texture;
     }
 
     private <ENTITY extends IAnimatable> void soundListener(SoundKeyframeEvent<ENTITY> event) {
         LocalPlayer player = Minecraft.getInstance().player;
         if (player != null) {
             if (Objects.equals(event.sound, "open"))
-                player.getLevel().playLocalSound(this.getBlockPos().getX(), this.getBlockPos().getY(), this.getBlockPos().getZ(), ModSounds.BIG_SLIDING_DOOR_OPEN.get(), SoundSource.BLOCKS, 1f, 1f, false);
+                player.getLevel().playLocalSound(this.getBlockPos().getX() + 0.5, this.getBlockPos().getY() + 0.5, this.getBlockPos().getZ() + 0.5, ModSounds.BIG_SLIDING_DOOR_OPEN.get(), SoundSource.BLOCKS, 1f, 1f, false);
             if (Objects.equals(event.sound, "close"))
-                player.getLevel().playLocalSound(this.getBlockPos().getX(), this.getBlockPos().getY(), this.getBlockPos().getZ(), ModSounds.BIG_SLIDING_DOOR_CLOSE.get(), SoundSource.BLOCKS, 1f, 1f, false);
+                player.getLevel().playLocalSound(this.getBlockPos().getX() + 0.5, this.getBlockPos().getY() + 0.5, this.getBlockPos().getZ() + 0.5, ModSounds.BIG_SLIDING_DOOR_CLOSE.get(), SoundSource.BLOCKS, 1f, 1f, false);
         }
     }
 
@@ -109,9 +118,9 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
         Level level = getLevel();
         BlockPos blockPos = getBlockPos();
         BlockState blockState = level.getBlockState(blockPos);
-
         if (blockState.getBlock() != Blocks.AIR) {
-            if (level.hasNeighborSignal(blockPos)) {
+            boolean xState = LocationUtil.getBigSlidingDoorRedstoneState(level, blockPos);
+            if (xState) {
                 if (!this.lasts) {
                     controller.clearAnimationCache();
                     controller.setAnimation(new AnimationBuilder().addAnimation("animation.big_sliding_door.anim_open", false));
@@ -129,7 +138,6 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
                     if (event.getController().getAnimationState() == AnimationState.Stopped)
                         controller.setAnimation(new AnimationBuilder().addAnimation("animation.big_sliding_door.idle_close", false));
                 }
-
             }
         }
         return PlayState.CONTINUE;
@@ -138,7 +146,6 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
     @Override
     public void onDataPacket(Connection net, ClientboundBlockEntityDataPacket pkt) {
         if (level.isClientSide && net.getDirection() == PacketFlow.CLIENTBOUND) {
-            //Handle the update tag when we are on the client
             handleUpdateTag(pkt.getTag());
         }
     }
@@ -182,7 +189,6 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
     @Override
     public void registerControllers(AnimationData data) {
         AnimationController<BigSlidingDoorEntity> controller = new AnimationController<BigSlidingDoorEntity>(this, "animation.big_sliding_door.idle_closed", 9, this::predicate);
-
         data.addAnimationController(controller);
         controller.registerSoundListener(this::soundListener);
     }
@@ -194,5 +200,6 @@ public class BigSlidingDoorEntity extends BlockEntity implements IAnimatable, An
 
     @Override
     public void playSound(SoundKeyframeEvent<BigSlidingDoorEntity> event) {
+
     }
 }

@@ -1,27 +1,24 @@
 package de.unhappycodings.blocksmod.common.geckolib;
 
 import de.unhappycodings.blocksmod.BlocksMod;
-import de.unhappycodings.blocksmod.common.blockentity.BigSlidingDoorEntity;
 import net.minecraft.resources.ResourceLocation;
+import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 
-public class BigSlidingDoorModel extends AnimatedGeoModel<BigSlidingDoorEntity>
-{
+public class BigSlidingDoorModel<T extends IAnimatable> extends AnimatedGeoModel<T> {
+
     @Override
-    public ResourceLocation getModelLocation(BigSlidingDoorEntity object)
-    {
+    public ResourceLocation getModelLocation(T object) {
         return new ResourceLocation(BlocksMod.MOD_ID, "geo/models/big_sliding_door.geo.json");
     }
 
     @Override
-    public ResourceLocation getTextureLocation(BigSlidingDoorEntity object)
-    {
-        return new ResourceLocation(BlocksMod.MOD_ID, "geo/textures/big_sliding_door.png");
+    public ResourceLocation getTextureLocation(T object) {
+        return new ResourceLocation(BlocksMod.MOD_ID, "geo/textures/big_sliding_door");
     }
 
     @Override
-    public ResourceLocation getAnimationFileLocation(BigSlidingDoorEntity object)
-    {
+    public ResourceLocation getAnimationFileLocation(T object) {
         return new ResourceLocation(BlocksMod.MOD_ID, "animations/models/big_sliding_door.animation.json");
     }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "blocksmod:geo/textures/big_sliding_door"
+    "all": "blocksmod:geo/textures/limestone_big_sliding_door"
   }
 }

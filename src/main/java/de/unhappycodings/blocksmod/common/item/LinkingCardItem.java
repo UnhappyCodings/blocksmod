@@ -2,7 +2,10 @@ package de.unhappycodings.blocksmod.common.item;
 
 import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.client.KeyBindings;
-import de.unhappycodings.blocksmod.common.block.*;
+import de.unhappycodings.blocksmod.common.block.LampBlock;
+import de.unhappycodings.blocksmod.common.block.LampFlatBlock;
+import de.unhappycodings.blocksmod.common.block.TubeLampBlock;
+import de.unhappycodings.blocksmod.common.block.WirelessLampControllerBlock;
 import de.unhappycodings.blocksmod.common.blockentity.WirelessLampControllerEntity;
 import de.unhappycodings.blocksmod.common.config.CommonConfig;
 import de.unhappycodings.blocksmod.common.util.NbtUtil;
@@ -22,12 +25,10 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
@@ -60,14 +61,12 @@ public class LinkingCardItem extends Item {
             tooltipComponents.add(new TextComponent(""));
             tooltipComponents.add(TextComponentUtil.getTComp("message.use", false, ChatFormatting.GRAY).append(" ")
                     .append(TextComponentUtil.getTComp("message.on", false, ChatFormatting.GRAY)).append(" ")
-                    .append(TextComponentUtil.getTComp("message.flat_lamps", true)).append(" ")
-                    .append(TextComponentUtil.getTComp("message.or", false, ChatFormatting.GRAY)).append(" ")
-                    .append(TextComponentUtil.getTComp("message.lamp_controller", true)));
+                    .append(new TranslatableComponent("block.blocksmod.wireless_lamp_controller").setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR_SUB))));
             tooltipComponents.add(new TextComponent("Sneak").setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR)).append(" ")
                     .append(TextComponentUtil.getTComp("message.to", false, ChatFormatting.GRAY)).append(" ")
                     .append(TextComponentUtil.getTComp("message.copy", false, ChatFormatting.GRAY)).append(" ")
                     .append(TextComponentUtil.getTComp("message.from", false, ChatFormatting.GRAY)).append(" ")
-                    .append(TextComponentUtil.getTComp("message.lamp_controller", true)));
+                    .append(new TranslatableComponent("block.blocksmod.wireless_lamp_controller").setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR_SUB))));
             tooltipComponents.add(new TextComponent(""));
             tooltipComponents.add(TextComponentUtil.getTComp("tooltip.linking_card_addrem", false, ChatFormatting.GRAY));
             tooltipComponents.add(getDescription());

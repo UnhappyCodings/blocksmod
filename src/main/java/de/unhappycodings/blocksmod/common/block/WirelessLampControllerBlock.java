@@ -68,7 +68,7 @@ public class WirelessLampControllerBlock extends BaseEntityBlock {
 
         if (level.hasNeighborSignal(block.getBlockPos())) {
             player.sendMessage(TextComponentUtil.getTCompNK("message.turn_off", false, ChatFormatting.GRAY).append(" ")
-                    .append(TextComponentUtil.getTCompNK("message.lamp_controller", true, null).append(" ")
+                    .append(new TranslatableComponent("block.blocksmod.wireless_lamp_controller").setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR)).append(" ")
                             .append(TextComponentUtil.getTCompNK("message.first", false, ChatFormatting.GRAY).append("!"))), UUID.randomUUID());
             player.playNotifySound(SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.BLOCKS, 1f, 0.5f);
             return InteractionResult.SUCCESS;
@@ -105,12 +105,12 @@ public class WirelessLampControllerBlock extends BaseEntityBlock {
             tooltipComponents.add(TextComponentUtil.getTComp("message.used", false, ChatFormatting.GRAY).append(" ")
                     .append(TextComponentUtil.getTComp("message.to", false, ChatFormatting.GRAY)).append(" ")
                     .append(TextComponentUtil.getTComp("message.control", false, ChatFormatting.GRAY)).append(" ")
-                    .append(TextComponentUtil.getTComp("message.flat_lamps", true, null)).append(" "));
+                    .append(new TranslatableComponent("block.blocksmod.all_remotables").setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR))));
             tooltipComponents.add(new TextComponent(""));
             tooltipComponents.add(TextComponentUtil.getTComp("message.add", false, ChatFormatting.GRAY).append(" ")
                     .append(TextComponentUtil.getTComp("message.link_bound_bounds", true).append(" "))
                     .append(TextComponentUtil.getTComp("message.by_using", false, ChatFormatting.GRAY).append(" "))
-                    .append(TextComponentUtil.getTComp("message.linking_card", true).append(" ")));
+                    .append(new TranslatableComponent("block.blocksmod.linking_card").setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR_SUB)).append(" ")));
             tooltipComponents.add(new TextComponent(""));
             tooltipComponents.add(TextComponentUtil.getTComp("tooltip.wireless_lamp_controller_addrem", false, ChatFormatting.GRAY));
             tooltipComponents.add(getDescription());

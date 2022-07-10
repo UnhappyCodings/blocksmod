@@ -4,6 +4,7 @@ import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.client.KeyBindings;
 import de.unhappycodings.blocksmod.common.blockentity.BigSlidingDoorEntity;
 import de.unhappycodings.blocksmod.common.blockentity.ModBlockEntities;
+import de.unhappycodings.blocksmod.common.util.LocationUtil;
 import de.unhappycodings.blocksmod.common.util.TextComponentUtil;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
@@ -12,7 +13,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
 import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -30,6 +31,7 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -38,6 +40,7 @@ import java.util.List;
 public class BigSlidingDoorBlock extends BaseEntityBlock {
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+    public RegistryObject<BlockEntityType<BigSlidingDoorEntity>> registryObject;
 
     protected static final VoxelShape OPEN_NS_1 = Shapes.or(Block.box(-16, 0, 7, 8, 32, 9), Block.box(8, 0, 7, 32, 32, 9));
     protected static final VoxelShape OPEN_NS_2 = Shapes.or(Block.box(-16, 0, 7, 3.5, 32, 9), Block.box(12.5, 0, 7, 32, 32, 9));
@@ -51,8 +54,9 @@ public class BigSlidingDoorBlock extends BaseEntityBlock {
     protected static final VoxelShape OPEN_EW_4 = Shapes.or(Block.box(7, 0, 21.5, 9, 32, 32), Block.box(7, 0, -16, 9, 32, -5.5));
     protected static final VoxelShape OPEN_EW_5 = Shapes.or(Block.box(7, 0, 27.15, 9, 32, 32), Block.box(7, 0, -16, 9, 32, -11.15));
 
-    protected BigSlidingDoorBlock() {
+    protected BigSlidingDoorBlock(RegistryObject<BlockEntityType<BigSlidingDoorEntity>> registryObject) {
         super(Properties.copy(Blocks.BLACK_STAINED_GLASS).noOcclusion());
+        this.registryObject = registryObject;
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(POWERED, false));
@@ -66,7 +70,8 @@ public class BigSlidingDoorBlock extends BaseEntityBlock {
     @SuppressWarnings("deprecation")
     @Override
     public void neighborChanged(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Block block, @NotNull BlockPos fromPos, boolean isMoving) {
-        level.setBlock(pos, state.setValue(POWERED, level.hasNeighborSignal(pos)), 3);
+        boolean xState = LocationUtil.getBigSlidingDoorRedstoneState(level, pos);
+        level.setBlock(pos, state.setValue(POWERED, xState), 3);
     }
 
     @Override
@@ -131,22 +136,25 @@ public class BigSlidingDoorBlock extends BaseEntityBlock {
                     .append(new TextComponent(" CTRL ").setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR)))
                     .append(TextComponentUtil.getTComp("tooltip.show_description_1", false, ChatFormatting.GRAY)));
         } else {
-            tooltipComponents.add(TextComponentUtil.getTComp("message.big_sliding_door", false, ChatFormatting.GRAY).append(" "));
+            tooltipComponents.add(TextComponentUtil.getTComp("tooltip.big_sliding_door_1", true, null).append(" ")
+                    .append(TextComponentUtil.getTComp("tooltip.big_sliding_door_2", false, ChatFormatting.GRAY))
+                    .append(new TextComponent(" 2").setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR)))
+                    .append(new TextComponent("x").setStyle(Style.EMPTY.withColor(ChatFormatting.DARK_GRAY)))
+                    .append(new TextComponent("3 ").setStyle(Style.EMPTY.withColor(BlocksMod.MOD_COLOR)))
+                    .append(TextComponentUtil.getTComp("message.blocks", false, ChatFormatting.GRAY)));
             tooltipComponents.add(new TextComponent(""));
-            tooltipComponents.add(TextComponentUtil.getTComp("message.big_sliding_door_control", false, ChatFormatting.GRAY).append(" "));
-            tooltipComponents.add(getDescription());
+            // By redstone Signal or wirelessly controllable Sliding Door.
+            tooltipComponents.add(TextComponentUtil.getTComp("message.by", false, ChatFormatting.GRAY).append(" ")
+                    .append(TextComponentUtil.getTComp("tooltip.big_sliding_door_control_1", true)).append(" ")
+                    .append(TextComponentUtil.getTComp("message.or", false, ChatFormatting.GRAY)).append(" ")
+                    .append(TextComponentUtil.getTComp("tooltip.big_sliding_door_control_2", true)).append(" ")
+                    .append(TextComponentUtil.getTComp("tooltip.big_sliding_door_control_3", false, ChatFormatting.GRAY)));
+            // Render Limitations Information
+            tooltipComponents.add(TextComponentUtil.getTComp("tooltip.big_sliding_door_information_1", false, ChatFormatting.DARK_RED).append(" "));
+            tooltipComponents.add(TextComponentUtil.getTComp("tooltip.big_sliding_door_information_2", false, ChatFormatting.DARK_RED).append(" "));
+            tooltipComponents.add(TextComponentUtil.getTComp("tooltip.big_sliding_door_information_3", false, ChatFormatting.DARK_RED).append(" "));
         }
         super.appendHoverText(stack, level, tooltipComponents, flag);
-    }
-
-    @NotNull
-    public Component getDescription() {
-        String descriptionId = getDescriptionId();
-        int lastIndex = descriptionId.lastIndexOf('.');
-        return new TranslatableComponent(String.format(
-                "%s.tooltip.%s",
-                descriptionId.substring(0, lastIndex).replaceFirst("^block", "item"),
-                descriptionId.substring(lastIndex + 1))).withStyle(ChatFormatting.DARK_GRAY);
     }
 
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, @NotNull BlockState blockState, @NotNull BlockEntityType<T> type) {
@@ -156,7 +164,7 @@ public class BigSlidingDoorBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
-        return ModBlockEntities.BIG_SLIDING_DOOR.get().create(pos, state);
+        return registryObject.get().create(pos, state);
     }
 
 }

@@ -10,12 +10,9 @@ import de.unhappycodings.blocksmod.BlocksMod;
 import de.unhappycodings.blocksmod.common.block.BigSlidingDoorBlock;
 import de.unhappycodings.blocksmod.common.block.BoundingBlock;
 import de.unhappycodings.blocksmod.common.block.ModBlocks;
-import de.unhappycodings.blocksmod.common.blockentity.BigSlidingDoorEntity;
 import de.unhappycodings.blocksmod.common.blockentity.BoundingBlockEntity;
-import de.unhappycodings.blocksmod.common.blockentity.WirelessLampControllerEntity;
 import de.unhappycodings.blocksmod.common.config.CommonConfig;
 import de.unhappycodings.blocksmod.common.item.LinkingCardItem;
-import de.unhappycodings.blocksmod.common.item.ModItems;
 import de.unhappycodings.blocksmod.common.util.NbtUtil;
 import de.unhappycodings.blocksmod.common.world.Generation;
 import net.minecraft.client.Minecraft;
@@ -27,17 +24,11 @@ import net.minecraft.nbt.Tag;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.StructureBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.phys.Vec3;
@@ -63,7 +54,8 @@ public class ForgeEvents {
         final List<Holder<PlacedFeature>> features = event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
 
         switch (event.getCategory()) {
-            case NETHER, THEEND -> {}
+            case NETHER, THEEND -> {
+            }
             default -> Generation.OVERWORLD_ORES.forEach(x -> features.add(new Holder.Direct<>(x)));
         }
     }
@@ -164,7 +156,11 @@ public class ForgeEvents {
             } else {
                 blockOriginPos = event.getPos();
             }
-            BlockPos above; BlockPos left; BlockPos leftAbove; BlockPos right; BlockPos rightAbove;
+            BlockPos above;
+            BlockPos left;
+            BlockPos leftAbove;
+            BlockPos right;
+            BlockPos rightAbove;
             if (facing == Direction.NORTH || facing == Direction.SOUTH) {
                 left = blockOriginPos.offset(-1, 0, 0);
                 leftAbove = blockOriginPos.offset(-1, 1, 0);
@@ -182,7 +178,7 @@ public class ForgeEvents {
             BlockPos[] posList = {left, leftAbove, above, rightAbove, right};
             level.destroyBlock(blockOriginPos, !event.getPlayer().isCreative());
             for (BlockPos pos : posList) {
-                level.destroyBlock(pos, false);
+                level.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
             }
         }
     }
@@ -194,7 +190,11 @@ public class ForgeEvents {
             LevelAccessor level = event.getWorld();
             BlockState blockState = level.getBlockState(blockPos);
             Direction facing = blockState.getValue(BigSlidingDoorBlock.FACING);
-            BlockPos above; BlockPos left; BlockPos leftAbove; BlockPos right; BlockPos rightAbove;
+            BlockPos above;
+            BlockPos left;
+            BlockPos leftAbove;
+            BlockPos right;
+            BlockPos rightAbove;
 
             if (facing == Direction.NORTH || facing == Direction.SOUTH) {
                 left = blockPos.offset(-1, 0, 0);
@@ -223,7 +223,7 @@ public class ForgeEvents {
                 above = blockPos.offset(0, 1, 0);
                 rightAbove = blockPos.offset(0, 1, 1);
                 right = blockPos.offset(0, 0, 1);
-                
+
                 if (facing == Direction.EAST) {
                     setNbt(level, left, blockPos, facing, (byte) 5);
                     setNbt(level, leftAbove, blockPos, facing, (byte) 4);
@@ -258,10 +258,14 @@ public class ForgeEvents {
 
     @SubscribeEvent
     public static void onSlidingDoorPlace(final PlayerInteractEvent.RightClickBlock event) {
-        if (event.getEntityLiving().getItemInHand(InteractionHand.MAIN_HAND).getItem() == ModBlocks.BIG_SLIDING_DOOR.get().asItem()) {
+        if (event.getEntityLiving().getItemInHand(InteractionHand.MAIN_HAND).getItem() == ModBlocks.ANORTHOSITE_BIG_SLIDING_DOOR.get().asItem()) {
             LevelAccessor level = event.getWorld();
             BlockPos pos;
-            BlockState above; BlockState left; BlockState leftAbove; BlockState right; BlockState rightAbove;
+            BlockState above;
+            BlockState left;
+            BlockState leftAbove;
+            BlockState right;
+            BlockState rightAbove;
             pos = switch (event.getFace()) {
                 case UP -> event.getPos().above();
                 case DOWN -> event.getPos().below();

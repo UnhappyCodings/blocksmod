@@ -3,7 +3,6 @@ package de.unhappycodings.blocksmod;
 import de.unhappycodings.blocksmod.common.block.ModBlocks;
 import de.unhappycodings.blocksmod.common.blockentity.ModBlockEntities;
 import de.unhappycodings.blocksmod.common.config.CommonConfig;
-import de.unhappycodings.blocksmod.common.event.ModEvents;
 import de.unhappycodings.blocksmod.common.item.ModItems;
 import de.unhappycodings.blocksmod.common.registration.ModSounds;
 import de.unhappycodings.blocksmod.common.registration.Registration;

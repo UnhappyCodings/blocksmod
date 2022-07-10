@@ -2513,6 +2513,8 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation(BlocksMod.MOD_ID, "block/aragonit_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.GNEISS_BLOCK.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/gneiss_block"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.GARAT_BLOCK.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/garat_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.GABBRO_BLOCK.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/gabbro_block"));
         withExistingParent(Objects.requireNonNull(ModBlocks.MONZONITE_BLOCK.get().getRegistryName()).toString(),
@@ -2522,6 +2524,8 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
 
         withExistingParent(Objects.requireNonNull(ModBlocks.WIRELESS_LAMP_CONTROLLER.get().getRegistryName()).toString(),
                 new ResourceLocation(BlocksMod.MOD_ID, "block/wireless_lamp_controller"));
+        withExistingParent(Objects.requireNonNull(ModBlocks.PLAYER_SENSOR.get().getRegistryName()).toString(),
+                new ResourceLocation(BlocksMod.MOD_ID, "block/player_sensor_off"));
 
         simpleItem(ModItems.LUMINOUS_DUST.get());
         simpleItem(ModItems.SANDING_PAPER.get());

@@ -1,6 +1,7 @@
 package de.unhappycodings.blocksmod.common.block;
 
 import de.unhappycodings.blocksmod.BlocksMod;
+import de.unhappycodings.blocksmod.common.blockentity.ModBlockEntities;
 import de.unhappycodings.blocksmod.common.registration.Registration;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -4261,12 +4262,16 @@ public class ModBlocks {
             register("magenta_lamp_block_flat_huge_framed_enlighted",
                     () -> new LampFlatBlock(true, true, "huge"));
 
+    public static final RegistryObject<PlayerSensorBlock> PLAYER_SENSOR =
+            registerNoTab("player_sensor", PlayerSensorBlock::new);
+    public static final RegistryObject<BigSlidingDoorBlock> ANORTHOSITE_BIG_SLIDING_DOOR =
+            register("anorthosite_big_sliding_door", () -> new BigSlidingDoorBlock(ModBlockEntities.ANORTHOSITE_BIG_SLIDING_DOOR));
+    public static final RegistryObject<BigSlidingDoorBlock> LIMESTONE_BIG_SLIDING_DOOR =
+            register("limestone_big_sliding_door", () -> new BigSlidingDoorBlock(ModBlockEntities.LIMESTONE_BIG_SLIDING_DOOR));
     public static final RegistryObject<WirelessLampControllerBlock> WIRELESS_LAMP_CONTROLLER =
             register("wireless_lamp_controller", WirelessLampControllerBlock::new);
-    public static final RegistryObject<BigSlidingDoorBlock> BIG_SLIDING_DOOR =
-            register("big_sliding_door", BigSlidingDoorBlock::new);
-    public static final RegistryObject<BoundingBlock> BOUNDING=
-            register("bounding", BoundingBlock::new);
+    public static final RegistryObject<BoundingBlock> BOUNDING =
+            registerNoTab("bounding", BoundingBlock::new);
 
     public static final RegistryObject<TubeLampBlock> WHITE_TUBE_LAMP =
             register("white_tube_lamp", () -> new TubeLampBlock(true, false));
@@ -4749,8 +4754,13 @@ public class ModBlocks {
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = Registration.BLOCKS.register(name, block);
-        Registration.ITEMS.register(name, () -> new BlockItem(toReturn.get(),
-                new Item.Properties().tab(BlocksMod.ItemTab)));
+        Registration.ITEMS.register(name, () -> new BlockItem(toReturn.get(), new Item.Properties().tab(BlocksMod.ItemTab)));
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryObject<T> registerNoTab(String name, Supplier<T> block) {
+        RegistryObject<T> toReturn = Registration.BLOCKS.register(name, block);
+        Registration.ITEMS.register(name, () -> new BlockItem(toReturn.get(), new Item.Properties()));
         return toReturn;
     }
 

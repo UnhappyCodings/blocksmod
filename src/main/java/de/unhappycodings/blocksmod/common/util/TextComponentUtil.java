@@ -37,4 +37,5 @@ public class TextComponentUtil {
             return x;
         return x.setStyle(Style.EMPTY.withColor(formatting));
     }
+
 }
